@@ -6,6 +6,52 @@ For example you can prevent UK from taking Nigeria by conquering just Lagos in t
 and conquer it with free casus beli that you get from Berlin Conference.
 
 #################################################################
+#                       Berlin Conference                       #
+#################################################################
+
+This is the single most important event in a way for Europeans to dominate the world. It is one of the most important events in the game.
+This event sets a single very important global flag: berlin_conference that leads to many events and decions, but most importantly
+it allows you to use a **uniqe free casus beli against most african natives**. You don't actually need to get it yorself.
+
+Scramble for Africa.txt - 95500
+It can be triggered by a great power nation with a capital in Europe, either being a colonial nation, or owning a land in Africa.
+Most importantly, they need 3 inventions:
+- Prophylaxis against malaria
+- Mission to civilize
+- Colonial negotiations
+
+The first one is the Medicine tech and obtainable from the game start (1830).
+The second is in State & Goverment, reserchable from 1840, but optainable only after researching 1850' techs.
+Last one is the most important, since it is a time bottleneck for the entire event.
+It is in the Breech-loaded Rifles (1850 tech), but optainable after researching 1880' techs.
+If you are prepared, you will get it it after ~4 months after geting first 1880' tech.
+
+Finally, it has a MTTH of 6 months, shorter if your capital is Berlin, increasing chance to be trully Berlin conference.
+Otherwise, it is named after other capital. It also gives 25 base prestige.
+
+# The Dark Continent invention
+
+It has a complex requirements, while giving final -5 min life rating. Here it is reqirements:
+You CAN NOT get it if you are not a great power with any of those flags:
+- congo_master
+- historical_congo
+- civilizing_congo
+If you have **colonial_reailroading** (it is enabled by deafult):
+    It CAN NOT be discovered after 1895, unless the Congo conference have happened
+If you disabled it:
+    You need 1 more tech or 2 other increasing factors listed below
+Now to actually get it, you need any of those techs, but having more of them incrases your chances greatly
+- Biologism (1850 tech)
+- Military Logistics (1870 tech)
+- Steel Streamers (1880 tech)
+Other factors also help to get it, but less
+- Any great power have that invention
+- Your neigthbour have it
+At the same scale these factors also can block you from getting it, forcing you to get more of above factors:
+- Being at most secondary power
+- Having rank worse than 16
+
+#################################################################
 #                            Africa                             #
 #################################################################
 
@@ -386,7 +432,7 @@ Probably the only way to get them before France is to conqer Mahori, since its 1
 colonize Comoros by hand since they have 30 life rating, enabling colonization after geting just prophylaxis against malaria.
 
 #################################################################
-##                          Namibia                            ##
+##                           Namibia                           ##
 #################################################################
 
 ### Walvis Bay & Penguin Islands
@@ -502,11 +548,11 @@ it will give Liberia its modern borders and one extra province in every directio
 This is fairly complex event, its resoults may give Liberia more provinces?
 
 #################################################################
-##                        Ivory Coast                          ##
+##                         Ivory Coast                         ##
 #################################################################
 
 ### First colony - Fort Nemours (Aboisso)
-**Colonial railroading** decision - Sitka.txt, id: fort_nemours can be taken by great powerFrance since 1840 (1843 automaticly) if they are at peace.
+**Colonial railroading** decision - Sitka.txt, id: fort_nemours can be taken by great power France since 1840 (1843 automaticly) if they are at peace.
 France gains it and province name is changed. If some nation owned Aboisso earlier (few tags are listed), it is stil taken and bad event is given to the loser.
 
 ### Mainland Conquest
@@ -514,11 +560,11 @@ France gains it and province name is changed. If some nation owned Aboisso earli
 
 It must be at least 1875, country needs to own Fort Nemours, have 2MLN+ POPs, be 16+ rank, have nationalism_n_imperialism tech, have 50k to spend,
 be independent, not disarmed, at peace and Sassandra and Subre needs to be empty.
-If you are not **FRA tag**, you need to wait until 1882. **AI** France can get this without spending 50k.
+If you are not **FRA tag**, you need to wait until 1882. AI France can get this without spending 50k.
 
 This decision gives in short every empty province in Windward Coast state plus Man province. Disclaimer: Liberia can take Tabu and Guiglo earlier.
 Names of 2 provinces are changed and war is declared against Wattara and Baule to annex them, but only if they are uncivilized AI outside of anyone SOI.
-For some reason BZD is also a target but it fortunatly does not work because it is a subject of TUR.
+For some reason BZD is also a target.
 Defending countries gets a casus beli against France, making it impossible to intervine on their side as a great power.
 
 #################################################################
@@ -527,7 +573,7 @@ Defending countries gets a casus beli against France, making it impossible to in
 
 ### African minors actions
 
-- Wolof starts with a war of conqest against Bundu
+Bundu starts with a war of conqest against Wolof, while being weaker country.
 
 ### The Occupation of Seju
 Yakutat.txt - sedhiou_conquest decision gives Seju province. It is not fixed to France.
@@ -544,7 +590,7 @@ Defending nations gets a buff and a casus beli, making intervention as a great p
 
 ### Maba Diakhou Ba's Jihads
 Yakutat.txt - 184825379
-**Event in a short time window: march-december 1861**, that happens to animist owner of Kunghol.
+**Event in a short time window: March-December 1861**, that happens to animist owner of Kunghol.
 
 It spawns Badibu in Kunghol. NOTE: It is a modified tag from kurdish Ottoman subject. Ottomans annex them in 1848, leaving this tag free to use.
 
@@ -565,7 +611,8 @@ Player also needs 45+ ships on top of that.
 
 **It gives 5 infamy**, declares war of conqest on Kedugu owner and gives a casus beli of conqest on Orungu.
 Defender gains casus beli, making intervention impossible, but against Orungu France gains just a casus beli, so intervention is possible.
-Note: AI will accept it even while having over 22 infamy, going over limit (read code for why).
+It can be possible to lose that casus beli since Tenda can easily be a subject of Futa Jallon.
+Note: AI will accept it even while having over 22 infamy, going over limit due to error in the code.
 
 ### Big invasion
 FRAFlavor.txt - 37241 event. It can happen **from 1870** to a great power France at peace owning Dakar, Mbul and St Louis.
@@ -576,7 +623,9 @@ It has 2 options, but only first is interesting.
 War is declared upon Sine, Saloum, Toro Imanate and Wolof if there are not truce with them. Read code for more details, since some of them may not be a target.
 For some reason Bayazid is again listed there, but event works fine.
 Same can be said about The Toro Immanate and Wolof, that should you should get a casus beli against, but it again does look like to work.
-Theoriticly it is possible to prevent France from taking this option, if they have large infamy. They salso theoreticly would take it even over infamy limit.
+It is probably due to complex casus beli system giving *establish_protectorate_casus_belli* but it cannot be used why you have Nationalism & Imperialism tech, making it useless.
+
+Theoriticly it is possible to prevent France from taking this option, if they have large infamy. They also theoreticly would take it even over infamy limit.
 Note: Appointment of new Senegal Governor is not necesary for it, despite being directly linked historicly.
 
 ### The Ocupation of Bignona
@@ -585,13 +634,13 @@ You need to be civilized, own Seju or Soma province, Bigona must be empty, addit
 Finally, you need to **own Velingara while having colonial_negotiations invention or just wait until 1883**.
 
 ### Border exchange
-Velingara can be echanged for Kansala throught border exchange. Read another paragraph for details
+Velingara can be echanged for Kansala throught border exchange. Read another paragraph for details.
 
 #################################################################
 ##                           Guinea                            ##
 #################################################################
 
-### African minors actions
+### African states actions
 
 #### Creation of Kabadugu
 In 1848, right after BZD tag is annexed by the Ottomans, they are spawned as Kabadugu in Odiene with Sinko province.
@@ -599,10 +648,25 @@ Kong that lost provinces to it also gets Man province.
 
 #### Wattara Gwiriko conflicts
 These countries ends up in war set by events, potentially by Gwiriko's secession. Events:
-Yakutat.txt: 184900011, 18490002
+Yakutat.txt - 184900011 and 18490002
 
 #### Jallon Immamate Conqests
-- Jallon declares a war against Tenda in 1856 to subjugate them (Yakutat.txt - invade_tenda).
+Jallon declares a war against Tenda in **1856** to subjugate them (Yakutat.txt - invade_tenda).
+
+events/Yakutat.txt - 184900211
+If previous decision was taken, after wining war with Tenda, the *Treaty of Yimbering* happens. It has additional reqirements but it does not matter really.
+It gives Jallon Yimbering and colonizes Sangaredi and gives 5 prestige. It has MTTH of just 1 day.
+
+decisions/Yakutat.txt - invade_kaabu
+After that Jallon can easily make next decision, to puppet Gabu for **3 infamy**.
+Gabu gets an event for some army stats and adds humilate casus beli, making intervention impossible.
+
+events/Yakutat.txt - 18490021
+After losing the war, Gabu can get an event, but it probably will never trigger due to reqirements.
+Gabu is then annexed by Jallon, and they can get Boffa?
+
+events/Yakutat.txt - 18482479
+This event would allow anexation of Gabu, but it requires Jallon to be civilized.
 
 ### Colonization of Boffa
 Yakutat.txt - colonize_boffa **colonial_railroading** decision colonizes Boffa.
@@ -650,18 +714,111 @@ In the deal you get many provinces in the region, establishing modern Gambia cou
 Exchange can also be made for other provinces or 200k?
 
 #################################################################
-##                          Madagascar                         ##
+##                            Gabon                            ##
 #################################################################
 
-### Boina annexation
-decisions/Yakutat.txt - annex_boina
-Imerina anexes its Boina subject in 1836
+events/Yakutat.txt - 18482374
+Add influence over them - WIP
 
-### Colonization of the south
+### The conqest of Orungu
+FlavourModAfrica.txt - appoint_louis_briere described in Senegal section also gives conqest casus beli against Orungu
+
+#################################################################
+##                         Madagascar                          ##
+#################################################################
+
+### Imerina decisions
+
+#### Boina annexation
+decisions/Yakutat.txt - annex_boina
+Imerina anexes its Boina subject in **1836**.
+Decision description missiforms that it leads to war with them.
+
+#### Colonization of the south
 decisions/Yakutat.txt - claim_madagascar_lowdesert
-Ampanihy & Ihosy can be taken by any nation owning Tananarive at peace since 1838. Comonly, Imerina will do it.
+Ampanihy & Ihosy can be taken by any nation owning Tananarive at peace since **1838**. Comonly, Imerina will do it.
+
+#### Cores in Antankarana
+decisions/Yakutat.txt - the_antankarana_question
+It grants cores to Imerina in all Antankaranan cores (Antomboko and Nosy Be) if Antankarana still exists.
+It can be easily done from **1841**, but have a few other requirements.
+
+### The Lambert Charter
+decisions/FlavourMod_Africa.txt - the_lambert_charter
+A decision avaible to great power France with State & Goverment tech (avaible from **1840**).
+Imerina needs to be at peace and be in their SOI or not it any SOI at all.
+It gives France 400 influence over them, instantly ading them to their SOI.
+
+It also reduces influence of great power having Imerina in SOI by 150, but this will do nothing since they cannot be in SOI of other powers to begin with.
+
+### Nosy Be colony & influence over Antankarana
+decisions/Yakutat.txt - colonize_nosy_be
+Decision avaible to France owning Ile Sainte-Marie (island at the Madagascar coast) at 16+ rank, at peace, independent and not disarmed.
+They also needs 100+ relation with Antankarana owning Nosy Be or just wait until **1840**.
+
+France gets Nosy Be from them and they can contest it throught event, but AI will never do it.
+
+events/Yakutat.txt - 18482357
+In **April of 1840** just after previous decision, Antankarana gets another event.
+They there can take anti colonial position, but AI will never do that.
+Instead owner of Nosy Be will get 400 influence and relations with them and get an event.
+
+In that event Nosy Be owner will gain them as a subject or break any ties with them.
+AI will always take the first option.
+With that Antankarana will lose a core on Nosy Be and Imerina will get it instead.
+This is because their cores makes borders of future Madagascar colony.
+
+If any counry takes Nosy Be from France, Antankarana will become a subject of Nosy Be new owner throught events/Yakutat.txt - 18482358.
+They alse can be annexed throught for for free or made free if a player wishes. AI wiil do neither of those.
+
+### Subjectification of Imerina
+decisions/FlavourMod_Africa - end_the_merina_monarchy
+This is a **berlin_conference** decision avaible **untill 1900** for great power owner of Ile Sainte-Marie
+with Nationalism & Imperialism tech, mission_to_civilize invention, capital in Europe, naval base that have Imerina in SOI.
+Imerina needs to be an uncivilized nation that is not a subject and at peace.
+You also need a province in Africa, but Ile Sainte-Marie that you need in a first place should fit.
+
+It declares a war with Imerina to puppet them and annexes Antankarana if they are a subject of nation clicking this decision.
+
+#################################################################
+#              Antarctic and subantarctic islands               #
+#################################################################
+
+## Bouvet Island
+It is one of few provinces with just 1 life rating. Due to this it cannot be colonized normally.
+Stitka.txt - bouvet_island
+It can be seized by Norway or Scandinavia from 1900 that have Oil Driven Ships tech (avaible from **1919**).
+However after that UK gets an event where it can take it for **0.1 infamy**. AI have 10% chance to do it, and this action cannot be contested.
+
+Poland can get a core there, probably a mistake in the code. It is also temporary used in one event as a buffer province.
+
+## Prince Edward Islands
+It is one of few provinces with just 1 life rating. Due to this it cannot be colonized normally.
+Sitka.txt - prince_edward_islands
+You need to be a civilized couuntry with Umtata or have a subject owning it, while said islands are empty.
+Next there are two ways to take them:
+- Have Mass Politics tech (reseachable from 1900)
+- Be a Boer primary culture with Naval Logistics tech if it is after 1900
+
+Both results in province being taken within a few months from **1900**.
+Boer RPA can get a core there. This is also true for non AI Imerina.
+
+## Kergulen Island
+Sitka.txt - 123562
+This **colonial_railroading** event with MTTH of 3 months gives this island. It requires:
+Being a France since **1893** while said island is empty.
+
+It also changes its name and gives coal there instead of fish.
+This coal however is shortly after in 1895 changed back to fish.
+
+Non AI Imerina can also get a core there.
+
+It is theoreticly possible to colonize it normally after geting *The Dark Continent* invention.
+
+# WIP
 
 establish_protectorate_BC_casus_belli
+demand_concession_BC_casus_belli
 colonial_reconquest_cb
 claim_holy_land
 annex_africa
