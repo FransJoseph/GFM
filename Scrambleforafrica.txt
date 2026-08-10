@@ -538,7 +538,7 @@ If finally done, Togo is given and if civilized country owns any part of it, the
 #################################################################
 
 ### Independence and early colonization
-Liberia begins as uncivilized American OPM subject. Event FlavourMod_USA, id: 441266 trigered in 1847 relases it and gives it Teysa and Tabu provinces.
+Liberia begins as uncivilized American OPM subject. Event FlavourMod_USA, id: 441266 trigered in **1847** relases it and gives it Teysa and Tabu provinces.
 As USA player, you can also play as it or annex Liberia with those extra provinces.
 Whatever happens with these event, Liberia is still in US influence or annexed.
 
@@ -562,10 +562,13 @@ It must be at least 1875, country needs to own Fort Nemours, have 2MLN+ POPs, be
 be independent, not disarmed, at peace and Sassandra and Subre needs to be empty.
 If you are not **FRA tag**, you need to wait until 1882. AI France can get this without spending 50k.
 
-This decision gives in short every empty province in Windward Coast state plus Man province. Disclaimer: Liberia can take Tabu and Guiglo earlier.
+This decision gives in short every empty province in Windward Coast state plus Man province.
+Disclaimer: Liberia can take Tabu and Guiglo earlier and they will not be given.
 Names of 2 provinces are changed and war is declared against Wattara and Baule to annex them, but only if they are uncivilized AI outside of anyone SOI.
 For some reason BZD is also a target.
 Defending countries gets a casus beli against France, making it impossible to intervine on their side as a great power.
+
+Search Plig in ecents/Yakutat.txt
 
 #################################################################
 ##                           Senegal                           ##
@@ -604,7 +607,7 @@ This is a decision (Yakutat.txt - dakar_stlouis_railroad) is not restricted to F
 It instantly gives you Mbul with 2 raiload lvs and declares war of conquest on Kayor for the **cost of 1 infamy**.
 Since Kayor gets a casus beli, it is impossible to intervine.
 
-### New Senegal Governor
+### Appointment of Louis Briere - conqest
 FlavourModAfrica.txt - appoint_louis_briere **colonial railroading** decision is avaible to great power France **from 1865**. Kedugu and Sitakili must be owned by France or by uncyvilized nation.
 France must have 2MLN+ POPs, cannot be disarmed, be a colonial nation, have nationalism_n_imperialism and raider_group_doctrine techs, 3+ ports, and less than 5 war e.
 Player also needs 45+ ships on top of that.
@@ -653,20 +656,33 @@ Yakutat.txt - 184900011 and 18490002
 #### Jallon Immamate Conqests
 Jallon declares a war against Tenda in **1856** to subjugate them (Yakutat.txt - invade_tenda).
 
-events/Yakutat.txt - 184900211
+- events/Yakutat.txt - 184900211
 If previous decision was taken, after wining war with Tenda, the *Treaty of Yimbering* happens. It has additional reqirements but it does not matter really.
 It gives Jallon Yimbering and colonizes Sangaredi and gives 5 prestige. It has MTTH of just 1 day.
 
-decisions/Yakutat.txt - invade_kaabu
+- decisions/Yakutat.txt - invade_kaabu
 After that Jallon can easily make next decision, to puppet Gabu for **3 infamy**.
 Gabu gets an event for some army stats and adds humilate casus beli, making intervention impossible.
 
-events/Yakutat.txt - 18490021
+- events/Yakutat.txt - 18490021
 After losing the war, Gabu can get an event, but it probably will never trigger due to reqirements.
 Gabu is then annexed by Jallon, and they can get Boffa?
 
-events/Yakutat.txt - 18482479
+- events/Yakutat.txt - 18482479
 This event would allow anexation of Gabu, but it requires Jallon to be civilized.
+
+- decisions/Yakutat.txt - unite_with_tooro
+This decision allows **non AI** Jallon Immanate to annex peacefully Tooro Immanate.
+Vice versa can be done if you play Tooro Immamate.
+
+- decisions/Yakutat.txt - denianke_happens
+Is is a player only decision giving Jallon Immanate many provinces
+
+- decisions/Yakutat.txt - no_more_fula_jihad
+Another player only decision avaible to 3 countries in the region
+It annexes TOU if it is a vasal and gives many cores in the region.
+
+Later, a coalition of muslim countries can form against new coalition of animist countries.
 
 ### Colonization of Boffa
 Yakutat.txt - colonize_boffa **colonial_railroading** decision colonizes Boffa.
@@ -679,9 +695,9 @@ It is avaible **from 1870** to a great power France while Dubreka is empty.
 They need to be at peace and not disarmed with nationalism_n_imperialism tech.
 Player also needs 45+ ships.
 
-**It gives 1.5 infamy**, gives Sangaredi and Dubreka and gives casus beli onto uncivilized AI owner of Forekariah.
+**It gives 1.5 infamy**, gives (XeXe if empty and Timbo ) Sangaredi and Dubreka and gives casus beli onto uncivilized AI owner of Forekariah.
 That casus beli however may not appear?
-AI will not do it until it is at 20+ infamy.
+AI will not do it while it is at 20+ infamy.
 
 #################################################################
 ##                           Gambia                            ##
@@ -727,7 +743,12 @@ FlavourModAfrica.txt - appoint_louis_briere described in Senegal section also gi
 ##                         Madagascar                          ##
 #################################################################
 
+NOTE: There is a **disabled** event SAFFlavor.txt - 1500000 connected to Madagascar.
+
 ### Imerina decisions
+
+#### Cores on surrounding islans
+**Non AI** Imerina can get cores on surrounding islands throught decisions/Sitka.txt - Claim_MAD.
 
 #### Boina annexation
 decisions/Yakutat.txt - annex_boina
@@ -779,6 +800,34 @@ Imerina needs to be an uncivilized nation that is not a subject and at peace.
 You also need a province in Africa, but Ile Sainte-Marie that you need in a first place should fit.
 
 It declares a war with Imerina to puppet them and annexes Antankarana if they are a subject of nation clicking this decision.
+It does not give any infamy, but AI will not do it if at 23+ infamy.
+If you missed this event, it is still possible to annex Imerina throught SOI.
+
+### Reorganisation of Madagascar
+events/Yakutat.txt - 18482516
+After Imerina becomes a subject of a country that did previous decision **before 1900**
+(so basicly after losing earlier war), this event trigers for their overlord with MTTM of 1 day.
+
+It gives 50k and transfers 3 provinces that colonizer should have already in the Madagascar to Imerina.
+It also gives colony_exemption flag to Imerina, preventing their annexation from having them in SOI alone.
+
+### Anexation of Imerina
+events/Yakutat.txt - 18482517
+It can trigger to country that got the previous event **from 1895**
+with a MTTH of 1 month while Imerina is their subject.
+
+It relases Imerina free and declares a war to annex them. Imerina adds just a status quo casus beli.
+Since this event do not check for SOI over Imerina and they do not add other casus belis,
+(all of their cores sould belong to them in that date, disalloving retake core cb) a great power intervention is possible.
+
+This event have a second option that AI will never take. It relases Imerina
+and once again allows to annex them throught SOI alone.
+
+### Rebelion
+events/Sitka.txt - 123490
+From **1904**, a rebelion will happen to **FRA tag** controlled Madagascar.
+Rebels add a casus beli, disallowing intervention.
+A player can chose to play as the rebels.
 
 #################################################################
 #              Antarctic and subantarctic islands               #
