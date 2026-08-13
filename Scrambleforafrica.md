@@ -121,7 +121,7 @@ This also changes Oranje goverment type to colonial_company, changing their name
 
 Nothern Cape (O'okiep, Emthanjeni and Hantam)
 
-events/BoerWar.txt id: 98261 #The Northern Cape Colony
+`events/BoerWar.txt id - 98261` #The Northern Cape Colony
 
 UK/SAF event at year 1840 with some MTTH, must be at peace and own Cape Town, at least one of said provinces must be empty
 
@@ -139,7 +139,7 @@ It is (or at least?) November
 Zulu own KwaDukuza
 Owner of Cape Town do not have flag boer_accepted
 
-mean_time_to_happen = { days = 1 }
+`MTTH` = { days = 1 }
 
 Zulu AI relase Natalia from said province and Emnambithi (Zulu player can contest it with a war)
 Owner of Cape Town gets an event (id: 98207) where AI selects to make them a puppet and give them Durban if it belongs to it
@@ -405,8 +405,46 @@ Then target country gets an event in which it makes the deal, or denies
 The better the relations, the better the chance for the deal with AI and vice versa
 If target is in the sphere of the proposer, the chance is very good even with the worst relations
 
-BETTER AREA \/\/\/\/
+BETTER AREA BEGINS NOW
+
 ___
+___
+___
+___
+
+## Algeria
+In 1830 it consists of a 4 countries and big swats of uncolonized Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Tuggurt. Additionally, one of Constantine's provinces is in the Tunisia state.
+Algeria is conqered by France through many wars and Sahara is taken by anexation of local rebelion + *The Saharan Frontier* decision.
+
+### War for Algiers
+`1830_GFM_FRA.txt - france_bullies_algeria`
+This is a very simple decision for great power France at peace if Algeria still owns Algiers.
+It reqires to be at least **May of any year**, so you can miss it and have to wait to May 1831 to do it.
+
+Algeria relases and breaks aliances with Ait Abbas and Tuggurt and get a feedback event.
+Finally, a war is declared upon them with *Punitive Expedition* CB (`treaty_port_casus_belli_no_infamy` exactly).
+
+After France wins, they can take one of two Algerian treaty ports, Oran and Algiers.
+`AI` will always chose Algiers since decision for Oran have a check that forbids its taking by `AI` if they do not own Algiers.
+
+> If France does it within 1830-1835 window, all pops from Great Slave Lake will be moved there and given 1% more literacy. This also happens in the setup that `CLN` does at every campain start.
+
+### War for Oran
+`1830_GFM_FRA.txt - oran_french_war`
+After wining the first war France can easily begin next. They just need to be at peace, hold Algiers and wait untill **1831**.
+They will declare war on Algeria with *Punitive Expedition* CB if they still hold Oran. This decision even ignores truce between them.
+
+### War for Bougie with Ait Abbas
+`1830_GFM_FRA.txt - bougie_french_war`
+It works literally the same. France just declares a war on them if they own Bougie. They again just need to hold Algiers and wait untill **1833**.
+
+### Battle of Macta - conqest of Algeria
+`1830_GFM_FRA.txt - 17051919`
+It trigers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algeria with *Establish Protectorate* CB, again ignoring potential truce.
+
+> As player you can also chose to not declare this war in that event, losing prestige
+
+`16151852` mucho importante break of Algeria
 
 ## Indian Ocean Teritory
 
@@ -414,11 +452,9 @@ This state is in 1830 owned by UK and France, with exception of Comoros & Mayott
 First one is uncolonized, second is an unciv OPM - Mahori Sultanate.
 
 They are quickly annexed by France by uniqe `colonial_railroading` decision: `France.txt - annex_mayotte`.
-France need to be a great power at peace with `Medicine` technology that they get fairly early. Mahori Sultanate must be `AI` and Comoros must be empty.
+France needs to be a great power at peace with `Medicine` technology that they get fairly early. Mahori Sultanate must be `AI` and Comoros must be empty.
 
 > Probably the only way to get them before France is to conqer Mahori, since **its 1 infamy max** and colonize Comoros by hand since they have 30 life rating, enabling colonization after geting just `Prophylaxis against Malaria`.
-
-___
 
 ## Namibia
 
@@ -426,7 +462,9 @@ ___
 `Colonial railroading` `berlin_conference` event (`MTH` of 1 day) - `BoerWar.txt - 98260`
 
 Rank 16+ country owning both Cape Town AND Springbok (O'okiep) while target provinces are empty with 10k to pay.
-Probably Easter Egg, all pops are moved from Walvis Ridge ocean province into Penguin Islands
+Probably Easter Egg or mistake, all pops are moved from Walvis Ridge ocean province into Penguin Islands.
+
+> You can do this decision with ease if you took Cape Town. Otherwise you will have to take infamy to take them
 
 ### Germany takes Namibian core - Luderitz Expedition
 
@@ -435,8 +473,10 @@ Probably Easter Egg, all pops are moved from Walvis Ridge ocean province into Pe
 3 mainland Southern Namibian provinces needs to be empty & Dithakong, Tsabong and Walvis Bay cannot be empty
 Country needs to be a German-like state owning Bremen or Wilhelmshaven (read code for more details)
 Is at least 1880/81/82, depending on techs and if GER is doing that
-Have `Nationalism & Imperialism`, 2MLN+ POPs, be 16+ rank, cannot be pacifistic and have <5 war e.
+Have `Nationalism & Imperialism`, 2MLN+ POPs, be 16+ rank, cannot be pacifistic and have <5 war exhaustion.
 Player also needs 55+ ships and 50k to pay.
+
+> If you do not prevent German unification from including Bremen & Wilhelmshaven (Oldenburg sells it to Prussia), you can really only take those ports for Infamy or devastate them at war until you will colonize Namibia thanks to `The Dark Continent`
 
 ## Rhodesia
 
@@ -533,7 +573,7 @@ This is fairly complex event, its resoults may give Liberia more provinces?
 France gains it and province name is changed. If some nation owned Aboisso earlier (few tags are listed), it is stil taken and bad event is given to the loser.
 
 ### Mainland Conquest
-**Colonial railroading** decision FlavourModArfica.txt, id: ivory_coast_conquest can be made by almost any contry - you can take that oportunity.
+`Colonial railroading` decision `FlavourModArfica.txt - ivory_coast_conquest` can be made by almost any contry - you can take that oportunity.
 
 It must be at least 1875, country needs to own Fort Nemours, have 2MLN+ POPs, be 16+ rank, have nationalism_n_imperialism tech, have 50k to spend,
 be independent, not disarmed, at peace and Sassandra and Subre needs to be empty.
@@ -545,11 +585,9 @@ Names of 2 provinces are changed and war is declared against Wattara and Baule t
 For some reason BZD is also a target.
 Defending countries gets a casus beli against France, making it impossible to intervine on their side as a great power.
 
-Search Plig in ecents/Yakutat.txt
+Search Plig in `events/Yakutat.txt`
 
-#################################################################
-##                           Senegal                           ##
-#################################################################
+## Senegal
 
 ### African minors actions
 
@@ -674,11 +712,9 @@ It is avaible **from 1870** to a great power France while Dubreka is empty.
 They need to be at peace and not disarmed with `Nationalism & Imperialism`.
 Player also needs 45+ ships.
 
-**It gives 1.5 infamy**, gives (XeXe if empty and Timbo) Sangaredi and Dubreka and gives casus beli onto uncivilized AI owner of Forekariah.
+**It gives 1.5 infamy**, gives Sangaredi and Dubreka and gives casus beli onto uncivilized AI owner of Forekariah.
 That casus beli however may not appear?
-AI will not do it while it is at 20+ infamy.
-
-___
+`AI` will not do it while it is at 20+ infamy.
 
 ##  Gambia
 
@@ -689,9 +725,11 @@ Soma can be colonized by `Yakutat.txt - upper_gambia_british` by UK **since 1875
 Soma and Basse can be gained through border exchange. Read the section below.
 > You cannot exploit it
 
+> The final province, Basse can be gained through border exchange - read next paragraph
+
 ## Senegal-Gambia border treaty
 `FlavourModAfrica.txt - senegal_gambia_border_treaty` is a `berlin_conference` decision fixing borders in the region.
-> This can give you a lot of land in Senagal & Guinea if your campain went badly here
+> If other colonial powers got colonies there, you can *recover* them thanks to this decision
 
 ### Requirements
 You must be a great power at peace with `Nationalism & Imperialism`, owning one of those provinces:
@@ -730,8 +768,6 @@ In exchange for Soma and Basse that you may own (otherwise they will colonize/ge
 > UK needs to own Soma in a first place to participate in this negotiations
 
 > United Kingdom `AI` will always accept this proposition, otherwise both sides gets *Place in the Sun* CB
-
-___
 
 ## Gabon
 
@@ -834,7 +870,7 @@ and once again allows to annex them throught SOI alone.
 
 ### Rebelion
 `events/Sitka.txt - 123490`
-From **1904**, a rebelion will happen to **FRA tag** controlled Madagascar.
+From **1904**, a rebelion will happen to `FRA` controlled Madagascar.
 Rebels add a casus beli, disallowing intervention.
 A player can chose to play as the rebels.
 
@@ -848,30 +884,32 @@ Stitka.txt - bouvet_island
 It can be seized by Norway or Scandinavia from 1900 that have Oil Driven Ships tech (avaible from **1919**).
 However after that UK gets an event where it can take it for **0.1 infamy**. AI have 10% chance to do it, and this action cannot be contested.
 
-Poland can get a core there, probably a mistake in the code. It is also temporary used in one event as a buffer province.
+> Poland can get a core there, probably a mistake in the code. It is also temporary used in one event as a buffer province.
 
 ## Prince Edward Islands
 It is one of few provinces with just 1 life rating. Due to this it cannot be colonized normally.
-Sitka.txt - prince_edward_islands
+`Sitka.txt - prince_edward_islands`
 You need to be a civilized couuntry with Umtata or have a subject owning it, while said islands are empty.
 Next there are two ways to take them:
 - Have Mass Politics tech (reseachable from 1900)
 - Be a Boer primary culture with Naval Logistics tech if it is after 1900
 
 Both results in province being taken within a few months from **1900**.
-Boer RPA can get a core there. This is also true for non AI Imerina.
+Boer RPA can get a core there. This is also true for non `AI` Imerina.
+
+> If you really want them, you need to conqer Umtata, or just take all of South Africa at once since they belong to that state
 
 ## Kergulen Island
-Sitka.txt - 123562
-This **colonial_railroading** event with MTTH of 3 months gives this island. It requires:
+`Sitka.txt - 123562`
+This `colonial_railroading` event `with MTTH` of 3 months that gives this island. It requires:
 Being a France since **1893** while said island is empty.
 
 It also changes its name and gives coal there instead of fish.
 This coal however is shortly after in 1895 changed back to fish.
 
-Non AI Imerina can also get a core there.
+Non `AI` Imerina can also get a core there.
 
-It is theoreticly possible to colonize it normally after geting *The Dark Continent* invention.
+> It is theoreticly possible to colonize it normally after geting `The Dark Continent`, otherwise you have to conqer it. It is a part of Austalian Victoria state
 
 # Colonial related casus belis
 
@@ -883,32 +921,34 @@ They are CB's that represent European justification for anexing african natives.
 They cannot be justified, but are enabled by deafult. *You just need to fulfill many reqirements* to get them.
 As you can see there are two of them, they are very similar. First one is to take a state and second to annex nation if they have just one state left.
 Since the second one have a few axtra reqirements the first one - Demand State, will be explained firt.
-Note: they are named annex_africa & annex_africa_full in the files.
+Note: they are `named annex_africa` & `annex_africa_full` in the files.
 
 ### Scramble for Africa - Demand State
 It has EU4 aggressive expansion icon.
 What you need to enable it?
 - Berlin conference has happened (it can happen from 1880, read other paragraph for details)
 - Have a capital in Europe
-- **You can't be Russia or Ottomans**
+- **You can't be `RUS` or `TUR`**
 - Be a westernized (civilized) nation
-- Have Nationalism & Imperialims technology
+- `Have Nationalism & Imperialims`
 - Be a colonial nation (have a colonial state but ones in America and Sibieria does not count, you cannot be an African or Australia/New Zealand nation)
 - Ban slavery
 - You are not a nation that called the Congo conference (basicly Belgium), since you get Congo for free, but nothing else.
-Note: punitive_effects blocks you usinng it unless you are already at war with target nation
-Note: Portuguesse **AI** cannot use it, unless you disabled colonial_railraoading
+> Note: `punitive_effects` blocks you usinng it unless you are already at war with target nation
+> Note: `POR` `AI` cannot use it, unless you disabled `colonial_railraoading`
 
 What countries can be conquered with it?
 Nation that fullfills all of those:
 - Have a capital in Africa
-- It is AI controlled
+- It is `AI` controlled
 - Is uncivilized
 - Have more than 1 state
 - You neightbor it by land or you and target have sea access or you are already at war with them as a player
 - It is not your subject
 - This is not a post colonial country (basicly ones that were already taken)
 - **It is NOT any of those nations: Morocco, Aldjazair, Tripoli, Cyrenaica, Liberia, Ethiopia, Madagascar/Imerina or Egypt**
+
+___
 
 ### Scramble for Africa - Annex
 It has EU4 overextension icon.
@@ -918,13 +958,12 @@ It has the same reqirements as the previous one but some extra:
 - Target cannot have any Ethiopian culture as their primary one (but ETH tag is not forbiden directly this time)
 These reqirements can be baypassed if you are already at war with the target nation:
     - If you do not neighbour target nation you will need to have 5+ ships
-- You need to have at least 1 army with 2+ brigades
-Note: It does not technicly require to be a westernized nation but it would be impossible to get Nationalism & Imperialims tech otherwise.
-Note: This casus beli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless.
+    - You need to have at least 1 army with 2+ brigades
+> It does not technicly require to be a westernized nation but it would be impossible to get `Nationalism & Imperialims` otherwise
+> This casus beli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
 
 ### Demand Concession (Berlin Conference)
-It has standard *place in the sun cb* icon. Its name in the files: demand_concession_BC_casus_belli.
-
+It has standard *place in the sun cb* icon. Its name in the files: `demand_concession_BC_casus_belli`.
 
 ### `claimed_africa` flag limit explanation
 This flag exists to disallow spam of certain casus belis. It is added to country that forces
@@ -934,7 +973,7 @@ Casus belis that are blocked by this flag:
 - Scramble for Africa - Annex
 - Colonial Conquest
 - Imperialism - Annex
-Note: they are called annex_africa_full, colonial_conquest & colonial_conquest_full in files.
+Note: they are called `annex_africa_full`, `colonial_conquest` & `colonial_conquest_full` in files.
 
 Actions that gives that flag:
 - When you add *Scramble for Africa - Annex* (Demand State does not count here) casus beli as a **aditional war goal** or you enforce it on some nation,
@@ -943,21 +982,22 @@ you will get it for 120 days.
 - Doing the same with *Imperialism - Annex* cb for the same amount of time
 Note: the last cb description wrongly states that it will always be 5 years.
 
-demand_concession_BC_casus_belli
-demand_concession_NI_casus_belli
-demand_concession_casus_belli
-demand_concession_casus_belli_no_infamy
-establish_protectorate_BC_casus_belli
-establish_protectorate_NI_casus_belli
-establish_protectorate_casus_belli
-establish_protectorate_casus_belli_no_infamy
+`demand_concession_BC_casus_belli`
+`demand_concession_NI_casus_belli`
+`demand_concession_casus_belli`
+`demand_concession_casus_belli_no_infamy`
 
-colonial_conquest
-colonial_conquest_full
+`establish_protectorate_BC_casus_belli`
+`establish_protectorate_NI_casus_belli`
+`establish_protectorate_casus_belli`
+`establish_protectorate_casus_belli_no_infamy`
 
-claim_colonial_region
-claim_colonial_region_full
+`colonial_conquest`
+`colonial_conquest_full`
 
-colonial_reconquest_cb
+`claim_colonial_region`
+`claim_colonial_region_full`
 
-claim_holy_land
+`colonial_reconquest_cb`
+
+`claim_holy_land`
