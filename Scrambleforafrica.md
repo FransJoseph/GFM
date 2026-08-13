@@ -446,6 +446,12 @@ It trigers for France owning any Algerian core in short time window: **May-Decem
 
 `16151852` mucho importante break of Algeria
 
+`RGA` - Algiers
+`LBY` - Libya - Beylik of Constantine
+`ABA` - Ait Abbas - Beni Abbas
+`TUG` - Tuggurt - Touggourt
+`ALD` - Aldjazair
+
 ## Indian Ocean Teritory
 
 This state is in 1830 owned by UK and France, with exception of Comoros & Mayotte.
