@@ -412,9 +412,27 @@ ___
 ___
 ___
 
+## Occupation of Sahel uncolonized provinces
+In 1830 there are 3 uncolonized provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it dificult.
+
+### Gao
+
+### Koro
+
+### Kedugu
+
+___
+
 ## Algeria
 In 1830 it consists of a 4 countries and big swats of uncolonized Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Tuggurt. Additionally, one of Constantine's provinces is in the Tunisia state.
 Algeria is conqered by France through many wars and Sahara is taken by anexation of local rebelion + *The Saharan Frontier* decision.
+Tags there can be very missleading, here is a list explaining them:
+
+`RGA` - Algiers
+`LBY` - Libya - Beylik of Constantine
+`ABA` - Ait Abbas - Beni Abbas
+`TUG` - Tuggurt - Touggourt
+`ALD` - Aldjazair
 
 ### War for Algiers
 `1830_GFM_FRA.txt - france_bullies_algeria`
@@ -427,30 +445,41 @@ Finally, a war is declared upon them with *Punitive Expedition* CB (`treaty_port
 After France wins, they can take one of two Algerian treaty ports, Oran and Algiers.
 `AI` will always chose Algiers since decision for Oran have a check that forbids its taking by `AI` if they do not own Algiers.
 
-> If France does it within 1830-1835 window, all pops from Great Slave Lake will be moved there and given 1% more literacy. This also happens in the setup that `CLN` does at every campain start.
+> If France does it within 1830-1835 window, all pops from Great Slave Lake will be moved there and given 1% more literacy. This also happens in the setup that `CLN` does at every campain start. This is probably to give Algiers first French settlers along with their slaves.
+
+### Breakup of Algeria
+`1830_GFM_FRA.txt - 16151852`
+If France have won this war before 1835, they get an event that splits Algeria. They yet again relase their subjects, lose cores, Algeria itself is split into half with Aldjazair. A civil war brokes out, leaving only Touggourt neutral.
+
+> If Algeria wins, they will get science points and can be added into Ottoman SOI
+> Algeria do not lose core on Bathnah - probably a mistake, because it has a high (suggesting new new) id
 
 ### War for Oran
 `1830_GFM_FRA.txt - oran_french_war`
 After wining the first war France can easily begin next. They just need to be at peace, hold Algiers and wait untill **1831**.
 They will declare war on Algeria with *Punitive Expedition* CB if they still hold Oran. This decision even ignores truce between them.
+After taking this treaty port they also gain POPs there, this time from Lake Anthabasca.
+> Truce breaking from decisions like that still leads to presige loss and infamy gain
+
+### War fo Ennab
+`1830_GFM_FRA.txt - bone_french_war`
+Another war that ignores truce. France can do it when at peace while owning Oran from **1832** if `RGA`, `ALD` or `LBY` owns Ennab.
+This just declares another Punitive Expedition war against its owner.
 
 ### War for Bougie with Ait Abbas
 `1830_GFM_FRA.txt - bougie_french_war`
-It works literally the same. France just declares a war on them if they own Bougie. They again just need to hold Algiers and wait untill **1833**.
+It works literally the same. France just declares a war on them if `ABA` own Bougie. They again just need to hold Algiers and wait untill **1833**.
 
 ### Battle of Macta - conqest of Algeria
 `1830_GFM_FRA.txt - 17051919`
-It trigers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algeria with *Establish Protectorate* CB, again ignoring potential truce.
+It trigers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algeria and Aldjazair with *Establish Protectorate* CB, again ignoring potential truce.
+> As player you can also chose to not declare these wars in that event, losing prestige
 
-> As player you can also chose to not declare this war in that event, losing prestige
+### French settlement in Algeria
+`1830_GFM_FRA.txt - fund_french_settlement_in_algeria` & `1830_GFM_FRA.txt - 160518542`
+This easy decision gives France coresponding event that has 3 options, neighter costing anything. The first increases French settled POPs, gives them some cash and increases size their slaves POPs, the second omits that slaves part and the third reduces prestige. There is no `AI` weighting there as in entire file.
 
-`16151852` mucho importante break of Algeria
-
-`RGA` - Algiers
-`LBY` - Libya - Beylik of Constantine
-`ABA` - Ait Abbas - Beni Abbas
-`TUG` - Tuggurt - Touggourt
-`ALD` - Aldjazair
+___
 
 ## Indian Ocean Teritory
 
@@ -461,6 +490,8 @@ They are quickly annexed by France by uniqe `colonial_railroading` decision: `Fr
 France needs to be a great power at peace with `Medicine` technology that they get fairly early. Mahori Sultanate must be `AI` and Comoros must be empty.
 
 > Probably the only way to get them before France is to conqer Mahori, since **its 1 infamy max** and colonize Comoros by hand since they have 30 life rating, enabling colonization after geting just `Prophylaxis against Malaria`.
+
+___
 
 ## Namibia
 
@@ -783,6 +814,13 @@ Add influence over them - WIP
 ### The conqest of Orungu
 `FlavourModAfrica.txt - appoint_louis_briere` described in Senegal section also gives conqest casus beli against Orungu
 
+___
+
+## Mali
+`Yakutat.txt - massina_conquer_segu`
+
+___
+
 ## Madagascar
 
 Madagascar in 1830 consist of Imerina that holds most of the island, its subject Boina and small nation of Antankarana. In the south there are 2 uncolonized provinces. France also owns a small island on the coast, that will be the key to Madagascar colonization.
@@ -916,6 +954,12 @@ This coal however is shortly after in 1895 changed back to fish.
 Non `AI` Imerina can also get a core there.
 
 > It is theoreticly possible to colonize it normally after geting `The Dark Continent`, otherwise you have to conqer it. It is a part of Austalian Victoria state
+
+# Mix
+
+## Flavour Ferdinandea Island
+`1830_GFM_FRA.txt - 17051920` & `1830_GFM_FRA.txt - 16051921`
+Island that quickly sinks, but you can claim it and disfavour other countries thanks to it!
 
 # Colonial related casus belis
 
