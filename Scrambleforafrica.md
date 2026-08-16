@@ -479,6 +479,11 @@ It trigers for France owning any Algerian core in short time window: **May-Decem
 `1830_GFM_FRA.txt - fund_french_settlement_in_algeria` & `1830_GFM_FRA.txt - 160518542`
 This easy decision gives France coresponding event that has 3 options, neighter costing anything. The first increases French settled POPs, gives them some cash and increases size their slaves POPs, the second omits that slaves part and the third reduces prestige. There is no `AI` weighting there as in entire file.
 
+### Conqest of Beylik of Constantine
+`Algerian_War.txt - 372382`
+
+### Rebelion - anexation of remaining states
+`Algerian_War.txt - 37240`
 ___
 
 ## Indian Ocean Teritory
@@ -773,7 +778,7 @@ You must be a great power at peace with `Nationalism & Imperialism`, owning one 
 - Bignona
 - Velingara
 - Kansala
-- Seju
+- Seju  
 
 You can not however own Bissau, Ziguinchor or Cacheu - Portuguese posesions. You also cannot have a truce with Bissau owner - them.
 > If left to itself it will happen shortly after France colonize Bignona **in 1870**
