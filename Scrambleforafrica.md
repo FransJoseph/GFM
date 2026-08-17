@@ -426,13 +426,15 @@ ___
 ## Algeria
 In 1830 it consists of a 4 countries and big swats of uncolonized Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Tuggurt. Additionally, one of Constantine's provinces is in the Tunisia state.
 Algeria is conqered by France through many wars and Sahara is taken by anexation of local rebelion + *The Saharan Frontier* decision.
-Tags there can be very missleading, here is a list explaining them:
+Tags there can be very missleading, here is a table explaining them:
 
-`RGA` - Algiers
-`LBY` - Libya - Beylik of Constantine
-`ABA` - Ait Abbas - Beni Abbas
-`TUG` - Tuggurt - Touggourt
-`ALD` - Aldjazair
+| Tag |Base name|      Real name      |
+|-----|---------|---------------------|
+|`RGA`| Algiers |       Algiers       |
+|`LBY`|  Libya  |Beylik of Constantine|
+|`ABA`|Ait Abbas|     Beni Abbas      |
+|`TUG`| Tuggurt |      Touggourt      | 
+|`ALD`|Aldjazair|      Aldjazair      |
 
 ### War for Algiers
 `1830_GFM_FRA.txt - france_bullies_algeria`
@@ -451,7 +453,7 @@ After France wins, they can take one of two Algerian treaty ports, Oran and Algi
 `1830_GFM_FRA.txt - 16151852`
 If France have won this war before 1835, they get an event that splits Algeria. They yet again relase their subjects, lose cores, Algeria itself is split into half with Aldjazair. A civil war brokes out, leaving only Touggourt neutral.
 
-> If Algeria wins, they will get science points and can be added into Ottoman SOI
+> If Algeria wins, they will get research points and can be added into Ottoman SOI
 > Algeria do not lose core on Bathnah - probably a mistake, because it has a high (suggesting new new) id
 
 ### War for Oran
@@ -1016,6 +1018,8 @@ These reqirements can be baypassed if you are already at war with the target nat
     - You need to have at least 1 army with 2+ brigades
 > It does not technicly require to be a westernized nation but it would be impossible to get `Nationalism & Imperialims` otherwise
 > This casus beli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
+
+> Because Scramble for Africa - Annex cb is limited to how often you can use it, you can only annex one state countries every 120 days, while the first cb does not have that limitation - meainig you can even annex big countries quicker.
 
 ### Demand Concession (Berlin Conference)
 It has standard *place in the sun cb* icon. Its name in the files: `demand_concession_BC_casus_belli`.
