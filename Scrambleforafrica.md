@@ -15,7 +15,7 @@ Most provinces have 35 LR however. Just like in the base game, by getting invent
 
 - Prophylaxis against Malaria (in `Medicine`, avaible from 1830): **-5**
 - Mission to Civilize (in `State & Goverment`, but avaible only from 1850): **-10**
-
+- 
 
 ## Berlin Conference
 
