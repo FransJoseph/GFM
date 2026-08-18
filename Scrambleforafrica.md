@@ -2,7 +2,22 @@
 
 This file contains all the information that is usefull for optaining as many colonies as possible in Victoria II Greater Flavour Mod. It also explains the process in with they are gained, so player can try to prevent their colonization by other nation. For example you can prevent UK from taking Nigeria by conquering just Lagos in the early game and conquer it with free casus beli that you get from Berlin Conference.
 
-# Berlin Conference
+# Important topics
+
+## Vaniia/Stock colonization
+
+In GFM almost every colonial province is scripted somewhat and colonization mechanic is mostly used as a last resort, for example if you crippled the Italian or German unification. However, even in that case their colonies (like Cameroon & Eritrea) can still be colonized in scripted action by other countries. Actions almost every time means decision or event, commonly a combination of both.
+
+## Life rating
+
+GFM did micro on LF. This is mostly to block provinces from colonization. The highest LF in 1830 is 48 - for Frankfurt.
+Most provinces have 35 LR however. Just like in the base game, by getting inventions you can access those lands to colonize them.
+
+- Prophylaxis against Malaria (in `Medicine`, avaible from 1830): **-5**
+- Mission to Civilize (in `State & Goverment`, but avaible only from 1850): **-10**
+
+
+## Berlin Conference
 
 This is the single most important event in a way for Europeans to dominate the world. It is one of the most important events in the mod.
 This event sets a single very important global flag, `berlin_conference` that leads to many events and decions, but most importantly it allows you to use a **uniqe free casus beli against most african natives**.
@@ -23,17 +38,17 @@ If you are prepared, you will get it it within few months after geting first 188
 Finally, it has a `MTTH` of 6 months, shorter if your capital is Berlin, increasing chance to be trully Berlin conference.
 Otherwise, it is named after capital of nation that got this event. It also gives 25 base prestige.
 
-# The Dark Continent invention
+## The Dark Continent invention
 
 It has a complex requirements, while giving final -5 min life rating. Here it is reqirements:
 You CAN NOT get it if you are not a great power with any of those flags:
 - congo_master
 - historical_congo
 - civilizing_congo
-If you have **colonial_reailroading** (it is enabled by deafult):
-    It CAN NOT be discovered after 1895, unless the Congo conference have happened
-If you disabled it:
-    You need 1 more tech or 2 other increasing factors listed below
+- If you have **colonial_reailroading** (it is enabled by deafult):
+    - It CAN NOT be discovered after 1895, unless the Congo conference have happened
+- If you disabled it:
+    - You need 1 more tech or 2 other increasing factors listed below
 Now to actually get it, you need any of those techs, but having more of them incrases your chances greatly
 - Biologism (1850 tech)
 - Military Logistics (1870 tech)
@@ -45,374 +60,10 @@ At the same scale these factors also can block you from getting it, forcing you 
 - Being at most secondary power
 - Having rank worse than 16
 
-# Africa
+## Occupation uncolonized provinces
 
-Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented colapse in the **Scrable for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coatial colonies dotted all across the continent.
-
-## South Africa
-
-> Disclaimer: Dithakong is in the Bechuanaland section
-
-### Set-up for Boers
-
-`events/1830_GFM_ENG.txt id: 18351836` # The Great Trek
-
-If there is at least 1834, but before 1845
-Country with banned slavery and owns both Cape Town & Port Elizabeth (UK bans it with slavery_abolition_act_ENG (1830_GFM_ENG decision), preventable?)
-
-Gets an event that set-ups global flag `great_boer_trek` enabling Boer republics and associated events and decisions to begin and giving cores to future Boer states
-
-This also begins the existance of prototype Oranje, see below section
-
-Many events and decisions also checks for lacking of flag `boer_accepted`. It is only gained through `decisions/NET.txt id: embrace_the_boer`
-
-------------------------------------------------------------------
-
-### Oranje (Voortrekkers)
-
-events/1830_GFM_ENG id: 183518362
-Said event gives an event for uncivilized owner of Botshabelo that forces creation of independent Voortrekkers (Oranje) from that province
-Uk gains 600 influence over it, instantly adding it to its sphere of influence
-There is also second option doing the same, but allowing to play as them.
-
-The founding of Winburg (events/BoerWar.txt id: 98215)
-
-It is 1836-1889, but no later than September in these years
-Civilized country owning Cape Town that do not have country flag boer_accepted
-Is not SAF or VLK
-Voortrekkers (Oranje) own Botshabelo
-Qwa-Qwa belongs to uncivilized nation at peace or to a nation geting the event (but only if it do not aslo own Botshabelo)
-
-Then country gets an event (with MTTH of 1 day) in which:
-
-SAF gets boer as an accepted culture and primary culture of whoever gets this event
-Whatever uncivilized tag owns Qwa-Qwa gives it to Oranje through another event (AI tags never contest that in said event) (id: 98216)
-Oranje becomes a puppet of a nation that got this event (it can declare independence with event: 18482420 but AI will never do this)
-This event also tries to change infuence over Oranje from UK to whoever owns Cape town, but it do not work?
-
-There is a decision that is possible to take while having Voortrekkers as a subject: decisions/Boer War.txt id: orange_river_convention
-It also requires Voortrekkers to be at peace and can be only made from 1854 onwards but before 1860
-
-This relases Potchefstroom and changes their goverment type, which renames them to Oranje and gives them 98231 event that
-gives influnce over them to a nation that clicked this decision (in contrast to similar sand_river_convention)
-There is a second option in event that Oranje AI would never take, giving casus beli against Oranje
-
-Temporaraly anexation of Oranje by Transvaal
-
-If Transvaal exists and is at peace while Oranje is also at peace and have prov_gov_liberal goverment type and Oranje is in the same influence as Transvaal or in no one
-Then they can click a decision from 1844 onwards: decisions/Yakutat.txt id: unite_with_potchefstroom
-
-This decision gives Transvaal maaaaany early techs, and anexes Oranje for Transvaal, while changing Transvaal goverment to prov_gov_conservative.
-This also sets global flag unite_with_potchefstroom, which will be important later.
-There are special cases if player plays one of this countries, making it player friendly, while overal effect is the same.
-
-decisions/Yakutat.txt id: warden_line
-
-If UK controlls Cape Town while Oranje do not exists with global flag unite_with_potchefstroom
-They can click a decision when at peace from 1848 onwards
-
-This decision transfers Oranje core provinces from subjects of country that clicked this decision to Oranje
-If owner/s of this provinces are not subjects of said country, they will get an event 18482307. Oranje also gains Phuthaditjhaba (again) as a core
-
-This event asks owners of Oranje cores to give them to Oranje. If not, they will face a war. AI will always agree.
-This also changes Oranje goverment type to colonial_company, changing their name to Transorangia and flag to union jack themed
-
------------------------------------------------------------------
-
-Nothern Cape (O'okiep, Emthanjeni and Hantam)
-
-`events/BoerWar.txt id - 98261` #The Northern Cape Colony
-
-UK/SAF event at year 1840 with some MTTH, must be at peace and own Cape Town, at least one of said provinces must be empty
-
-Target country gets O'okiep, Emthanjeni and Hantam (in that order) if they are not already colonized
-
------------------------------------------------------------------
-
-### Natalia & Zulu
-
-`events/BoerWar.txt id: 98205` #Invasion of the Laagers
-
-has_global_flag = great_boer_trek
-It is at least 1838
-It is (or at least?) November
-Zulu own KwaDukuza
-Owner of Cape Town do not have flag boer_accepted
-
-`MTTH` = { days = 1 }
-
-Zulu AI relase Natalia from said province and Emnambithi (Zulu player can contest it with a war)
-Owner of Cape Town gets an event (id: 98207) where AI selects to make them a puppet and give them Durban if it belongs to it
-
-Then a country at peace with all great powers and capital in Europe that have Cape Town with Natalia as a puppet (Natalia must be at peace)
-NOT = { has_country_flag = boer_accepted }
-
-Gets an event (id: 98210) with MTTH of a few years in with AI always deciding to annex Natalia, AI Natalia will always accept it through another event
-
--------------------------------------------------------------------
-
-Anexation of Zulu:
-UK or South Africa at peace from 1878 onwards
-Neightbouring uncivilized Zulu with less than 2 states and no truce
-
-Gets an event allowing them to declare war on Zulu with establish protectorate casus beli. AI would do this if they have a infamy reserve.
-
--------------------------------------------------------------------
-
-Transvaal (Potchefstroom Republic)
-`events/BoerWar.txt id: 98220`
-
-Requirements:
-
-It is at least 1837
-IT is (at least?) August
-It is before 1890
-Civilized country owning Cape Town
-Do not have a country flag boer_accepted
-Is not SAF or VLK
-Oranje exists and Transvaal do not
-Do not own all Transvaal core provinces + Ga-Seleka + Mashashane at the same time (+ 1 province in South America xD)
-Marothodi belongs to uncivilized nation at peace or to a nation geting the event
-
-Then country gets an event with MTTH of 1 day in which:
-
-SAF = {
-        primary_culture = british
-        add_accepted_culture = boer
-    }
-
-If country geting the event own any of said provinces, it will give them to Potchefstroom, which is temporary created in uncolonized Saan province
-
-This triggers 2 events:
-
-`184824202` - for Potchefstroom
-It asks them if they want to declare independence or not (AI will always stay loyal in this event)
-
-Event for Mthwakazi (events/Yakutat.txt id: 18482305), that sets up Potchefstroom Republic, for example making it a puppet of a nation that got original 98220 event
-Asks Mthwakazi for contest of it (AI will never do this)
-(3rd option allows to play as Potchefstroom Republic) and triggers another 2 events:
-
-`events/Yakutat.txt id: 184823053` - for the owner of Ga-Seleka
-It asks for action against their incursion into Ga-Seleka (AI will never oppose it), then event 184823055 triggers for Mthwakazi as a response,
-giving them said province and giving their old provinces to Potchefstroom and aslo uncolonizing Saan province from them (by changing life rating?)
-
-events/African Uncivs.txt id: 95517 - for Potchefstroom after ~120 days (MTTH)
-Basicly another double event triger and 3 prestige, this delay allows Mthwakazi migration to work without issues and look smoothly
-
-events/African Uncivs.txt id: 95518 - for Mthwakazi
-Mthwakazi moves from Ga-Seleka (giving it (back) to gaMangwato) to southern Zimbabwe, + anexing OPM in Tomotha province
-Rozvi, which loses said Zimbabwe provinces also loses 2 western provinces to baTawana
-Mthwakazi also gains powerfull military buff without expiration date
-
-events/African Uncivs.txt id: 95517324 - for Rozvi Empire
-Event without AI decision weights, but it looks like AI selects option to lose 1 core and prestige
-another option would give them military buff and declare war on Mthwakazi
-
-There is a decision that is possible to take while having Potchefstroom as a subject: decisions/Boer War.txt id: sand_river_convention
-It also requires Potchefstroom to be at peace and can be only made from 1852 onwards but before 1858
-
-This relases Potchefstroom and gives them 98230 event that changes their goverment type, which renames Potchefstroom to Transvaal
-It also gives influnce over them to UK (whoever clicked this decision, UK or someone else) (in contrast to similar orange_river_convention)
-There is a second option in event that Transvaal AI would never take, giving casus beli against Transvaal
-
-Mashishing (decisions/Yakutat.txt id: lydenburg_occupy)
-
-Availbe to Boer primary culture nation owning Kwaneng while baPedi owns Mashishing
-Country must be at peace and fullfill one of these:
-
-It is at least 1850 and at least March (2nd month in files)
-Have Nationalism & Imperialism tech
-State & Goverment tech with at least 50 001 money and at least 100 relation with baPedi
-
-After clicking it, Transvaal gets Mashishing, as AI will never refuse to their demand/proposal
-There are 2 ways to finalise this, booth looks the same,
-but if Transvaal bought province, baPedi gains techs (not money as event says). Taking it by having Nationalism & Imperialism tech will not create that resoults
-
-The Sekhukhune Wars (Transvaal conquers of Tky-Gariep state/baPedi tribe) (events/Yakutat.txt id: 18482309)
-
-There is at least 1874 but before 1878, while Transvaal owns Kwaneng and baPedi owns Mbombela (MTTH = 1 day)
-
-Out of 3 options AI will chose 1st one and very rarely 2.
-Booth of these will give Transvaal cores on rest of the state (except Mbabane and eMkhondo)
-First option also resoults in a war of conquest between Transvaal and baPedi
-
-Ga-Seleka goes to Transvaal (events 18482313 and 184823131 from events/Yakutat.txt)
-
-In short between 1852 and 1855 there is an event for baMangwato that spawns event for Transvaal. These events gives Ga-Seleka to Transvaal.
-
-Nkomazi is given to Transvaal (events 18494562 and 184945621 from events/Yakutat.txt)
-
-In short, if some non-african country owning Nkomazi without owning Mbombela, while colonial_railroading is not disabled,
-it gets an event that allows to give this province to owner of Mbabane, losing 1 infamy in a proces (AI will always select this option)
-The second option do nothing
-
-Second event just seceds province to the Mbombela owner
-
-The colonization of Saan by Transvaal (events/Yakutat.txt id: 18482589)
-
-In short, by by pretty much power projection, Transvaal can get Saan quicker or faster (read details in event)
-There is another option, just wait unil neightboring Dithakong is colonized. Event have MTTH of 1 day
-
-WIP
-
-Witwatersrand Goldrush (1886)
-
-In short, if Transvaal is independent and not in any sphere of influence, after geting this gold rush,
-neightboring great power can (AI will always) get a casus beli to add it to its sphere, but not to make them a puppet
-
---------------------------------------------------------------------------------------------------------------
-
-Xhosa
-
-Great power UK (or South Africa)
-That neightbour Xhosa
-Is at peace and have no truce with them
-
-Gets an event in which they declare war on Xhosa to add them to sphere
-This event will fire a few (3?) times
-
-treaty_of_umtata decision
-
-In short, a country that owns Cape Town and was at war with Xhosa can kick them out of their sphere of influence and get 2 of their 3 provinces for 1 infamy. AI will always do this
-
-Anexation of Xhosa
-
-Great power UK (or South Africa)
-That neightbour Xhosa
-Is at peace and with no truce with them
-OR = {
-        check_variable = {
-            which = xhosa_conflict
-            value = 3
-        }
-        has_global_flag = berlin_conference
-    }
-
-Gets an event in which at 90% AI will annex them through war or 10% to gain extra influence and relations with Xhosa
-
---------------------------------------------------------------------------------------------------------------
-
-The Northern Cape Colony (2-3 provinces)
-
-UK or South Africa at peace owning Cape Town from 1840 onwards when any of the target province is empty (player also needs 10k)
-
-Event giving target provinces for 10k
-
-If someone else owns these provinces, UK have a decision if owning Cape Town to get a casus beli on that country. UK will also leave aliance with said country
-
---------------------------------------------------------------------------------------------------------------
-
-Griekwastad/Kimberley
-
-`events/Boer War.txt id: 98262` - Diamonds Discovered in Kimberley
-
-Civilized nation owning Hantam from 1867 onwards, while Griekwastad do not produce gems and is owned by uncivilized nation or Griqua (MTTH = 1 day)
-
-Griekwastad is renamed to Kimberley and its RGO changes to gems
-
-If Mpondo owns Kokstad/Shayilanga, it wiil get event: events/Yakutat.txt id: 18490065, asking them if they allow Griekwastad to move into Kokstad/Shayilanga (AI wiil always accept)
-This will remove all Griqua cores and make this provinces cores of South Africa, then give Griqua core in Kokstad/Shayilanga and give them 184900651 event
-Another event: 184900653 is given to owner of Hantam
-
-184900651 event will move Griqua POPs, change them to republic and make them a subject of UK, if they own any provinces listed in the event? (Lake Nyasa is one of them xD)
-
-184900653 event will give Kimberley to nation that got this event, with Philippolis if Griqua also owns it
-
---------------------------------------------------------------------------------------------------------------
-
-Transvaal & Oranje + Natalia (Uk anex them)
-
-Boer War
-
-A series of events, but in short:
-
-Uk at peace and have no truce with Transvaal
-Neightbouring Transvaal
-Transvaal is not a subject and in peace
-It is at least 1896
-South Africa AND Zulu does not exists
-
-Event in with Uk declares war (AI will not do it if going over infamy limit, always otherwise) on (if any of them exists) Transvaal, Oranje and Natalia to annex them
-Some countries can contest this, joining the war on boer side, resoulting in event chain after victory, resoults include boer helper losing all provinces in South Africa
-To win that war on the boer side, boer primary culture country needs to occupy Cape Town for at least 120 days
-
-appeal_to_the_british decision
-
-If any of these 3 countries are getting bad at war (while not being in the sphere of UK influence or a war with UK) with anyone except Zulu or any other of these 3 countries
-UK gets an event that allows them to get 200 influence over them or get a casus beli on them
-Chance for the first is 35-70% or maybe even 100%
-
---------------------------------------------------------------------------------------------------------------
-
-The fate of Basotho and Suazi
-
-Basotho from 1860 onwards or Suazi after Berlin Conference can make a decision to ask for protection
-
-The target country needs to:
-Be a great power outside of Africa and own Cape Town that neightbour them
-Basotho/Suazi cannot be in the sphere of influence of other country (can be in that of target country) and cannot be a puppet and must be at peace
-
-Through an event target country makes them a puppet, target country gets all of their provinces, evcept for the capital,
-changes their religion to its faith, gains influence over them and relations
-
-Target country AI will rarely refuse
-Note: from that point they cannot be a target for Scramble for Africa casus beli
-
---------------------------------------------------------------------------------------------------------------
-
-reorganize_south_africa
-
-Decision that requires ownership of Cape Town, being at peace and having Nationalism & Imperialism tech while South Africa do not exists
-
-It makes South Africa of your primary culture, adds boer as their accepted culture
-South Africa also loses its cores in South Africa that you do not own
-This decision do not relase them
-
---------------------------------------------------------------------------------------------------------------
-## Bechuanaland
-
-`bechuanaland_protectorate` `colonial_railroading` decision
-
-Country needs to:
-
-Have Nationalism & Imperialism tech
-Have Machineguns tech or it is at least 1885
-Can not be disarmed or a subject
-Be at peace with all great powers
-Own both Cape Town and Kimberley
-
-All target provinces (except for Dithakong and Luhonono) needs to be empty or owned by AI controlled uncivilized nation(s)
-
-All target provinces will be granted to target nation, but Luhonono only if it is empty
-
-Tip: Dithakong is the province needed to discover Australopithecus Africanus
-
-Tip: bamangwato_chungus decision allows local nation to take those empty provinces if they conquer all non empty Bechuanaland provinces,
-so this decision would not work, but they can be easily conquered later instead
-
---------------------------------------------------------------------------------------------------------------
-
-Luhonono can be bought from non African country thanks to buy_caprivi_strip decision
-
-Requirements:
-
-Is civilized and at peace
-Hereroland state is fully owned, except for Luhonono
-Target country is independent and have no truce with proposing country
-Have 100k or is AI
-
-Then target country gets an event in which it makes the deal, or denies
-The better the relations, the better the chance for the deal with AI and vice versa
-If target is in the sphere of the proposer, the chance is very good even with the worst relations
-
-BETTER AREA BEGINS NOW
-
-___
-___
-___
-___
-
-## Occupation of Sahel uncolonized provinces
+In 1830 there are many empty provinces. All of them are colonized through decisions, events or a combination of booth.  
+They are colonized this way from early game even into the late game.
 In 1830 there are 3 uncolonized provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it dificult.
 
 ### Gao
@@ -421,7 +72,9 @@ In 1830 there are 3 uncolonized provinces in the western Sahel, south of Sahara.
 
 ### Kedugu
 
-___
+# Africa
+
+Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented colapse in the **Scrable for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coatial colonies dotted all across the continent.
 
 ## Algeria
 In 1830 it consists of a 4 countries and big swats of uncolonized Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Tuggurt. Additionally, one of Constantine's provinces is in the Tunisia state.
@@ -1060,3 +713,361 @@ Note: the last cb description wrongly states that it will always be 5 years.
 `colonial_reconquest_cb`
 
 `claim_holy_land`
+
+# WIP
+
+## South Africa
+
+> Disclaimer: Dithakong is in the Bechuanaland section
+
+### Set-up for Boers
+
+`events/1830_GFM_ENG.txt id: 18351836` # The Great Trek
+
+If there is at least 1834, but before 1845
+Country with banned slavery and owns both Cape Town & Port Elizabeth (UK bans it with slavery_abolition_act_ENG (1830_GFM_ENG decision), preventable?)
+
+Gets an event that set-ups global flag `great_boer_trek` enabling Boer republics and associated events and decisions to begin and giving cores to future Boer states
+
+This also begins the existance of prototype Oranje, see below section
+
+Many events and decisions also checks for lacking of flag `boer_accepted`. It is only gained through `decisions/NET.txt id: embrace_the_boer`
+
+------------------------------------------------------------------
+
+### Oranje (Voortrekkers)
+
+events/1830_GFM_ENG id: 183518362
+Said event gives an event for uncivilized owner of Botshabelo that forces creation of independent Voortrekkers (Oranje) from that province
+Uk gains 600 influence over it, instantly adding it to its sphere of influence
+There is also second option doing the same, but allowing to play as them.
+
+The founding of Winburg (events/BoerWar.txt id: 98215)
+
+It is 1836-1889, but no later than September in these years
+Civilized country owning Cape Town that do not have country flag boer_accepted
+Is not SAF or VLK
+Voortrekkers (Oranje) own Botshabelo
+Qwa-Qwa belongs to uncivilized nation at peace or to a nation geting the event (but only if it do not aslo own Botshabelo)
+
+Then country gets an event (with MTTH of 1 day) in which:
+
+SAF gets boer as an accepted culture and primary culture of whoever gets this event
+Whatever uncivilized tag owns Qwa-Qwa gives it to Oranje through another event (AI tags never contest that in said event) (id: 98216)
+Oranje becomes a puppet of a nation that got this event (it can declare independence with event: 18482420 but AI will never do this)
+This event also tries to change infuence over Oranje from UK to whoever owns Cape town, but it do not work?
+
+There is a decision that is possible to take while having Voortrekkers as a subject: decisions/Boer War.txt id: orange_river_convention
+It also requires Voortrekkers to be at peace and can be only made from 1854 onwards but before 1860
+
+This relases Potchefstroom and changes their goverment type, which renames them to Oranje and gives them 98231 event that
+gives influnce over them to a nation that clicked this decision (in contrast to similar sand_river_convention)
+There is a second option in event that Oranje AI would never take, giving casus beli against Oranje
+
+Temporaraly anexation of Oranje by Transvaal
+
+If Transvaal exists and is at peace while Oranje is also at peace and have prov_gov_liberal goverment type and Oranje is in the same influence as Transvaal or in no one
+Then they can click a decision from 1844 onwards: decisions/Yakutat.txt id: unite_with_potchefstroom
+
+This decision gives Transvaal maaaaany early techs, and anexes Oranje for Transvaal, while changing Transvaal goverment to prov_gov_conservative.
+This also sets global flag unite_with_potchefstroom, which will be important later.
+There are special cases if player plays one of this countries, making it player friendly, while overal effect is the same.
+
+decisions/Yakutat.txt id: warden_line
+
+If UK controlls Cape Town while Oranje do not exists with global flag unite_with_potchefstroom
+They can click a decision when at peace from 1848 onwards
+
+This decision transfers Oranje core provinces from subjects of country that clicked this decision to Oranje
+If owner/s of this provinces are not subjects of said country, they will get an event 18482307. Oranje also gains Phuthaditjhaba (again) as a core
+
+This event asks owners of Oranje cores to give them to Oranje. If not, they will face a war. AI will always agree.
+This also changes Oranje goverment type to colonial_company, changing their name to Transorangia and flag to union jack themed
+
+-----------------------------------------------------------------
+
+Nothern Cape (O'okiep, Emthanjeni and Hantam)
+
+`events/BoerWar.txt id - 98261` #The Northern Cape Colony
+
+UK/SAF event at year 1840 with some MTTH, must be at peace and own Cape Town, at least one of said provinces must be empty
+
+Target country gets O'okiep, Emthanjeni and Hantam (in that order) if they are not already colonized
+
+-----------------------------------------------------------------
+
+### Natalia & Zulu
+
+`events/BoerWar.txt id: 98205` #Invasion of the Laagers
+
+has_global_flag = great_boer_trek
+It is at least 1838
+It is (or at least?) November
+Zulu own KwaDukuza
+Owner of Cape Town do not have flag boer_accepted
+
+`MTTH` = { days = 1 }
+
+Zulu AI relase Natalia from said province and Emnambithi (Zulu player can contest it with a war)
+Owner of Cape Town gets an event (id: 98207) where AI selects to make them a puppet and give them Durban if it belongs to it
+
+Then a country at peace with all great powers and capital in Europe that have Cape Town with Natalia as a puppet (Natalia must be at peace)
+NOT = { has_country_flag = boer_accepted }
+
+Gets an event (id: 98210) with MTTH of a few years in with AI always deciding to annex Natalia, AI Natalia will always accept it through another event
+
+-------------------------------------------------------------------
+
+Anexation of Zulu:
+UK or South Africa at peace from 1878 onwards
+Neightbouring uncivilized Zulu with less than 2 states and no truce
+
+Gets an event allowing them to declare war on Zulu with establish protectorate casus beli. AI would do this if they have a infamy reserve.
+
+-------------------------------------------------------------------
+
+Transvaal (Potchefstroom Republic)
+`events/BoerWar.txt id: 98220`
+
+Requirements:
+
+It is at least 1837
+IT is (at least?) August
+It is before 1890
+Civilized country owning Cape Town
+Do not have a country flag boer_accepted
+Is not SAF or VLK
+Oranje exists and Transvaal do not
+Do not own all Transvaal core provinces + Ga-Seleka + Mashashane at the same time (+ 1 province in South America xD)
+Marothodi belongs to uncivilized nation at peace or to a nation geting the event
+
+Then country gets an event with MTTH of 1 day in which:
+
+SAF = {
+        primary_culture = british
+        add_accepted_culture = boer
+    }
+
+If country geting the event own any of said provinces, it will give them to Potchefstroom, which is temporary created in uncolonized Saan province
+
+This triggers 2 events:
+
+`184824202` - for Potchefstroom
+It asks them if they want to declare independence or not (AI will always stay loyal in this event)
+
+Event for Mthwakazi (events/Yakutat.txt id: 18482305), that sets up Potchefstroom Republic, for example making it a puppet of a nation that got original 98220 event
+Asks Mthwakazi for contest of it (AI will never do this)
+(3rd option allows to play as Potchefstroom Republic) and triggers another 2 events:
+
+`events/Yakutat.txt id: 184823053` - for the owner of Ga-Seleka
+It asks for action against their incursion into Ga-Seleka (AI will never oppose it), then event 184823055 triggers for Mthwakazi as a response,
+giving them said province and giving their old provinces to Potchefstroom and aslo uncolonizing Saan province from them (by changing life rating?)
+
+events/African Uncivs.txt id: 95517 - for Potchefstroom after ~120 days (MTTH)
+Basicly another double event triger and 3 prestige, this delay allows Mthwakazi migration to work without issues and look smoothly
+
+events/African Uncivs.txt id: 95518 - for Mthwakazi
+Mthwakazi moves from Ga-Seleka (giving it (back) to gaMangwato) to southern Zimbabwe, + anexing OPM in Tomotha province
+Rozvi, which loses said Zimbabwe provinces also loses 2 western provinces to baTawana
+Mthwakazi also gains powerfull military buff without expiration date
+
+events/African Uncivs.txt id: 95517324 - for Rozvi Empire
+Event without AI decision weights, but it looks like AI selects option to lose 1 core and prestige
+another option would give them military buff and declare war on Mthwakazi
+
+There is a decision that is possible to take while having Potchefstroom as a subject: decisions/Boer War.txt id: sand_river_convention
+It also requires Potchefstroom to be at peace and can be only made from 1852 onwards but before 1858
+
+This relases Potchefstroom and gives them 98230 event that changes their goverment type, which renames Potchefstroom to Transvaal
+It also gives influnce over them to UK (whoever clicked this decision, UK or someone else) (in contrast to similar orange_river_convention)
+There is a second option in event that Transvaal AI would never take, giving casus beli against Transvaal
+
+Mashishing (decisions/Yakutat.txt id: lydenburg_occupy)
+
+Availbe to Boer primary culture nation owning Kwaneng while baPedi owns Mashishing
+Country must be at peace and fullfill one of these:
+
+It is at least 1850 and at least March (2nd month in files)
+Have Nationalism & Imperialism tech
+State & Goverment tech with at least 50 001 money and at least 100 relation with baPedi
+
+After clicking it, Transvaal gets Mashishing, as AI will never refuse to their demand/proposal
+There are 2 ways to finalise this, booth looks the same,
+but if Transvaal bought province, baPedi gains techs (not money as event says). Taking it by having Nationalism & Imperialism tech will not create that resoults
+
+The Sekhukhune Wars (Transvaal conquers of Tky-Gariep state/baPedi tribe) (events/Yakutat.txt id: 18482309)
+
+There is at least 1874 but before 1878, while Transvaal owns Kwaneng and baPedi owns Mbombela (MTTH = 1 day)
+
+Out of 3 options AI will chose 1st one and very rarely 2.
+Booth of these will give Transvaal cores on rest of the state (except Mbabane and eMkhondo)
+First option also resoults in a war of conquest between Transvaal and baPedi
+
+Ga-Seleka goes to Transvaal (events 18482313 and 184823131 from events/Yakutat.txt)
+
+In short between 1852 and 1855 there is an event for baMangwato that spawns event for Transvaal. These events gives Ga-Seleka to Transvaal.
+
+Nkomazi is given to Transvaal (events 18494562 and 184945621 from events/Yakutat.txt)
+
+In short, if some non-african country owning Nkomazi without owning Mbombela, while colonial_railroading is not disabled,
+it gets an event that allows to give this province to owner of Mbabane, losing 1 infamy in a proces (AI will always select this option)
+The second option do nothing
+
+Second event just seceds province to the Mbombela owner
+
+The colonization of Saan by Transvaal (events/Yakutat.txt id: 18482589)
+
+In short, by by pretty much power projection, Transvaal can get Saan quicker or faster (read details in event)
+There is another option, just wait unil neightboring Dithakong is colonized. Event have MTTH of 1 day
+
+WIP
+
+Witwatersrand Goldrush (1886)
+
+In short, if Transvaal is independent and not in any sphere of influence, after geting this gold rush,
+neightboring great power can (AI will always) get a casus beli to add it to its sphere, but not to make them a puppet
+
+--------------------------------------------------------------------------------------------------------------
+
+Xhosa
+
+Great power UK (or South Africa)
+That neightbour Xhosa
+Is at peace and have no truce with them
+
+Gets an event in which they declare war on Xhosa to add them to sphere
+This event will fire a few (3?) times
+
+treaty_of_umtata decision
+
+In short, a country that owns Cape Town and was at war with Xhosa can kick them out of their sphere of influence and get 2 of their 3 provinces for 1 infamy. AI will always do this
+
+Anexation of Xhosa
+
+Great power UK (or South Africa)
+That neightbour Xhosa
+Is at peace and with no truce with them
+OR = {
+        check_variable = {
+            which = xhosa_conflict
+            value = 3
+        }
+        has_global_flag = berlin_conference
+    }
+
+Gets an event in which at 90% AI will annex them through war or 10% to gain extra influence and relations with Xhosa
+
+--------------------------------------------------------------------------------------------------------------
+
+The Northern Cape Colony (2-3 provinces)
+
+UK or South Africa at peace owning Cape Town from 1840 onwards when any of the target province is empty (player also needs 10k)
+
+Event giving target provinces for 10k
+
+If someone else owns these provinces, UK have a decision if owning Cape Town to get a casus beli on that country. UK will also leave aliance with said country
+
+--------------------------------------------------------------------------------------------------------------
+
+Griekwastad/Kimberley
+
+`events/Boer War.txt id: 98262` - Diamonds Discovered in Kimberley
+
+Civilized nation owning Hantam from 1867 onwards, while Griekwastad do not produce gems and is owned by uncivilized nation or Griqua (MTTH = 1 day)
+
+Griekwastad is renamed to Kimberley and its RGO changes to gems
+
+If Mpondo owns Kokstad/Shayilanga, it wiil get event: events/Yakutat.txt id: 18490065, asking them if they allow Griekwastad to move into Kokstad/Shayilanga (AI wiil always accept)
+This will remove all Griqua cores and make this provinces cores of South Africa, then give Griqua core in Kokstad/Shayilanga and give them 184900651 event
+Another event: 184900653 is given to owner of Hantam
+
+184900651 event will move Griqua POPs, change them to republic and make them a subject of UK, if they own any provinces listed in the event? (Lake Nyasa is one of them xD)
+
+184900653 event will give Kimberley to nation that got this event, with Philippolis if Griqua also owns it
+
+--------------------------------------------------------------------------------------------------------------
+
+Transvaal & Oranje + Natalia (Uk anex them)
+
+Boer War
+
+A series of events, but in short:
+
+Uk at peace and have no truce with Transvaal
+Neightbouring Transvaal
+Transvaal is not a subject and in peace
+It is at least 1896
+South Africa AND Zulu does not exists
+
+Event in with Uk declares war (AI will not do it if going over infamy limit, always otherwise) on (if any of them exists) Transvaal, Oranje and Natalia to annex them
+Some countries can contest this, joining the war on boer side, resoulting in event chain after victory, resoults include boer helper losing all provinces in South Africa
+To win that war on the boer side, boer primary culture country needs to occupy Cape Town for at least 120 days
+
+appeal_to_the_british decision
+
+If any of these 3 countries are getting bad at war (while not being in the sphere of UK influence or a war with UK) with anyone except Zulu or any other of these 3 countries
+UK gets an event that allows them to get 200 influence over them or get a casus beli on them
+Chance for the first is 35-70% or maybe even 100%
+
+--------------------------------------------------------------------------------------------------------------
+
+The fate of Basotho and Suazi
+
+Basotho from 1860 onwards or Suazi after Berlin Conference can make a decision to ask for protection
+
+The target country needs to:
+Be a great power outside of Africa and own Cape Town that neightbour them
+Basotho/Suazi cannot be in the sphere of influence of other country (can be in that of target country) and cannot be a puppet and must be at peace
+
+Through an event target country makes them a puppet, target country gets all of their provinces, evcept for the capital,
+changes their religion to its faith, gains influence over them and relations
+
+Target country AI will rarely refuse
+Note: from that point they cannot be a target for Scramble for Africa casus beli
+
+--------------------------------------------------------------------------------------------------------------
+
+reorganize_south_africa
+
+Decision that requires ownership of Cape Town, being at peace and having Nationalism & Imperialism tech while South Africa do not exists
+
+It makes South Africa of your primary culture, adds boer as their accepted culture
+South Africa also loses its cores in South Africa that you do not own
+This decision do not relase them
+
+--------------------------------------------------------------------------------------------------------------
+## Bechuanaland
+
+`bechuanaland_protectorate` `colonial_railroading` decision
+
+Country needs to:
+
+Have Nationalism & Imperialism tech
+Have Machineguns tech or it is at least 1885
+Can not be disarmed or a subject
+Be at peace with all great powers
+Own both Cape Town and Kimberley
+
+All target provinces (except for Dithakong and Luhonono) needs to be empty or owned by AI controlled uncivilized nation(s)
+
+All target provinces will be granted to target nation, but Luhonono only if it is empty
+
+Tip: Dithakong is the province needed to discover Australopithecus Africanus
+
+Tip: bamangwato_chungus decision allows local nation to take those empty provinces if they conquer all non empty Bechuanaland provinces,
+so this decision would not work, but they can be easily conquered later instead
+
+--------------------------------------------------------------------------------------------------------------
+
+Luhonono can be bought from non African country thanks to buy_caprivi_strip decision
+
+Requirements:
+
+Is civilized and at peace
+Hereroland state is fully owned, except for Luhonono
+Target country is independent and have no truce with proposing country
+Have 100k or is AI
+
+Then target country gets an event in which it makes the deal, or denies
+The better the relations, the better the chance for the deal with AI and vice versa
+If target is in the sphere of the proposer, the chance is very good even with the worst relations
