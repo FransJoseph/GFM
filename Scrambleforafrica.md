@@ -60,17 +60,116 @@ At the same scale these factors also can block you from getting it, forcing you 
 - Being at most secondary power
 - Having rank worse than 16
 
-## Occupation uncolonized provinces
+## Occupation of uncolonized provinces
 
-In 1830 there are many empty provinces. All of them are colonized through decisions, events or a combination of booth.  
-They are colonized this way from early game even into the late game.
-In 1830 there are 3 uncolonized provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it dificult.
+In 1830 there are huge swats of empty provinces. All of them are colonized through decisions, events or a combination of booth.  
+They are colonized this way from early game even into the late game by multi-use decisions.
+They give you provinces deeper into the hinterlands if you own coresponding frontier provinces.
+Most of them can be still be taken through vanilia colonization, but provinces with less than 10 LR cannot be.
 
-### Gao
+### Sahel
 
-### Koro
+In 1830 there are 3 uncolonized provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it dificult. They are:
+- Gao
+- Koro
+- Kedugu
 
-### Kedugu
+### Ethiopia & Somalia
+
+`UncivFlavor.txt - conquest_of_the_south`
+
+# Colonial related casus belis
+
+They are key for taking colonies, as for example *Scramble for Africa* casus beli can be used to conqer most african natives without taking any infamy.
+Due to GFM complexity, there are quite a few of them. Many have 2 similar versions, one to take state and other for annexation.
+
+## Scramble for Africa - Demand State/Annex
+They are CB's that represent European justification for anexing african natives.
+They cannot be justified, but are enabled by deafult. *You just need to fulfill many reqirements* to get them.
+As you can see there are two of them, they are very similar. First one is to take a state and second to annex nation if they have just one state left.
+Since the second one have a few axtra reqirements the first one - Demand State, will be explained firt.
+Note: they are `named annex_africa` & `annex_africa_full` in the files.
+
+### Scramble for Africa - Demand State
+It has EU4 aggressive expansion icon.
+What you need to enable it?
+- Berlin conference has happened (it can happen from 1880, read other paragraph for details)
+- Have a capital in Europe
+- **You can't be `RUS` or `TUR`**
+- Be a westernized (civilized) nation
+- `Have Nationalism & Imperialims`
+- Be a colonial nation (have a colonial state but ones in America and Sibieria does not count, you cannot be an African or Australia/New Zealand nation)
+- Ban slavery
+- You are not a nation that called the Congo conference (basicly Belgium), since you get Congo for free, but nothing else.
+> Note: `punitive_effects` blocks you usinng it unless you are already at war with target nation
+> Note: `POR` `AI` cannot use it, unless you disabled `colonial_railraoading`
+
+What countries can be conquered with it?
+Nation that fullfills all of those:
+- Have a capital in Africa
+- It is `AI` controlled
+- Is uncivilized
+- Have more than 1 state
+- You neightbor it by land or you and target have sea access or you are already at war with them as a player
+- It is not your subject
+- This is not a post colonial country (basicly ones that were already taken)
+- **It is NOT any of those nations: Morocco, Aldjazair, Tripoli, Cyrenaica, Liberia, Ethiopia, Madagascar/Imerina or Egypt**
+
+___
+
+### Scramble for Africa - Annex
+It has EU4 overextension icon.
+It has the same reqirements as the previous one but some extra:
+- Target have only 1 state
+- **You cannot have `claimed_africa` country flag** (see explanation below)
+- Target cannot have any Ethiopian culture as their primary one (but ETH tag is not forbiden directly this time)
+These reqirements can be baypassed if you are already at war with the target nation:
+    - If you do not neighbour target nation you will need to have 5+ ships
+    - You need to have at least 1 army with 2+ brigades
+> It does not technicly require to be a westernized nation but it would be impossible to get `Nationalism & Imperialims` otherwise
+> This casus beli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
+
+> Because Scramble for Africa - Annex cb is limited to how often you can use it, you can only annex one state countries every 120 days, while the first cb does not have that limitation - meainig you can even annex big countries quicker.
+
+### Demand Concession (Berlin Conference)
+It has standard *place in the sun cb* icon. Its name in the files: `demand_concession_BC_casus_belli`.
+
+### `claimed_africa` flag limit explanation
+This flag exists to disallow spam of certain casus belis. It is added to country that forces
+another one to accept specyfic wargoals or adds said war goals to wars.
+
+Casus belis that are blocked by this flag:
+- Scramble for Africa - Annex
+- Colonial Conquest
+- Imperialism - Annex
+Note: they are called `annex_africa_full`, `colonial_conquest` & `colonial_conquest_full` in files.
+
+Actions that gives that flag:
+- When you add *Scramble for Africa - Annex* (Demand State does not count here) casus beli as a **aditional war goal** or you enforce it on some nation,
+you will get it for 120 days.
+- Enforcing *Colonial Conquest* cb on other nation for 1-5 years at random
+- Doing the same with *Imperialism - Annex* cb for the same amount of time
+Note: the last cb description wrongly states that it will always be 5 years.
+
+`demand_concession_BC_casus_belli`
+`demand_concession_NI_casus_belli`
+`demand_concession_casus_belli`
+`demand_concession_casus_belli_no_infamy`
+
+`establish_protectorate_BC_casus_belli`
+`establish_protectorate_NI_casus_belli`
+`establish_protectorate_casus_belli`
+`establish_protectorate_casus_belli_no_infamy`
+
+`colonial_conquest`
+`colonial_conquest_full`
+
+`claim_colonial_region`
+`claim_colonial_region_full`
+
+`colonial_reconquest_cb`
+
+`claim_holy_land`
 
 # Africa
 
@@ -139,6 +238,16 @@ This easy decision gives France coresponding event that has 3 options, neighter 
 
 ### Rebelion - anexation of remaining states
 `Algerian_War.txt - 37240`
+___
+
+## Benin
+
+Dahomey - modern day Benin is in 1830 is separated between 4 nations, 2 of them have a capital there - Dahomey and Borgu.
+They are separated by uncolonized land.
+
+`FlavourMod_Africa.txt - cotonou_concession`
+A `colonial_railroading` decision 
+
 ___
 
 ## Indian Ocean Teritory
@@ -512,7 +621,7 @@ It can be easily done from **1841**, but have a few other requirements.
 `decisions/FlavourMod_Africa.txt - the_lambert_charter`
 A decision avaible to great power France with `State & Goverment` tech (avaible from **1840**).
 Imerina needs to be at peace and be in their SOI or not it any SOI at all.
-It gives France 400 influence over them, instantly ading them to their SOI.
+It gives [!France 400] influence over them, instantly ading them to their SOI.
 
 > It also reduces influence of great power having Imerina in SOI by 150, but this will do nothing since they cannot be in SOI of other powers to begin with
 
@@ -578,7 +687,7 @@ From **1904**, a rebelion will happen to `FRA` controlled Madagascar.
 Rebels add a casus beli, disallowing intervention.
 A player can chose to play as the rebels.
 
->There is a **disabled** event `SAFFlavor.txt - 1500000` connected to sale of Madagascar.
+> There is a **disabled** event `SAFFlavor.txt - 1500000` connected to sale of Madagascar.
 
 # Antarctic and subantarctic islands
 
@@ -620,99 +729,6 @@ Non `AI` Imerina can also get a core there.
 ## Flavour Ferdinandea Island
 `1830_GFM_FRA.txt - 17051920` & `1830_GFM_FRA.txt - 16051921`
 Island that quickly sinks, but you can claim it and disfavour other countries thanks to it!
-
-# Colonial related casus belis
-
-They are key for taking colonies, as for example *Scramble for Africa* casus beli can be used to conqer most african natives without taking any infamy.
-Due to GFM complexity, there are quite a few of them. Many have 2 similar versions, one to take state and other for annexation.
-
-## Scramble for Africa - Demand State/Annex
-They are CB's that represent European justification for anexing african natives.
-They cannot be justified, but are enabled by deafult. *You just need to fulfill many reqirements* to get them.
-As you can see there are two of them, they are very similar. First one is to take a state and second to annex nation if they have just one state left.
-Since the second one have a few axtra reqirements the first one - Demand State, will be explained firt.
-Note: they are `named annex_africa` & `annex_africa_full` in the files.
-
-### Scramble for Africa - Demand State
-It has EU4 aggressive expansion icon.
-What you need to enable it?
-- Berlin conference has happened (it can happen from 1880, read other paragraph for details)
-- Have a capital in Europe
-- **You can't be `RUS` or `TUR`**
-- Be a westernized (civilized) nation
-- `Have Nationalism & Imperialims`
-- Be a colonial nation (have a colonial state but ones in America and Sibieria does not count, you cannot be an African or Australia/New Zealand nation)
-- Ban slavery
-- You are not a nation that called the Congo conference (basicly Belgium), since you get Congo for free, but nothing else.
-> Note: `punitive_effects` blocks you usinng it unless you are already at war with target nation
-> Note: `POR` `AI` cannot use it, unless you disabled `colonial_railraoading`
-
-What countries can be conquered with it?
-Nation that fullfills all of those:
-- Have a capital in Africa
-- It is `AI` controlled
-- Is uncivilized
-- Have more than 1 state
-- You neightbor it by land or you and target have sea access or you are already at war with them as a player
-- It is not your subject
-- This is not a post colonial country (basicly ones that were already taken)
-- **It is NOT any of those nations: Morocco, Aldjazair, Tripoli, Cyrenaica, Liberia, Ethiopia, Madagascar/Imerina or Egypt**
-
-___
-
-### Scramble for Africa - Annex
-It has EU4 overextension icon.
-It has the same reqirements as the previous one but some extra:
-- Target have only 1 state
-- **You cannot have `claimed_africa` country flag** (see explanation below)
-- Target cannot have any Ethiopian culture as their primary one (but ETH tag is not forbiden directly this time)
-These reqirements can be baypassed if you are already at war with the target nation:
-    - If you do not neighbour target nation you will need to have 5+ ships
-    - You need to have at least 1 army with 2+ brigades
-> It does not technicly require to be a westernized nation but it would be impossible to get `Nationalism & Imperialims` otherwise
-> This casus beli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
-
-> Because Scramble for Africa - Annex cb is limited to how often you can use it, you can only annex one state countries every 120 days, while the first cb does not have that limitation - meainig you can even annex big countries quicker.
-
-### Demand Concession (Berlin Conference)
-It has standard *place in the sun cb* icon. Its name in the files: `demand_concession_BC_casus_belli`.
-
-### `claimed_africa` flag limit explanation
-This flag exists to disallow spam of certain casus belis. It is added to country that forces
-another one to accept specyfic wargoals or adds said war goals to wars.
-
-Casus belis that are blocked by this flag:
-- Scramble for Africa - Annex
-- Colonial Conquest
-- Imperialism - Annex
-Note: they are called `annex_africa_full`, `colonial_conquest` & `colonial_conquest_full` in files.
-
-Actions that gives that flag:
-- When you add *Scramble for Africa - Annex* (Demand State does not count here) casus beli as a **aditional war goal** or you enforce it on some nation,
-you will get it for 120 days.
-- Enforcing *Colonial Conquest* cb on other nation for 1-5 years at random
-- Doing the same with *Imperialism - Annex* cb for the same amount of time
-Note: the last cb description wrongly states that it will always be 5 years.
-
-`demand_concession_BC_casus_belli`
-`demand_concession_NI_casus_belli`
-`demand_concession_casus_belli`
-`demand_concession_casus_belli_no_infamy`
-
-`establish_protectorate_BC_casus_belli`
-`establish_protectorate_NI_casus_belli`
-`establish_protectorate_casus_belli`
-`establish_protectorate_casus_belli_no_infamy`
-
-`colonial_conquest`
-`colonial_conquest_full`
-
-`claim_colonial_region`
-`claim_colonial_region_full`
-
-`colonial_reconquest_cb`
-
-`claim_holy_land`
 
 # WIP
 
