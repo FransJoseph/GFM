@@ -1,6 +1,25 @@
 # Victoria II Grater Flavour Mod colonization encyclopedia
 
-This file contains all the information that is useful for obtaining as many colonies as possible in Victoria II Greater Flavour Mod. It also explains the process in with they are gained, so player can try to prevent their colonization by other nation. For example you can prevent UK from taking Nigeria by conquering just Lagos in the early game and conquer it with free casus beli that you get from Berlin Conference.
+This file contains all the information that is useful for obtaining as many colonies as possible in Victoria II Greater Flavour Mod. It also explains the process in with they are gained, so player can try to prevent their colonization by other nation. For example you can prevent UK from taking Nigeria by conquering just Lagos in the early game and conquer it with free casus belli that you get from Berlin Conference.
+
+## Dictionary
+
+Here is a small dictionary to help you understand some of the terms and abbreviations used in this encyclopedia.
+
+GFM - Greater Flavour Mod
+GP - Great Power
+SoI - Sphere of Influence
+CB - Casus Belli
+LR - Life rating
+SC - Supply Consumption
+`colonial_railroading` (or similar looking) - in-game name for flag, decision or event but they have numbers instead
+`Yakutat.txt` - game/mod file in with said thing is written
+`GER` (or similar) - Country `tag`. Every country have a unique one (few short living countries are used as other country, retaining the same tag)
+France - French like country not specifying exact tag, like `BOR` or `FRA`
+Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`
+UK - United Kingdom
+USA - United States of America
+45k+ (and similar) - *at least 45 thousand pounds* (money)
 
 ## Important topics
 
@@ -59,15 +78,15 @@ First, all uncivilized nations are non-colonial since they can not have colonial
 
 - You **can not** have a capital in modern day Australia, New Zealand, Morocco, Algeria, Libya, Egypt or Sudan
 - A colonial state in any of those regions: Africa, Australia, New Zealand, Oceania, or some part of Asia, more specific:
-  - Indochina, Siam, Burma (include Adamawa), Yunnan state, Philippines, Indonesia and its surroundings
+  - Indochina, Siam, Burma (including Andaman Islands), Yunnan state, Philippines or Indonesia and its surroundings
 
-Most importantly, American colonies like in the Caribbeans (Sweden case), in India or Middle East do not make you a colonial nation.
+Most importantly, American colonies like in the Caribbeans (Sweden case), in India or in the Middle East do not make you a colonial nation.
 
-> To check: You can be a colonial nation as Zulu (probably a mistake) since *Africa* continents is actually just North Africa, the rest is West Africa, East Africa, etc.
+> NOTE: You can be a colonial nation for example as Zulu (probably a mistake) since continent *Africa* is actually just North Africa, the rest is West Africa, East Africa, etc.
 
 ___
 
-### Colonial reforms
+### Colonial policies/reforms
 
 Those reforms works rather like policies and are called like that in the game interface. There are 4 of them:
 
@@ -82,10 +101,16 @@ If you are not a colonial nation, you are forced to have *Non-colonial Nation* r
 
 Settlement
 
+Indirect rule
+
+Civilizing mission
+
+Non-colonial Nation - Despite being a place holder for the other nations, it can be beneficial. That is because it gives -10% SC and gives +5% research on military techs, in exchange for -5% on naval techs, with is nothing to complain about. Additionally, since being a colonial nation gives extra 10% SC, this is almost instant jump of +20% when you become a colonial nation.
+
 ### Berlin Conference
 
 It is one of the most important events in the mod, allowing European countries to dominate the world.
-It sets a single very important global flag, `berlin_conference` that leads to many events and decisions, but most importantly it allows you to use a **unique free casus beli against most african natives**. Every event and decision cited here also is categorized if it requires it or not, just like `colonial_railroading`.
+It sets a single very important global flag, `berlin_conference` that leads to many events and decisions, but most importantly it allows you to use a **unique free casus belli against most african natives**. Every event and decision cited here also is categorized if it requires it or not, just like `colonial_railroading`.
 
 `Scramble for Africa.txt - 95500`
 It can be triggered by a great power nation with a capital in Europe, either being a colonial nation, or owning land in Africa.
@@ -106,7 +131,7 @@ Otherwise, it is named after capital of nation that got this event. It also give
 
 ### Colonial related casus belli
 
-They are key for taking colonies, as for example *Scramble for Africa* casus beli can be used to conquer most african natives without taking any infamy.
+They are key for taking colonies, as for example *Scramble for Africa* casus belli can be used to conquer most african natives without taking any infamy.
 Due to GFM complexity, there are quite a few of them. Due to technical limitations, many have 2 similar versions, one to take state and other for annexation.
 
 #### Scramble for Africa - Demand State/Annex
@@ -163,7 +188,7 @@ These requirements can be bypassed if you are already at war with the target nat
 - You need to have at least 1 army with 2+ brigades
 
 > It does not technically require to be a westernized nation but it would be impossible to get `Nationalism & Imperialism` otherwise
-> This casus beli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
+> This casus belli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
 > Because Scramble for Africa - Annex cb is limited to how often you can use it, you can only annex one state countries every 120 days, while the first cb does not have that limitation - meaning you can even annex big countries quicker.
 
 #### Demand Concession (Berlin Conference)
@@ -184,7 +209,7 @@ Casus belli that are blocked by this flag:
 
 Actions that gives that flag:
 
-- When you add *Scramble for Africa - Annex* (Demand State does not count here) casus beli as a **additional war goal** or you enforce it on some nation,
+- When you add *Scramble for Africa - Annex* (Demand State does not count here) casus belli as a **additional war goal** or you enforce it on some nation,
   you will get it for 120 days.
 - Enforcing *Colonial Conquest* cb on other nation for 1-5 years at random
 - Doing the same with *Imperialism - Annex* cb for the same amount of time
@@ -434,7 +459,7 @@ Requirements:
 
 Effect: You get 4 provinces in Dahomey state: Idaasha, Maho, Materi and Chauru that if they are empty or owned by an uncivilized nation.
 
-> Berlin Conference happens in the beginning of 1880's, meaning that it can be done **instantly after conquering Dahomey**
+> Berlin Conference happens in the beginning of 1880's, meaning that it can be done **instantly after conquering Dahomey**.
 
 ___
 
