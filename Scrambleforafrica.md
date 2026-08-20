@@ -4,47 +4,88 @@ This file contains all the information that is useful for obtaining as many colo
 
 ## Important topics
 
-### Vanilla/Stock colonization
+### Colonial railroading
 
-In GFM almost every colonial province is scripted and colonization mechanic is mostly used as a last resort, for example if you crippled the Italian or German unification. However, even in that case their colonies (like Cameroon & Eritrea) can still be colonized in scripted action by other countries. Actions almost every time means decision or event, commonly a combination of both.
+At every campaign start you get a chain of setup events. One of them asks for *colonial railroading*. This is a setting that does exactly that - leads countries to their historical colonies. It is **enabled by default**, but can be disabled in that setup. Most decisions and events cited here can only appear if it is enabled. Every of them is labeled under being a `colonial_railroading` or not.
 
-### Life rating
+### Vanilla/Stock colonization & Life Rating
 
-GFM did micro on LR. This is mostly to block provinces from colonization rather that represent real conditions there. The highest LR in 1830 is 48 - for Frankfurt.
-Most provinces have 35 LR however. Just like in the base game, by getting inventions you can access those lands to colonize them.
+In GFM almost every colonial province is scripted and colonization mechanic is mostly used as a last resort, for example if you crippled the Italian or German unification. However, even in that case their colonies (like Cameroon & Eritrea) can still be colonized in scripted action by other countries.
 
-- Prophylaxis against Malaria (in `Medicine`, available from 1830): **-5**
-- Mission to Civilize (in `State & Government`, but available only from 1850): **-10**
-- Colonial Negotiations (in `Breech-loaded Riffles`, but available from 1880): **-5**
-- The Dark Continent (in `Revolution & Counterrevolution`, but available from 1895): **-5**
+GFM did micro on LR. This is mostly to block provinces from colonization rather that represent real conditions there. Thats why when you get them through decisions or events you get LR there. The highest LR in 1830 is 48 - for Frankfurt.
+Most provinces have 35 LR. Just like in the base game, by getting inventions you can colonize provinces that have a lower LR. Note that some provinces have LR of just 5 or even 1. They can never be colonized through that mechanic alone.  
+Here is the list of inventions that do decrease minimum LR in GFM:
+
+- Prophylaxis against Malaria (in `Medicine`, available from 1830): -5, 30 minimum in total
+- Mission to Civilize (in `State & Government`, but available only from 1850): -10, 20 minimum in total
+- Colonial Negotiations (in `Breech-loaded Riffles`, but available from 1880): -5, 15 minimum in total
+- The Dark Continent (in `Revolution & Counterrevolution`, but available from 1895): -5, 10 minimum in total
 
 #### The Dark Continent invention
 
 It has a complex requirements, while giving final -5 min life rating. Here it is requirements:
-You CAN NOT get it if you are not a great power with any of those flags:
 
-- congo_master
-- historical_congo
-- civilizing_congo
-- If you have **colonial_railroading** (it is enabled by default):
+You **CAN NOT** get it if you are not a great power with any of those flags:
+
+- `congo_master`
+- `historical_congo`
+- `civilizing_congo`
+- If you have `colonial_railroading`
   - It CAN NOT be discovered after 1895, unless the Congo conference have happened
 - If you disabled it:
   - You need 1 more tech or 2 other increasing factors listed below
-    Now to actually get it, you need any of those techs, but having more of them increases your chances greatly
+
+Now to actually get it, you need any of those techs, but having more of them increases your chances greatly:
+
 - Biologism (1850 tech)
 - Military Logistics (1870 tech)
 - Steel Streamers (1880 tech)
   Other factors also help to get it, but less
 - Any great power have that invention
 - Your neighbor have it
-  At the same scale these factors also can block you from getting it, forcing you to get more of above factors:
+
+At the same scale these factors also can block you from getting it, forcing you to get more of above factors:
+
 - Being at most secondary power
 - Having rank worse than 16
 
+___
+
+### Colonial nation status
+
+Every country can be categorized by its colonial status. There are however a few quirks there. That status is important since being one allows to make many colonial actions, but also increases supply consumption.
+
+First, all uncivilized nations are non-colonial since they can not have colonial states. Second, you can actually have many of those and never be a colonial nation. To actually became one, you need to met a set of requirements:
+
+- You **can not** have a capital in modern day Australia, New Zealand, Morocco, Algeria, Libya, Egypt or Sudan
+- A colonial state in any of those regions: Africa, Australia, New Zealand, Oceania, or some part of Asia, more specific:
+  - Indochina, Siam, Burma (include Adamawa), Yunnan state, Philippines, Indonesia and its surroundings
+
+Most importantly, American colonies like in the Caribbeans (Sweden case), in India or Middle East do not make you a colonial nation.
+
+> To check: You can be a colonial nation as Zulu (probably a mistake) since *Africa* continents is actually just North Africa, the rest is West Africa, East Africa, etc.
+
+___
+
+### Colonial reforms
+
+Those reforms works rather like policies and are called like that in the game interface. There are 4 of them:
+
+- Settlement
+- Indirect rule
+- Civilizing mission
+- Non-colonial Nation
+
+If you are not a colonial nation, you are forced to have *Non-colonial Nation* reform. Note that uncivilized nations do not have it, since they have westernization reforms instead. If you became a colonial nation, you are forced to have 1 of 3 remaining instead. You will also get an event allowing you to take any of those for free. They work otherwise as a normal political reforms, allowing you to take one step at a time into lower tiers, or rollback them into higher tiers.
+
+#### Detailed description
+
+Settlement
+
 ### Berlin Conference
 
-This is the single most important event in a way for Europeans to dominate the world. It is one of the most important events in the mod.
-This event sets a single very important global flag, `berlin_conference` that leads to many events and decisions, but most importantly it allows you to use a **unique free casus beli against most african natives**.
+It is one of the most important events in the mod, allowing European countries to dominate the world.
+It sets a single very important global flag, `berlin_conference` that leads to many events and decisions, but most importantly it allows you to use a **unique free casus beli against most african natives**. Every event and decision cited here also is categorized if it requires it or not, just like `colonial_railroading`.
 
 `Scramble for Africa.txt - 95500`
 It can be triggered by a great power nation with a capital in Europe, either being a colonial nation, or owning land in Africa.
@@ -63,44 +104,25 @@ If you are prepared, you will get it it within few months after getting first 18
 Finally, it has a `MTTH` of 6 months, shorter if your capital is Berlin, increasing chance to be truly Berlin conference.
 Otherwise, it is named after capital of nation that got this event. It also gives 25 base prestige.
 
-### Occupation of empty provinces
-
-In 1830 there are huge swats of empty provinces. All of them are colonized through decisions, events or a combination of booth.
-They are colonized this way from early game even into the late game by multi-use decisions.
-They give you provinces deeper into the hinterlands if you own corresponding frontier provinces.
-Most of them can be still be taken through vanilla colonization, but provinces with less than 10 LR cannot be.
-
-#### Sahel
-
-In 1830 there are 3 empty provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it difficult. They are:
-
-- Gao
-- Koro
-- Kedugu
-
-#### Ethiopia & Somalia
-
-`uncivilizedFlavor.txt - conquest_of_the_south`
-
 ### Colonial related casus belli
 
 They are key for taking colonies, as for example *Scramble for Africa* casus beli can be used to conquer most african natives without taking any infamy.
-Due to GFM complexity, there are quite a few of them. Many have 2 similar versions, one to take state and other for annexation.
+Due to GFM complexity, there are quite a few of them. Due to technical limitations, many have 2 similar versions, one to take state and other for annexation.
 
-### Scramble for Africa - Demand State/Annex
+#### Scramble for Africa - Demand State/Annex
 
 They are CB's that represent European justification for annexing african natives.
 They cannot be justified, but are enabled by default. *You just need to fulfill many requirements* to get them.
-As you can see there are two of them, they are very similar. First one is to take a state and second to annex nation if they have just one state left.
+First one is to take a state and second to annex nation if they have just one state left.
 Since the second one have a few extra requirements the first one - Demand State, will be explained first.
 Note: they are `named annex_africa` & `annex_africa_full` in the files.
 
-#### Scramble for Africa - Demand State
+##### Scramble for Africa - Demand State
 
 It has EU4 aggressive expansion icon.
 What you need to enable it?
 
-- Berlin conference has happened (it can happen from 1880, read other paragraph for details)
+- Berlin conference has happened (beginning of the 1880')
 - Have a capital in Europe
 - **You can't be `RUS` or `TUR`**
 - Be a westernized (civilized) nation
@@ -126,7 +148,7 @@ Nation that fulfills all of those:
 
 ___
 
-#### Scramble for Africa - Annex
+##### Scramble for Africa - Annex
 
 It has EU4 overextension icon.
 It has the same requirements as the previous one but some extra:
@@ -187,6 +209,25 @@ Actions that gives that flag:
 `colonial_reconquest_cb`
 
 `claim_holy_land`
+
+### Occupation of empty provinces
+
+In 1830 there are huge swats of empty provinces. All of them are colonized through decisions, events or a combination of booth.
+They are colonized this way from early game even into the late game by multi-use decisions.
+They give you provinces deeper into the hinterlands if you own corresponding frontier provinces.
+Most of them can be still be taken through vanilla colonization, but provinces with less than 10 LR cannot be.
+
+#### Sahel
+
+In 1830 there are 3 empty provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it difficult. They are:
+
+- Gao
+- Koro
+- Kedugu
+
+#### Ethiopia & Somalia
+
+`uncivilizedFlavor.txt - conquest_of_the_south`
 
 Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented collapse in the **Scramble for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coastal colonies dotted all across the continent.
 
@@ -376,7 +417,6 @@ Requirements:
 
 Effects: Dahomey get empty province of Chauru, and Ketu if they failed to take it earlier and you declare a war of conquest upon them.
 You also declare a war upon Borgu, with `demand_concession_capital` or `annex_africa_full` CB, depending on their extend.
-
 
 > Note that this decision can be done by almost any nation. It also ignores sphere leader of the Dahomey.
 > Dahomey add a CB to retake core, making intervention mechanic useless there.
