@@ -273,7 +273,7 @@ Dahomey - now called Benin is in 1830 a state belonging to 4 nations, 2 of them 
 ### Partition of Egba
 
 `Yakutat.txt - pact_for_abeokuta`
-Decision allowing Dahomey to partition Ebga with Ijebu in 1850/55 time window for **5 infamy**.
+Decision allowing Dahomey to partition Egba with Ijebu in 1850-54 time window for **5 infamy**.
 
 > Thanks to it there is one nation less to conquer in the 1880's
 
@@ -284,11 +284,11 @@ Requirements:
 - Ijebu owns Eko (also their capital)
 - Egba owns booth of their starting provinces
 - Its before 1855
-- Have 200 relation with Ijebu (`AI` can omit that from 1850)
+- Have 200 relation with Ijebu (`AI` can omit that **from 1850**)
 
-Effects: A war with `cut_down_to_size_no_infamy` CB is declared upon Egba **for 5 infamy** and event chain starts.
+Effects: A war with `cut_down_to_size_no_infamy` CB is declared upon Egba **for 5 infamy**, Egba adds humiliate CB and event chain starts.
 
-In short, If all participants are `AI`, Ijebu joins the war and UK stays neutral, making an easy war for the attackers.
+In short, If all participants are `AI` controlled, Ijebu joins the war and UK stays neutral, making an easy war for the attackers.
 
 If they win the war, and no one got on their way otherwise, an event - `Yakutat.txt - 184824102` happens.
 It gives Abenkuta to Ijebu and Ketu to Dahomey and ensures they still have slavery, giving them that reform.
@@ -299,46 +299,55 @@ Here is a graph depicting full event chain:
 [Decision to partition Egba]
            ↓            
 [Join the war - Ijebu]
-↳ (Do not join - 0% chance) → [1st event for Dahomey]
-|                             ↳(Stop the war - 0% chance)
-|                             ↳(Declare war on Ijebu - 100% chance)
+↳ (Do not join - 0% chance) → [Ijebu rejects deal - Dahomey]
+|                             ↳ (Stop the war - 0% chance)
+|                             ↳ (Declare war on Ijebu - 100% chance)
 |
-↳ (Join) → [Event for Egba]
-           ↳ (Stand alone - 10% chance) → [Dahomey victory]
+↳ (Join) → [Egba calls UK]
+           ↳ (Stand alone - 10% chance) ----------------------→ [Dahomey victory]
            ↳ (Ask UK to join - 90% chance)
                   ↓
-           [1st event for UK]
-           ↳ (Ignore them - 100% chance) → [Dahomey victory]
+           [UK answers to Egba]
+           ↳ (Ignore them - 100% chance) ---------------------→ [Dahomey victory]
            ↳ (Send ultimatum and add them to SoI - 0% chance)
                      ↓
-           [2nd event for Dahomey]
-           ↳ (Reject Ultimatum - 90% chance) → [3rd event for UK]
-           |                                   ↳(Declare war - 90% chance) → [3rd event for Dahomey]
-           |                                   ↳(Do nothing - 10% chance)    ↳ (Ignore blockade - 10% chance) →
-           ↳(Accept Ultimatum - 10% chance)                ↓                 ↳ (Surrender - 90% chance)
-                           ↓                   []                                   ↓
-            [2nd event for UK]
-            [2nd event for Egba]
-            [2nd event for Ijebu]
+           [UK Ultimatum - Dahomey]
+           ↳ (Reject Ultimatum - 90% chance) → [UK responds to rejected ultimatum]
+           |                                   ↳ (Blockade them - 90% chance) -------------------→ [UK naval blockade - Dahomey]
+           |                                   ↳ (Do nothing - 10% chance)                         ↳ (Ignore blockade - 10% chance) → [UK acknowledge that]
+           ↳ (Accept Ultimatum - 10% chance)                 ↓                                     ↳ (Surrender - 90% chance)
+                            |                    [UK do not intervene - Egba]                                   ↓
+                            ↓                    [UK do not intervene - Dahomey]                     [Dahomey accepts ultimatum - UK]
+             [Dahomey accepts ultimatum - UK]                  ↓                                     [Dahomey accepts ultimatum - Egba]
+             [Dahomey accepts ultimatum - Egba]        [Dahomey victory]                             [Dahomey accepts ultimatum - Ijebu]
+             [Dahomey accepts ultimatum - Ijebu]
 ```
 
 #### References
 
 - Decision to partition Egba - `pact_for_abeokuta`
 - Join the war - Ijebu - `18482410`
-- First event for Dahomey - `184824101`
-- Dahomey victory event - `184824102`
-- Event for Egba - `184824103`
-- 1st event for UK - `184824104`
-- 2nd event for Dahomey - `184824105`
-- 2nd event for UK - 100 influence - `184824106`
-- 2nd event for Egba - `184824107`
-- 2nd event for Ijebu - `184824108`
-- 3rd event for UK - `184824109`
+- Ijebu rejects deal - Dahomey - `184824101`
+- Dahomey victory - `184824102`
+- Egba calls UK - `184824103`
+- UK answers to Egba - `184824104`
+- UK Ultimatum - Dahomey - `184824105` - also gives them 100 influence over Dahomey
+- Dahomey accepts ultimatum - UK - `184824106`
+- Dahomey accepts ultimatum - Egba `184824107`
+- Dahomey accepts ultimatum - Ijebu - `184824108`
+- UK responds to rejected ultimatum - `184824109`
+- UK do not intervene - Egba - `184824110`
+- UK do not intervene - Dahomey - `184824111`
+- UK naval blockade - Dahomey - `184824112`
+- UK acknowledge that - `184824113`
+
+> Note: It worked in test like if `AI` would be able to take decisions with `factor = 0`
+> Note: UK does not declare war directly at any point in the event chain.
 
 ### Concessions to France
 
-`FlavourMod_Africa.txt - cotonou_concession`It allows France to take Wyida and add Dahomey to their SoI **from ~1855** for **0.5 infamy**.
+`FlavourMod_Africa.txt - cotonou_concession`  
+It allows France to take Wyida and add Dahomey to their SoI **from ~1855** for **0.5 infamy**.
 
 > You can prevent France from doing that by adding Dahomey to your SoI
 
@@ -354,6 +363,38 @@ Requirements:
 - Have 45+ ships and 45k+ funds (actually 45001) to pay (`AI` omits that)
 
 Effects: Wyida is bought from Dahomey for 45k and they are added to SoI (300 influence) of decision executor
+
+### Conquest of the east
+
+`Yakutat.txt - finish_off_dahomey`
+Type: `colonial_railroading`, `berlin_conference`
+Requirements:
+
+- Own Wyida, while Dahomey own Abomey
+- Be independent great power (is otherwise possible?) that is not disarmed
+- Be at peace (this can be bypassed from 1883)
+
+Effects: Dahomey get empty province of Chauru, and Ketu if they failed to take it earlier and you declare a war of conquest upon them.
+You also declare a war upon Borgu, with `demand_concession_capital` or `annex_africa_full` CB, depending on their extend.
+
+
+> Note that this decision can be done by almost any nation. It also ignores sphere leader of the Dahomey.
+> Dahomey add a CB to retake core, making intervention mechanic useless there.
+
+### Conquest of the west
+
+`Yakutat.txt - 18482534`
+> This event is just a mean to extend the reach of **any** Dahomey colonizer
+Type: `colonial_railroading`
+Requirements:
+
+- Own Abomey & Wyida while Dahomey no longer exists (basically conquer Dahomey)
+- **Its 1875 or later**
+- Be a colonial nation (this just ensures you are not an african native)
+
+Effect: You get 4 provinces in Dahomey state: Idaasha, Maho, Materi and Chauru that if they are empty or owned by an uncivilized nation.
+
+> Berlin Conference happens in the beginning of 1880's, meaning that it can be done **instantly after conquering Dahomey**
 
 ___
 
