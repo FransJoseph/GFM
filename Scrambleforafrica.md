@@ -14,7 +14,10 @@ CB - Casus Belli
 LR - Life rating
 SC - Supply Consumption
 WE - War Exhaustion
-`colonial_railroading` (or similar looking) - in-game name for flag, decision or event but they have numbers instead
+`MTTH` - Mean time to happen, events use it to determine how long it takes to happen
+Independent - Not a puppet, but can be in someone SoI
+Base prestige - Prestige from events to be modified by *prestige gain* modifier
+`colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead)
 `Yakutat.txt` - game/mod file in with said thing is written
 `GER` (or similar) - Country `tag`. Every country have a unique one (few short living countries are used as other country, retaining the same tag)
 France - French like country not specifying exact tag, like `BOR` or `FRA`
@@ -101,9 +104,9 @@ If you are not a colonial nation, you are forced to have *Non-colonial Nation* r
 
 #### Detailed description
 
-Settlement
+**Settlement** - 
 
-Indirect rule
+**Indirect rule** - 
 
 **Civilizing mission** - It is the most *liberal* one of them all. It is blocked for countries with `islamic_law` and enabled only after `berlin_conference` or for `theocratic_government` countries.
 
@@ -239,6 +242,40 @@ Actions that gives that flag:
 
 `claim_holy_land`
 
+### Annexation through SoI
+
+After the Berlin Conference, most African natives can be annexed also through SoI. **It costs some infamy**, and can take some time, but is useful nonetheless.
+
+Firstly, an event must pop-up in nation that is a candidate for annexation: `Scramble for Africa.txt - 95505`.
+
+How it is triggered:
+
+- Berlin Conference has happened
+- It is independent, uncivilized country with a capital in Africa at peace
+- It is not a country that refused annexation that way before or post colonial country
+- Its sphere leader neighbors it or booth countries have sea access
+  - Russia however cannot do this through sea
+- Sphere leader have a capital in Europe, `Nationalism & Imperialism` technology, is at peace, not disarmed, not pacifistic and without rebels
+- **`AI`** cannot annex those countries that way: **Cyrenaica**, **Aussa**, **Algeria**, **Algiers**, **Harar**, **Ethiopia** or **Darfur**
+  - Ottoman **`AI`** additionally cannot annex **Morocco** this way
+
+> Note: `CYR` is labeled 2 times in the `OR` code bracket
+
+This event has a `MTTH` of 4 months, but can happen earlier or later depending on some circumstances:
+
+- Egypt, Tunisia or Morocco triggers it 100x times as fast, so in ~1.2 day
+  - For The Ottomans however Egypt takes 5x that time (~6 days)
+- Ethiopia takes 10x that time (~40 months or over 3 years)
+- Zanzibar takes 10x time up to 1890, because of unique flag after its formation: `delay_unciv_annexation`
+- It triggers 1000x times as fast for Canaria having `triggerfasttamazight` flag (1 day)
+- Base time for all cases is halved from 1890 (~2 months)
+- It is halved again since 1900 (~1 month)
+
+Finally, the candidate for annexation is presented with 2 options:
+
+- Accept annexation
+- Deny it
+
 ### Occupation of empty provinces
 
 In 1830 there are huge swats of empty provinces. All of them are colonized through decisions, events or a combination of booth.
@@ -272,7 +309,7 @@ Tags there can be very misleading, here is a table explaining them:
 | `LBY` | Libya     | Beylik of Constantine |
 | `ABA` | Ait Abbas | Beni Abbas            |
 | `TUG` | Tuggurt   | Touggourt             |
-| `ALD` | Aldjazair | Aldjazair             |
+| `ALD` | Aldjazair | Algeria               |
 
 ### War for Algiers
 
