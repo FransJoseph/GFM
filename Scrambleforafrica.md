@@ -8,10 +8,12 @@ Here is a small dictionary to help you understand some of the terms and abbrevia
 
 GFM - Greater Flavour Mod
 GP - Great Power
+SP - Secondary Power
 SoI - Sphere of Influence
 CB - Casus Belli
 LR - Life rating
 SC - Supply Consumption
+WE - War Exhaustion
 `colonial_railroading` (or similar looking) - in-game name for flag, decision or event but they have numbers instead
 `Yakutat.txt` - game/mod file in with said thing is written
 `GER` (or similar) - Country `tag`. Every country have a unique one (few short living countries are used as other country, retaining the same tag)
@@ -25,7 +27,7 @@ USA - United States of America
 
 ### Colonial railroading
 
-At every campaign start you get a chain of setup events. One of them asks for *colonial railroading*. This is a setting that does exactly that - leads countries to their historical colonies. It is **enabled by default**, but can be disabled in that setup. Most decisions and events cited here can only appear if it is enabled. Every of them is labeled under being a `colonial_railroading` or not.
+At every campaign start you get a chain of setup events. One of them asks you for *colonial railroading*. This is a setting that does exactly what is says - it leads countries to their historical colonies, and block others from taking the region. It is **enabled by default**, but can be disabled in that setup. Most decisions and events cited here can only appear if it is enabled. Every of them is labeled under being a `colonial_railroading`.
 
 ### Vanilla/Stock colonization & Life Rating
 
@@ -56,9 +58,9 @@ You **CAN NOT** get it if you are not a great power with any of those flags:
 
 Now to actually get it, you need any of those techs, but having more of them increases your chances greatly:
 
-- Biologism (1850 tech)
-- Military Logistics (1870 tech)
-- Steel Streamers (1880 tech)
+- `Biologism` (1850 tech)
+- `Military Logistics` (1870 tech)
+- `Steel Streamers` (1880 tech)
   Other factors also help to get it, but less
 - Any great power have that invention
 - Your neighbor have it
@@ -103,9 +105,11 @@ Settlement
 
 Indirect rule
 
-Civilizing mission
+**Civilizing mission** - It is the most *liberal* one of them all. It is blocked for countries with `islamic_law` and enabled only after `berlin_conference` or for `theocratic_government` countries.
 
-Non-colonial Nation - Despite being a place holder for the other nations, it can be beneficial. That is because it gives -10% SC and gives +5% research on military techs, in exchange for -5% on naval techs, with is nothing to complain about. Additionally, since being a colonial nation gives extra 10% SC, this is almost instant jump of +20% when you become a colonial nation.
+Like all of them it increases the need for bureaucrats in the same scale. The greatest bonus here is education efficiency +10% and +10% assimilation rate. Additionally it gives 5% culture research and 0.1
+
+**Non-colonial Nation** - Despite being a place holder for the other nations, it can be beneficial. That is because it gives -5% SC and gives +5% research on military techs, in exchange for -5% on naval techs, with is nothing to complain about. Additionally, since being a colonial nation gives extra 10% SC, this is instant jump of +15% when you become a colonial nation.
 
 ### Berlin Conference
 
@@ -407,7 +411,7 @@ Here is a graph depicting full event chain:
 - UK naval blockade - Dahomey - `184824112`
 - UK acknowledge that - `184824113`
 
-> Note: It worked in test like if `AI` would be able to take decisions with `factor = 0`
+> Note: It worked in test like if `AI` would be able to take decisions with `factor = 0` somehow
 > Note: UK does not declare war directly at any point in the event chain.
 
 ### Concessions to France
@@ -455,7 +459,7 @@ Requirements:
 
 - Own Abomey & Wyida while Dahomey no longer exists (basically conquer Dahomey)
 - **Its 1875 or later**
-- Be a colonial nation (this just ensures you are not an african native)
+- Be a colonial nation (this is a weak check to filter out African nations)
 
 Effect: You get 4 provinces in Dahomey state: Idaasha, Maho, Materi and Chauru that if they are empty or owned by an uncivilized nation.
 
