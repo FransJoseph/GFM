@@ -242,23 +242,27 @@ Actions that gives that flag:
 
 `claim_holy_land`
 
-### Annexation through SoI
+### Annexation through Sphere of Influence
 
-After the Berlin Conference, most African natives can be annexed also through SoI. **It costs some infamy**, and can take some time, but is useful nonetheless.
+After the Berlin Conference, most African natives can be annexed also through SoI. **It costs some infamy**, but can be the only way of annexation. Ethiopia is a good example of it.
 
-Firstly, an event must pop-up in nation that is a candidate for annexation: `Scramble for Africa.txt - 95505`.
+This process consists of an event chain:  
+1. Event must pop-up in a nation that is a candidate for annexation, where it can accept, or deny annexation
+2. Great power gets an event where it can decide to annex that country **for 2 infamy**, or not, **losing 1 infamy**. If African nation denied it, GP can declare a war on them with free CB, or let it be
 
-How it is triggered:
+How the first event (`Scramble for Africa.txt - 95505`) is triggered:
 
 - Berlin Conference has happened
 - It is independent, uncivilized country with a capital in Africa at peace
-- It is not a country that refused annexation that way before or post colonial country
+- It is not a country that was refused annexation that way by colonial power before or post colonial country
 - Its sphere leader neighbors it or booth countries have sea access
   - Russia however cannot do this through sea
 - Sphere leader have a capital in Europe, `Nationalism & Imperialism` technology, is at peace, not disarmed, not pacifistic and without rebels
 - **`AI`** cannot annex those countries that way: **Cyrenaica**, **Aussa**, **Algeria**, **Algiers**, **Harar**, **Ethiopia** or **Darfur**
   - Ottoman **`AI`** additionally cannot annex **Morocco** this way
 
+> This rather broad trigger allows you to annex countries like Ethiopia, Senussi, Morocco or even Liberia!
+> Note: This event can trigger to a player
 > Note: `CYR` is labeled 2 times in the `OR` code bracket
 
 This event has a `MTTH` of 4 months, but can happen earlier or later depending on some circumstances:
@@ -267,7 +271,7 @@ This event has a `MTTH` of 4 months, but can happen earlier or later depending o
   - For The Ottomans however Egypt takes 5x that time (~6 days)
 - Ethiopia takes 10x that time (~40 months or over 3 years)
 - Zanzibar takes 10x time up to 1890, because of unique flag after its formation: `delay_unciv_annexation`
-- It triggers 1000x times as fast for Canaria having `triggerfasttamazight` flag (1 day)
+- It triggers 1000x times as fast for Bilad as-Siba having `triggerfasttamazight` flag (1 day)
 - Base time for all cases is halved from 1890 (~2 months)
 - It is halved again since 1900 (~1 month)
 
@@ -275,6 +279,23 @@ Finally, the candidate for annexation is presented with 2 options:
 
 - Accept annexation
 - Deny it
+
+`AI` will respond to both options with 50% chance at base.
+However, if it has less than 3 armies (3 stacks of min 2 regiments) it will always accept it.
+Otherwise, if target country has any of those (it stacks), it will likely deny:
+
+- At least 50% westernization progress
+- More than 2 states
+- It is Ethiopia
+- It is Bilad as-Siba having `triggerfasttamazight` flag
+
+If annexation was accepted, SoI owner gets an event: `Scramble for Africa.txt - 95506`
+
+It gives 2 options, where first makes a status quo, **reducing infamy by 1**. It also locks annexation of it that way, event if other GP adds it to its SoI. Second annex target country **for 2 infamy**.
+
+If the annexation was denied however, SoI owner gets event `Scramble for Africa.txt - 95507` instead.
+
+GP loses them from SoI, all other GPs also loses 100 influence over them. In the event itself GP can let them be for 25 prestige, `AI` will rarely do that. Otherwise, GP declares a war to annex them.
 
 ### Occupation of empty provinces
 
