@@ -24,7 +24,7 @@ France - French like country not specifying exact tag, like `BOR` or `FRA`
 Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`
 UK - United Kingdom
 USA - United States of America
-45k+ (and similar) - *at least 45 thousand pounds* (money)
+45k+ (and similar) - *at least 45 thousand pounds*
 
 ## Important topics
 
@@ -320,11 +320,12 @@ Africa is in 1830 dominated by *uncivilized* natives, many of them have a very h
 
 ## Algeria
 
-In 1830 it consists of a 4 countries and big swats of empty Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Tuggurt. Additionally, one of Constantine's provinces is in the Tunisia state.
+In 1830 it consists of a 4 countries and big swats of empty Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Touggourt. Additionally, one of Constantine's provinces is in the Tunisia state.
 Algeria is conquered by France through many wars and Sahara is taken by annexation of local rebellion + *The Saharan Frontier* decision.
+
 Tags there can be very misleading, here is a table explaining them:
 
-| Tag   | Base name | Real name             |
+| Tag   | Base name | In-game name          |
 | ----- | --------- | --------------------- |
 | `RGA` | Algiers   | Algiers               |
 | `LBY` | Libya     | Beylik of Constantine |
@@ -338,7 +339,7 @@ Tags there can be very misleading, here is a table explaining them:
 This is a very simple decision for great power France at peace if Algeria still owns Algiers.
 It requires to be at least **May of any year**, so you can miss it and have to wait to May 1831 to do it.
 
-Algeria releases and breaks alliances with Ait Abbas and Tuggurt and get a feedback event.
+Algeria releases and breaks alliances with Ait Abbas and Touggourt and get a feedback event.
 Finally, a war is declared upon them with *Punitive Expedition* CB (`treaty_port_casus_belli_no_infamy` exactly).
 
 After France wins, they can take one of two Algerian treaty ports, Oran and Algiers.
@@ -349,17 +350,17 @@ After France wins, they can take one of two Algerian treaty ports, Oran and Algi
 ### Breakup of Algeria
 
 `1830_GFM_FRA.txt - 16151852`
-If France have won this war before 1835, they get an event that splits Algeria. They yet again release their subjects, lose cores, Algeria itself is split into half with Aldjazair. A civil war breaks out, leaving only Touggourt neutral.
+If France have won this war before 1835, they get an event that splits Algeria. They yet again release their subjects, lose cores, Algiers itself is split into half with Algeria. A civil war breaks out, leaving only Touggourt neutral.
 
 > If Algeria wins, they will get research points and can be added into Ottoman SOI
-> Algeria do not lose core on Bathnah - probably a mistake, because it has a high (suggesting new new) id
+> Algeria do not lose core on Batnah - probably a mistake, because it has a high (suggesting new new) id
 
 ### War for Oran
 
 `1830_GFM_FRA.txt - oran_french_war`
 After wining the first war France can easily begin next. They just need to be at peace, hold Algiers and wait until **1831**.
 They will declare war on Algeria with *Punitive Expedition* CB if they still hold Oran. This decision even ignores truce between them.
-After taking this treaty port they also gain POPs there, this time from Lake Anthabasca.
+After taking this treaty port they also gain POPs there, this time from Lake Athabasca.
 
 > Truce breaking from decisions like that still leads to prestige loss and infamy gain
 
@@ -377,7 +378,7 @@ It works literally the same. France just declares a war on them if `ABA` own Bou
 ### Battle of Macta - conquest of Algeria
 
 `1830_GFM_FRA.txt - 17051919`
-It triggers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algeria and Aldjazair with *Establish Protectorate* CB, again ignoring potential truce.
+It triggers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algiers and Algeria with *Establish Protectorate* CB, again ignoring potential truce.
 
 > As player you can also chose to not declare these wars in that event, losing prestige
 
@@ -394,9 +395,9 @@ This easy decision gives France corresponding event that has 3 options, neither 
 
 `Algerian_War.txt - 37240`
 
-## Benin
+## Benin/Dahomey
 
-Dahomey - now called Benin is in 1830 a state belonging to 4 nations, 2 of them have a capital there - Dahomey and Borgu. They are separated by empty land. Benin is scripted to be colonized by France.
+Dahomey colony - modern day country of Benin - in 1830 a state belonging to 4 nations, 2 of them have a capital there - Dahomey and Borgu. They are separated by empty land. Benin is scripted to be colonized by France.
 
 ### Partition of Egba
 
@@ -523,7 +524,49 @@ Effect: You get 4 provinces in Dahomey state: Idaasha, Maho, Materi and Chauru t
 
 > Berlin Conference happens in the beginning of 1880's, meaning that it can be done **instantly after conquering Dahomey**.
 
-___
+## Ghana
+
+### Ghana in 1830
+
+Colony of Ghana consist of 2 states: Gold coast at the south and Lower Volta in the north. In 1830, the north is dominated by tiny natives, the center by Ashanti and the coast by 3 European colonies.
+Those belong to UK, The Netherlands & Denmark. North of them there is also another native tag, Fante that is in the UK's SoI and alliance. They also have a Union Jack as part of their flag.
+
+### The Anglo-Ashanti Treaty
+
+`1830_GFM_ENG.txt - anglo_ashanti_treaty` It is a decision available since **1831** to `ENG` at peace owning Cape Coast while Ashanti and Fante exists.
+It gives Ashanti a treaty event: `1830_GFM_ENG.txt - 16051835`. There, Ashanti can accept it, giving them Krobo (`AI` 100%) or deny, giving UK another event.
+Whatever happens, UK gets respond event. If Ashanti denied, they can declare a war to take it (`AI` 100%), or let it be.
+
+### Gold Coast Treaty
+
+`ENG.txt - gold_coast_treaty` is a decision allowing Gold Coast owner to take Sekondi through treaty with the Dutch or `BNF`. You also agree to lose 200 influence over Indonesian countries. **Potentially, it can give colonies like Ghana, Togo?, Senegal?, Benin and Ivory Coast** from Sekondi owner to Gold Coast province owner.
+
+Requirements:
+
+- Suez Canal is enabled
+- **You** own Cape Coast as a great power at peace and have 10k+
+- It is 1900 or Aceh (country in Sumatra) no longer exists
+- You are not `NET` or `BNF`
+- `NET` or `BNF`:
+  - Is at peace
+  - Own Sekondi and Batavia
+  - If you disabled `colonial_railroading`, then that decision is blocked if they expanded their colony there
+
+> This decision can be done by almost any country owning Cape Coast!
+> `AI` will never do this decision while having a truce or less than -50 relation with Sekondi owner.
+
+Finally, this decision takes your 10k and gives Sekondi owner an event: `ENGFlavor.txt - 36960`. There, receiver have 2 options.
+
+If the treaty is accepted, Sekondi is transferred and relation is improved by 100. Then, the response event happens to country that did the original decision.
+
+It gives 100 influence over seller (if it is not a GP), +50 relation, Sekondi and all provinces that seller may own in the following colonies: Ghana, Togo?, Senegal?, Benin and Ivory Coast.
+You also lose 200 influence and all alliances with Indonesian minors.
+
+If the treaty is rejected, then you will get a different event, giving your 10k back.
+You can decide to let it be, losing 10 prestige or **for 2 infamy**, get a temporary core on Sekondi and humiliate CB, allowing you to take Sekondi through war.
+You also lose 100 influence, alliance and relation with country that rejected the treaty. `AI` do not have any weights attached to this event.
+
+> `AI` will always accept the treaty if it is a subject of the proposer or in its SoI. Otherwise, relations, having alliance or `AI` being in other GP SoI have an impact on its decision there.
 
 ## Eritrea
 
