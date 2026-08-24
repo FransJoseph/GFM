@@ -104,9 +104,9 @@ If you are not a colonial nation, you are forced to have *Non-colonial Nation* r
 
 #### Detailed description
 
-**Settlement** - 
+**Settlement** -
 
-**Indirect rule** - 
+**Indirect rule** -
 
 **Civilizing mission** - It is the most *liberal* one of them all. It is blocked for countries with `islamic_law` and enabled only after `berlin_conference` or for `theocratic_government` countries.
 
@@ -246,7 +246,8 @@ Actions that gives that flag:
 
 After the Berlin Conference, most African natives can be annexed also through SoI. **It costs some infamy**, but can be the only way of annexation. Ethiopia is a good example of it.
 
-This process consists of an event chain:  
+This process consists of an event chain:
+
 1. Event must pop-up in a nation that is a candidate for annexation, where it can accept, or deny annexation
 2. Great power gets an event where it can decide to annex that country **for 2 infamy**, or not, **losing 1 infamy**. If African nation denied it, GP can declare a war on them with free CB, or let it be
 
@@ -304,6 +305,14 @@ They are colonized this way from early game even into the late game by multi-use
 They give you provinces deeper into the hinterlands if you own corresponding frontier provinces.
 Most of them can be still be taken through vanilla colonization, but provinces with less than 10 LR cannot be.
 
+#### Map
+
+On the map, I added a special folder dedicated to expansion like that. I painted frontier provinces in green. Provinces you can get are painted in yellow. Arrows shows an order in with they are given if you own a province in with said arrow begins. They can create a whole chain, with is taken all at once. If expansion requires some province/s to be already taken, it is shown in red. In some cases, there are more than one set of *frontier provinces*. In that case, they are colored in lime or arrows shows one of the sets.
+
+#### Sahara
+
+It is by far the largest area that can be colonized that way. It can be taken by multi use decision ``...
+
 #### Sahel
 
 In 1830 there are 3 empty provinces in the western Sahel, south of Sahara. All of them can be colonized by local countries, but they can find it difficult. They are:
@@ -312,11 +321,102 @@ In 1830 there are 3 empty provinces in the western Sahel, south of Sahara. All o
 - Koro
 - Kedugu
 
+#### Sagokope
+
+It is the only empty province in Ghana. It can be taken by an event: `Yakutat.txt - 18482535` by any nation that owns required provinces. You can see that on the map. It is most likely to be taken in the **early 1850's** by UK when they bought Accra from Denmark, since they take Krobo from Ashanti in the beginning of the game.
+
+#### Togo & neighboring lands
+
+Togo is a special case, where all provinces belonging to a colony is taken by once without any *frontier province*. It is described in its dedicated chapter.
+
+However, there is an additional event (`Yakutat.txt - 18482536`) allowing you to take all empty provinces between Ghana and Nigeria that is a typical *expansion* event. It requires to take 3 provinces around it. Since its only a only a set of provinces, local natives can also take them, for a much better looking map.
+
+> Tip: Since one of the requirements is true in 1830 - empty provinces in the Togo-Benin border you can easily do it after conquering Ashanti and Dahomey. The whole event is however blocked in the moment that Togo is colonized.
+
 #### Ethiopia & Somalia
+
+## Africa
 
 `uncivilizedFlavor.txt - conquest_of_the_south`
 
 Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented collapse in the **Scramble for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coastal colonies dotted all across the continent.
+
+## French Conquests in the Scrabble for Africa
+
+France have historically conquered huge swats of land in western Africa. For that big of a task, for both `AI` and French player, there is a `colonial_railroading` decision declaring war or annexing countries in SoI in the Western Africa with exception of Nigeria, Ashanti and Sierra Leone. There are also a set of decisions helping France with conquest of modern day Chad and Central Africa.
+
+`FlavourMod_Africa.txt - ai_french_west_africa`  
+Requirements:
+
+- Berlin Conference has happened
+- Great power have a capital in Paris and french as a primary culture (its an incarnation of France)
+- Country is not disarmed, own Aboisso and St Louis
+- Country is at peace with the following nations:
+  - Germany (`GER` or `GCF`)
+  - United Kingdom (`ENG`)
+  - Italy (`ITA`)
+  - Austria-Hungary (`KUK`)
+  - Russia (`RUS`)
+  - Japan (`JAP`)
+  - USA (`USA`)
+  - Belgium (`BEL`)
+  - Netherlands (`NET`)
+  - Spain (`SPA`)
+  - Ottoman Empire (`TUR`)
+
+Effects:
+
+- If Gobir is a subject of `AI` Sokoto, it is released
+- Uncivilized `AI` countries in the Western Africa (except ones in Nigeria, Ghana and Sierra Leone) that are not a part of **any** SoI gets an event in with France declares a war of conquest upon them (`AI` adds status quo CB, still allowing GP intervention)
+- If `ALD` meets those conditions (while being in another part of Africa by itself) war will also be declared upon them
+- The same set of countries (except `ALD`) but in the French SoI gets a different event in with they are directly annexed **for 0 infamy**!
+- If `AI` does this decision, they **lose 15 infamy**, and get some steam transports
+
+> Note: Using or prohibiting use of this decision can be very powerful, especially since annexation CB for Scramble can not be spammed  
+> Note: Declaring wars through decisions and events still gives penalties for truce breaking, good relations etc, be careful  
+> Note: Despite `ASH` being blocked in the code, they are still a target of war. Following that, countries like ... in the Western Sahara is also a target of war. Some countries in Nigeria can also be one.
+
+### Western Chad
+
+`FlavourMod_Africa.txt - french_bagirmi` is a `colonial_railroading`, `berlin_conference` decision available to an incarnation of France that is a great power while not disarmed and neighboring Chad or Kanem-Bornu owning its provinces.
+
+It annexes Chad or takes it from Kanem-Bornu if they own their provinces.
+
+### Conquest of Eastern Chad
+
+`FlavourMod_Africa.txt - france_wadai` is a `colonial_railroading`, `berlin_conference` decision available to an incarnation of France that is a great power while not disarmed. Eventually, instead of France this can be any other civilized country with a capital in Europe since 1907.
+
+It declares a war of conquest upon Wadai.
+
+### Rabih az-Zubayr Empire
+
+`Yakutat.txt - join_rabih_azzubayr` is a decision creating historical empire created by adventurer from Egypt. For simplicity is is just formed by a local nation.
+
+Requirements:
+
+- Its Rafai
+  - or Azande is a player if Rafai no longer exists
+- Have 50%+ westernization progress or is westernized
+  - `AI` can bay pass that from 1876
+- Owns Bangasu and Zemio or is `AI`
+
+Effects:
+
+- Goverment type is changed to `absolute_empire`, changing country name to *Rabih az-Zubayr* by doing so (`tag` `CAR` stays the same)
+- 10 prestige is given
+- Soldiers POPs size is tripled
+- 5 regiments are given
+- If the country is uncivilized (almost certain), a few reforms and techs are given
+- If the country was not Rafai (so Azande), tag is changed to `CAR`
+- 4 empty provinces are given (5th is their in 1830)
+- Cores are given
+
+**Northern Expansion**  
+`Yakutat.txt - rabih_azzubayr` is a decision available to Rabih az-Zubayr that simplifying, owns all non empty cores. It gives many cores in the region.
+
+### Conquest of Central Africa
+
+`FlavourMod_Africa.txt - france_rabih` is a decision with almost the same requirements as the previous French ones. It similarly declares a war of conquest, but this time upon Rabih az-Zubayr (or rather just `CAR`).
 
 ## Algeria
 
@@ -537,13 +637,63 @@ Those belong to UK, The Netherlands & Denmark. North of them there is also anoth
 It gives Ashanti a treaty event: `1830_GFM_ENG.txt - 16051835`. There, Ashanti can accept it, giving them Krobo (`AI` 100%) or deny, giving UK another event.
 Whatever happens, UK gets respond event. If Ashanti denied, they can declare a war to take it (`AI` 100%), or let it be.
 
+### The sell of Accra
+
+Denmark (or Denmark-Norway) sells Accra to Cape Coast owner in the early 1850's. **Potentially, it can give colonies like Ghana, Togo?, Senegal?, Benin and Ivory Coast** from Accra owner to Gold Coast province owner.
+
+`DEN.txt - selling_danish_ghana`  
+Requirements:
+
+- It is at least 1850
+- It has `State & Goverment` technology
+- Its Denmark or Denmark-Norway with Danish as primary culture
+- Owns Accra
+- It is not a great power
+- It is independent and at peace
+- It does not own any of Fante starting provinces or `colonial_railroading` is disabled
+- Cape Coast owner:
+  - Is civilized
+  - Ruing party is not reactionary, communist or fascist
+  - Have at least 0 relation with this country
+  - Is independent or a puppet of that country
+  - Have at least 35 001 funds
+
+Finally, Cape Coast owner gets an event in with they can deny it (AI 0%) or accept.
+If accepted, the following provinces will be transferred: Accra and all provinces that seller may own in the following colonies: Ghana, Togo?, Senegal?, Benin and Ivory Coast for 55k (seller always gets its money but `AI` do not pay anything). Seller also loses 200 influence and relations with Ashanti.
+
+### Bond of 1844
+
+This is a decision available from **1844** to `ENG`, making Fante their subject.
+
+`Yakutat.txt - bond_of_1844`  
+Requirements:
+
+- It is `ENG` at peace and not disarmed owning Cape Coast, Accra or Sekondi
+- Fante is an independent nation, have no truce with a country making this decision and at least -100 relation with them
+
+2 prestige is given and an event chain begins:
+
+`Yakutat.txt - 18490031` - Fante agrees or not on treaty, if they agree (`AI` 100%), `ENG` gets the next event:
+`18490031` - Where `ENG` can alter the treaty (`AI` 100%) or not. Fante gets another event for **0.5 infamy** (`AI` do not get it):
+`184900313` - Where Fante becomes their subject.
+
+Alternatively if player is involved, Fante can oppose the treaty, giving `ENG` event where they can let if be, **losing 0.5 infamy**, or subjecting them through war for **2 infamy**. Fante adds humiliate CB, making no use to intervention mechanic.
+
+### Sogakope
+
+Sogakope is the only empty province in Ghana. It can be taken in expansion like event, described in the expansion section.
+
+### Annexation of Fante
+
+It looks like Fante do not have a dedicated annexation script. So it is probably annexed through SoI chain event, since they are UK subject in their SoI - hard material to overcome.
+
 ### Gold Coast Treaty
 
-`ENG.txt - gold_coast_treaty` is a decision allowing Gold Coast owner to take Sekondi through treaty with the Dutch or `BNF`. You also agree to lose 200 influence over Indonesian countries. **Potentially, it can give colonies like Ghana, Togo?, Senegal?, Benin and Ivory Coast** from Sekondi owner to Gold Coast province owner.
+`ENG.txt - gold_coast_treaty` is a decision allowing Gold Coast owner (generally UK) to take Sekondi through treaty with the Dutch or `BNF`. You also agree to lose 200 influence over Indonesian countries. **Potentially, it can give colonies like Ghana, Togo?, Senegal?, Benin and Ivory Coast** from Sekondi owner to Gold Coast province owner.
 
 Requirements:
 
-- Suez Canal is enabled
+- **Suez Canal is enabled**
 - **You** own Cape Coast as a great power at peace and have 10k+
 - It is 1900 or Aceh (country in Sumatra) no longer exists
 - You are not `NET` or `BNF`
@@ -568,9 +718,31 @@ You also lose 100 influence, alliance and relation with country that rejected th
 
 > `AI` will always accept the treaty if it is a subject of the proposer or in its SoI. Otherwise, relations, having alliance or `AI` being in other GP SoI have an impact on its decision there.
 
-## Eritrea
+### Annexation of Ashanti
 
-___
+`FlavourMod_Africa.txt - fourth_ashanti_war`
+
+This is a big `colonial_railroading` decision for the final takeover of Ghana by `ENG`. Due to this, Ashanti is given the rest of non-westernized Ghana.
+
+Requirements:
+
+- It is a great power `ENG` owning Cape Coast or Accra or Sekondi while not disarmed and with `Colonial Negotiations`
+  - If player does it there are extra requirements: have 95+ ships, `Blue & Brown Water Schools` and own Krobo
+- It is at least 1875
+- Uncivilized Ashanti is `AI` controlled, at peace and neighbors `ENG`
+
+> `AI` can hold Cape Coast and wait until 1881 if it failed to take Krobo instead
+
+Effects:
+
+- All of future Ghana colony becomes a core of `GHN` (plus 2 Gyman provinces outside of Ghana)
+- Local natives gives their land in Lower Volta state to Ashanti
+- A safety check runs to secure both countries from truce breaking and similar infamy/prestige related penalties
+- Ashanti declares a humiliation CB war on UK that gets conquest CB on them (making intervention mechanic useless there)
+
+> Note: War will not be declared if there is a truce between UK and Ashanti
+
+## Eritrea
 
 ## Indian Ocean Territory
 
@@ -694,6 +866,8 @@ In short, if AI formed Germany (Prussia will always form it even without any oth
 
 If finally done, Togo is given and if civilized country owns any part of it, they will be asked to transfer it. AI will never contest, otherwise claimer will get a casus beli.
 
+> Tip: There is an expansion like event that gives all of Togo and surrounding empty provinces. It is described in its section in the expansion chapter. You will need to own a province in Ghana and 2 in Dahomey however. It can even be taken by natives.
+
 ## Liberia
 
 ### Independence and early colonization
@@ -719,14 +893,16 @@ France gains it and province name is changed. If some nation owned Aboisso earli
 
 `Colonial railroading` decision `FlavourModAfrica.txt - ivory_coast_conquest` can be made by almost any country - you can take that opportunity.
 
-It must be at least 1875, country needs to own Fort Nemours, have 2MLN+ POPs, be 16+ rank, have nationalism_n_imperialism tech, have 50k to spend,
-be independent, not disarmed, at peace and Sassandra and Subre needs to be empty.
-If you are not **FRA tag**, you need to wait until 1882. AI France can get this without spending 50k.
+It must be at least 1875, country needs to own Fort Nemours, have 2MLN+ POPs, be 16+ rank, have `Nationalism & Imperialism` and 50k to spend, be independent, not disarmed, at peace and Sassandra and Subre needs to be empty.
+If you are not `FRA`, you need to wait until 1882. `AI` France can get this without spending 50k.
 
 This decision gives in short every empty province in Windward Coast state plus Man province.
-Disclaimer: Liberia can take Tabu and Guiglo earlier and they will not be given.
-Names of 2 provinces are changed and war is declared against Wattara and Baule to annex them, but only if they are uncivilized AI outside of anyone SOI.
-For some reason BZD is also a target.
+
+> Disclaimer: Liberia can take Tabu and Guiglo earlier and they will not be given.
+
+Names of 2 provinces are changed and war is declared against Wattara and Baule to annex them, but only if they are uncivilized `AI` outside of anyone SoI.
+
+For some reason `BZD` is also a target.
 Defending countries gets a casus beli against France, making it impossible to intervene on their side as a great power.
 
 Search Plig in `events/Yakutat.txt`
@@ -945,8 +1121,6 @@ ___
 ## Mali
 
 `Yakutat.txt - massina_conquer_segu`
-
-___
 
 ## Madagascar
 
