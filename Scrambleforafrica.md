@@ -335,6 +335,17 @@ However, there is an additional event (`Yakutat.txt - 18482536`) allowing you to
 
 #### Ethiopia & Somalia
 
+### Tags recycling
+
+In GFM for ??? reasons some country tags are recycled. This can cause big confusions. Here is a list of them:
+
+|  Tag  | First name |      Second name      |        Third name        |
+| ----- | ---------- | --------------------- | ------------------------ |
+| `BZD` |  Bayazid   |       Kabadugu        |            -             |
+| `BTL` |   Bitlis   |        Badibu         |            -             |
+| `CAR` |   Rafai    |    Rabih az-Zubayr    | Central African Republic |
+| `EQG` |   Waalo    |         Benga         |    Equatorial Guinea     |
+
 ## Africa
 
 `uncivilizedFlavor.txt - conquest_of_the_south`
@@ -343,7 +354,7 @@ Africa is in 1830 dominated by *uncivilized* natives, many of them have a very h
 
 ## French Conquests in the Scrabble for Africa
 
-France have historically conquered huge swats of land in western Africa. For that big of a task, for both `AI` and French player, there is a `colonial_railroading` decision declaring war or annexing countries in SoI in the Western Africa with exception of Nigeria, Ashanti and Sierra Leone. There are also a set of decisions helping France with conquest of modern day Chad and Central Africa.
+France have historically conquered huge swats of land in western Africa. For that big of a task, for both `AI` and French player, there is a `colonial_railroading` decision declaring war or annexing countries in SoI in the Western Africa with exception of ones in Nigeria, Ashanti and Sierra Leone. There are also a set of decisions helping France with conquest of modern day Chad and Central Africa.
 
 `FlavourMod_Africa.txt - ai_french_west_africa`  
 Requirements:
@@ -915,22 +926,28 @@ Bundu starts with a war of conquest against Wolof, while being weaker country.
 
 ### The Occupation of Seju
 
-Yakutat.txt - sedhiou_conquest decision gives Seju province. It is not fixed to France.
+`Yakutat.txt - sedhiou_conquest` decision gives Seju province. It is not fixed to France.
 It is available to civilized country at peace, owning Dakar OR Kahone OR Ziguinchor while Sejuand and Bigona are empty.
 However, to actually do this decision, you need to own Dakar or Velingara. **It can be made since 1836 in months September-December**.
 
+### Trarza-Waalo relations
+
+`Yakutat.txt - trarza_waalo_relations` is a decision allowing them to create alliance in 1845.
+
 ### The plan of 1854
 
-Yakutat.txt - plan_of_1854 is a decision available to FRA or BOR tags owning St Louis, that do not own Babae or Xhouma.
+`Yakutat.txt - plan_of_1854` is a decision available to FRA or BOR tags owning St Louis, that do not own Babae or Xhouma.
 France also needs to be at peace and not disarmed. **It is available well, from 1854**.
 
-**It gives 4 infamy, but only to a player**, declares war with unique casus beli on any uncivilized country owning Babae, Xhouma, Mataam, Bakel, Kaedi, Bulibani or Xaayi.
+**It gives 4 infamy, but only to a player**, declares war with unique casus belli on any uncivilized country owning Babae, Xhouma, Mataam, Bakel, Kaedi, Bulibani or Xaayi.
 Enforcing this casus beli on a country annexes it, but only provinces specified in decision are taken.
 Defending nations gets a buff and a casus beli, making intervention as a great power impossible.
 
+> Note: Annexation of Waalo paves the way for its repperance in the Equatorial Guinea. It is primarly used as that country with `tag`: `EQG`.
+
 ### Maba Diakhou Ba's Jihads
 
-Yakutat.txt - 184825379
+`Yakutat.txt - 184825379`
 **Event in a short time window: March-December 1861**, that happens to animist owner of Kunghol.
 
 It spawns Badibu in Kunghol. NOTE: It is a modified tag from kurdish Ottoman subject. Ottomans annex them in 1848, leaving this tag free to use.
@@ -940,7 +957,7 @@ Due to this, war is declared on them.
 
 ### Claim the Kayor Coast
 
-This is a decision (Yakutat.txt - dakar_stlouis_railroad) is not restricted to France. You need to be a civilized country being at peace and not disarmed, owning St Louis and Dakar, while Kayor owns Mbul.
+This is a decision (`Yakutat.txt - dakar_stlouis_railroad`) is not restricted to France. You need to be a civilized country being at peace and not disarmed, owning St Louis and Dakar, while Kayor owns Mbul.
 **AI can take it from 1863, while player from 1855** while having nationalism_n_imperialism and medicine techs.
 
 It instantly gives you Mbul with 2 railroad lvs and declares war of conquest on Kayor for the **cost of 1 infamy**.
@@ -948,7 +965,7 @@ Since Kayor gets a casus beli, it is impossible to intervene.
 
 ### Appointment of Louis Briere - conquest
 
-FlavourModAfrica.txt - appoint_louis_briere **colonial railroading** decision is available to great power France **from 1865**. Kedugu and Sitakili must be owned by France or by uncivilized nation.
+`FlavourModAfrica.txt - appoint_louis_briere` **colonial railroading** decision is available to great power France **from 1865**. Kedugu and Sitakili must be owned by France or by uncivilized nation.
 France must have 2MLN+ POPs, cannot be disarmed, be a colonial nation, have nationalism_n_imperialism and raider_group_doctrine techs, 3+ ports, and less than 5 war e.
 Player also needs 45+ ships on top of that.
 
@@ -959,7 +976,7 @@ Note: AI will accept it even while having over 22 infamy, going over limit due t
 
 ### Big invasion
 
-FRAFlavor.txt - 37241 event. It can happen **from 1870** to a great power France at peace owning Dakar, Mbul and St Louis.
+`FRAFlavor.txt - 37241 event`. It can happen **from 1870** to a great power France at peace owning Dakar, Mbul and St Louis.
 Jaxaaw, Kahone and Kunghol owner/s must be uncivilized, AI, or France, so if european AI got it it can still trigger.
 
 It has 2 options, but only first is interesting.
@@ -974,7 +991,7 @@ Note: Appointment of new Senegal Governor is not necessary for it, despite being
 
 ### The Occupation of Bignona
 
-Yakutat.txt - fogni_conquest decision is not limited to France. It gives Bignona.
+`Yakutat.txt - fogni_conquest` decision is not limited to France. It gives Bignona.
 You need to be civilized, own Seju or Soma province, Bignona must be empty, additionally, you need to own Dakar or Velingara and Seju cannot be empty.
 Finally, you need to **own Velingara while having colonial_negotiations invention or just wait until 1883**.
 
@@ -1238,6 +1255,59 @@ A player can chose to play as the rebels.
 
 > There is a **disabled** event `SAFFlavor.txt - 1500000` connected to sale of Madagascar.
 
+## Equatorial Guinea
+
+### 1830
+
+In 1830, this state consist of UK leased from Spain Fernando Po island, Portuguesse Sao Tome e Principe and 2 empty provinces in the mainland Africa. Portuguesse colony is an etirely different one, despite being just a one province.
+
+### End of Fernando Po lease
+
+`SPA.txt - colonization_of_fernando_po` is a decision allowing Spain to end lease to the island.
+
+It is avaible to `SPA` or `SPC` at peace while `ENG` owns Fernando Po and do not have a truce with it.
+If you are a player, you need `Nationalism & Imperialism`, `AI` can also just wait untill **1855**.
+
+> There is a useles check preventing `EIC` from seing this decision
+
+It gives `ENG` an event: `Sitka.txt - 1239508` with 3 options:
+
+- Return the island (`AI` 0%)
+- Attempt to purchase it (`AI` 100%)
+- Ingore them (`AI` 0%)
+
+1. Transfers Fernando Po to Spain, and all english culture POPs from it to London
+2. Spanish `AI` will alwasys refuse, otherwise UK can keep the island for 60k. You will transfer Fernando Po just as you would take option 1. If UK will still refuse to handel the island, the same event as if you would took option 3 will trigger
+3. **For 1 infamy** you can keep the island, giving Spain a casus beli against you
+
+> If `AI` is in controll of both nations, Fernando Po is transfered peacefuly to Spain
+
+### Coastial provinces
+
+After taking Fernando Po, Spain or `SPC` can get coastial subject through `colonial_railroading` event `Yakutat.txt - 18482430` that triggers in **March of 1858**.
+
+> Note: This would create a subject Benga that hava a tag `EQG` - the same as Waalo (Senegal) that is annexed by France in 1854
+
+If a player took this decision, a subject Benga is created in Evinayong and Mitembie.
+If Waalo still exists, provinces are given directly.
+If `AI` took this decision, provinces are always given directly.
+
+### Inland colonization and border adjustments
+
+`SPA.txt - treaty_of_bata`
+
+If previous events went right, after Germany (or any other westernized nation) colonizes Cameroon (Kribi to be exact), this decision can be taken by Spain if they are at peace and have `Nationalism & Imperialism`.
+
+Effects:
+
+- Spain annexes Benga if they are their subject
+- Kribi owner gets an event `SPAFlavor.txt - 90141`
+- Gabon owner (if westernized) or European country that have Orungu in its SoI will get an event `Yakutat.txt - 18482429`
+
+1. If istead of Benga, Spain got their provinces directly, nothing happens
+2. If country agres, Aconibe is given to Spain and country that got this event **loses 1 infamy** and gets 75 relation with Spain (`AI` 70% - if between 2 AIs or countries have 50+ relation, its 100%). If no deal is achived, that country gets colonial CB on Spain for **2 infamy** (`AI` 30%, 60% if realtion is below -50, 0% if stated as above). Then, Spain gets the response event in with they can let it be for -5 prestige (`AI` 100%) or declare a war over it, with defender geting humiliate CB (`AI` 0%).
+3. Gabon owner (if westernized) or European country that have Orungu in its SoI will get Mitembie from Spain. There is no other option to pick.
+
 ## Bouvet Island
 
 It is one of few provinces with just 1 life rating. Due to this it cannot be colonized normally.
@@ -1331,13 +1401,13 @@ There is a second option in event that Oranje AI would never take, giving casus 
 Temporaraly anexation of Oranje by Transvaal
 
 If Transvaal exists and is at peace while Oranje is also at peace and have prov_gov_liberal goverment type and Oranje is in the same influence as Transvaal or in no one
-Then they can click a decision from 1844 onwards: decisions/Yakutat.txt id: unite_with_potchefstroom
+Then they can click a decision from 1844 onwards: `Yakutat.txt - unite_with_potchefstroom`
 
 This decision gives Transvaal maaaaany early techs, and anexes Oranje for Transvaal, while changing Transvaal goverment to prov_gov_conservative.
 This also sets global flag unite_with_potchefstroom, which will be important later.
 There are special cases if player plays one of this countries, making it player friendly, while overal effect is the same.
 
-decisions/Yakutat.txt id: warden_line
+`Yakutat.txt - warden_line`
 
 If UK controlls Cape Town while Oranje do not exists with global flag unite_with_potchefstroom
 They can click a decision when at peace from 1848 onwards
