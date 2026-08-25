@@ -147,7 +147,8 @@ They are CB's that represent European justification for annexing african natives
 They cannot be justified, but are enabled by default. *You just need to fulfill many requirements* to get them.
 First one is to take a state and second to annex nation if they have just one state left.
 Since the second one have a few extra requirements the first one - Demand State, will be explained first.
-Note: they are `named annex_africa` & `annex_africa_full` in the files.
+
+> Note: they are named `annex_africa` & `annex_africa_full` in the files.
 
 ##### Scramble for Africa - Demand State
 
@@ -159,9 +160,9 @@ What you need to enable it?
 - **You can't be `RUS` or `TUR`**
 - Be a westernized (civilized) nation
 - `Have Nationalism & Imperialism`
-- Be a colonial nation (have a colonial state but ones in America and Siberia does not count, you cannot be an African or Australia/New Zealand nation)
+- Be a colonial nation (explained in the other paragraph)
 - Ban slavery
-- You are not a nation that called the Congo conference (basically Belgium), since you get Congo for free, but nothing else.
+- You are not a nation that successfully called the Congo conference (basically Belgium)
 
 > Note: `punitive_effects` blocks you using it unless you are already at war with target nation
 > Note: `POR` `AI` cannot use it, unless you disabled `colonial_railroading`
@@ -194,6 +195,7 @@ These requirements can be bypassed if you are already at war with the target nat
 - If you do not neighbor target nation you will need to have 5+ ships
 - You need to have at least 1 army with 2+ brigades
 
+> It looks like this CB **can be used** by congo conference caller
 > It does not technically require to be a westernized nation but it would be impossible to get `Nationalism & Imperialism` otherwise
 > This casus belli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
 > Because Scramble for Africa - Annex cb is limited to how often you can use it, you can only annex one state countries every 120 days, while the first cb does not have that limitation - meaning you can even annex big countries quicker.
@@ -634,6 +636,111 @@ Requirements:
 Effect: You get 4 provinces in Dahomey state: Idaasha, Maho, Materi and Chauru that if they are empty or owned by an uncivilized nation.
 
 > Berlin Conference happens in the beginning of 1880's, meaning that it can be done **instantly after conquering Dahomey**.
+
+## Belgian Congo
+
+This colony has a complex scripts allowing it to be taken by Belgium (eventually other secondary like power) with approval from great powers in the Congo Conference. This is one of the most beneficial colonies, with wast supply of rubber and other resources and big population.
+
+### 1830 in future Belgian Congo
+
+Borders of this future colony are so wast and abstract that it shatters many native African countries. The coast belongs to two countries, then there are a few countries in the interior, but half of the colony consist of empty jungle provinces in the center. Colony also cuts in half two Central African countries in the north and Rwanda to the east.
+
+### The Congo Conference
+
+This conference can be called by `colonial_railroading` decision by Belgium (or `BNF`) or eventually other secondary like power to take over wast Congo colony while having limited colonial possibilities, thanks to approval by Great Powers, forbidding them from taking that colony. By doing so they can weaken colonial rivals, because no one will take it.
+
+> Note: For simplicity, in this chapter, the country that calls the Congo Conference will be called *Belgium*, since they do it in wast majority of campaigns, despite its formable and other minor European powers also having access to it.  
+> Note: Taking Congo that way forbids you from using *Scramble for Africa* CB, severely reducing your potential at gaining other colonies in Africa. It is also generally restricted to minor European countries.
+
+`BEL.txt - international_african_association`
+
+Requirements:
+
+- Berlin Conference has happened (early 1880's) and its at least 1870 (useless check?)
+- Country have a capital in Europe
+- Have a naval base
+- At least 6 cities (provinces?) and at least 2 states
+- Its independent monarchy at peace
+- It is not any of those countries: `TUR`, `RUS`, `SAR`, `SIC`
+- Have 1MLN+ POPs
+- Have 16+ rank or is `BEL` or `BNF`
+- Abolished slavery
+Then country have to fulfill at least one set of those requirements:
+- Set one (5 infamy):
+  - Have less than 5 infamy
+  - Do not have any subjects
+  - Do not have any colonial province
+  - Have `Blue and Brown Water Schools` technology
+- Set two (2.5 infamy)
+  - Less than 2.5 infamy
+  - Do not have any province in Africa (but other colonies **are allowed**)
+  - Have `Naval Logistics` technology
+  - It is at least 1885
+- Set three (0.25 infamy)
+  - Have less than 0.25 infamy
+  - Do not have any province in Africa (but other colonies **are NOT allowed**)
+  - Do not have any colonial province
+  - Have `Raider Group Doctrine` technology
+  - It is at least 1886
+- Set four (Belgium)
+  - It is `BEL` or `BNF`
+  - Have less than 12.5 infamy
+  - Do not have any province in Africa (but other colonies **are NOT allowed**)
+  - Do not have any colonial province
+  - Have `Raider Group Doctrine` technology
+  - It is at least 1884
+  - `colonial_railroading` is enabled
+
+> Note: One of the sets is identical as the other but has a smaller infamy tolerance. Due to this, it was skipped.  
+> Note: `colonial_railroading` is checked to even show this decision, so its placement in Belgium set requirements is useless.
+
+Effects:
+
+All Great Powers in Europe, excluding `TUR`, `RUS` and Belgium gets an event in with they can vote to agree or deny demands stated in the conference.
+
+`Congo.txt - 955182`
+
+There are 3 options:
+
+- Vote for Belgium
+- Vote against Belgium
+- Abstain from voting
+
+1. Gives 25 influence and 25 relation Belgium (`AI` base 75%, 2x if have Belgium in SoI or at 150+ relation, 1.1x if at 100+ relation, 5x if `BEL` or `BNF` called the conference, 0.7x if at -50 relation, 0.4x if at -100 relation)
+2. Gives -25 influence and -25 relation with Belgium (`AI` base 20%, 0.1x if have Belgium in SoI or at 150+ relation, 1.25x if at -50 relation, 1.5x if at -100 relation)
+3. Nothing happens (`AI` 5%)
+
+> Note: In this time period there should be around 4-6 countries allowed to vote.
+> If `BEL` or `BNF` called the conference and there are no big player involvements, they have little chances to lose this voting.
+
+When *votes are counted* another event happens in with Belgium claims Congo:
+
+`Congo.txt - 4778710`
+
+Event triggers if Belgium received at least 4 votes *for* or at lest 3 votes *for* while there is less than 3 votes *against*.
+
+It gives an event to Belgium to claim Congo if any westernized nation is owning Boma or Kinkoki or Lemba. There, they ask them to transfer Congo to them through another event.
+
+`Congo.txt - 4778711`
+
+Congo current colonizer gets 2 options there:
+
+- Sell Congo to Belgium
+- Stay at Congo against Belgium
+
+1. Congo is sold for 100k, (see map for actual provinces that are sold) you get 25 prestige and **lose 3 infamy** (`AI` 100%)
+2. **3 infamy** is given, 25 prestige taken, every European GP loses 250 relation with you and get cut down to size CB against you. In response you get the same CB against Belgium, and lose 400 influence and relation with it. (`AI` 0%)
+
+> This means that in order to vote conference to fail, you need to force at least 3 votes *against* and up to 3 *for*, or just less than 3 votes *for*. You can occupy European GPs to oblivion, making non-Europeans countries GPs - they cannot vote.
+
+If Congo went to Belgium (may there be an exploit?) with voting wining for Belgium, another event happens, where Congo is colonized by Belgium.
+
+`Congo.txt - 955183`
+
+Congo is colonized by Belgium and any country that voted for it, transfers their provinces to it. Other countries are given ultimatum to do it instead.
+Colony consists of a westernized subject with its master religion, Belgium gets `Indirect Rule` reform/colonial policy, despite potentially not owning any colony directly.
+
+WIP
 
 ## Ghana
 
@@ -1257,7 +1364,7 @@ A player can chose to play as the rebels.
 
 ## Equatorial Guinea
 
-### 1830
+### 1830 in future Equatorial Guinea
 
 In 1830, this state consist of UK leased from Spain Fernando Po island, Portuguesse Sao Tome e Principe and 2 empty provinces in the mainland Africa. Portuguesse colony is an etirely different one, despite being just a one province.
 
