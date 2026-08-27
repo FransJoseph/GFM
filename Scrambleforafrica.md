@@ -123,18 +123,20 @@ It sets a single very important global flag, `berlin_conference` that leads to m
 It can be triggered by a great power nation with a capital in Europe, either being a colonial nation, or owning land in Africa.
 Most importantly, they need 3 inventions:
 
-- Prophylaxis against malaria
-- Mission to civilize
-- Colonial negotiations
+- Prophylaxis against Malaria
+- Mission to Civilize
+- Colonial Negotiations
 
 The first one is the Medicine tech and is obtainable from the game start (1830).
 The second is in State & Government, available from 1840, but obtainable only after researching 1850' techs.
 Last one is the most important, since it is a time bottleneck for the entire event.
-It is in the Breech-loaded Rifles (1850 tech), but obtainable after researching 1880' techs.
-If you are prepared, you will get it it within few months after getting first 1880' tech.
+It is in the Breech-loaded Rifles (1850 tech), but obtainable after researching 1870' techs.
+If you are prepared, you will get it it within few months after getting first 1870' tech.
 
 Finally, it has a `MTTH` of 6 months, shorter if your capital is Berlin, increasing chance to be truly Berlin conference.
 Otherwise, it is named after capital of nation that got this event. It also gives 25 base prestige.
+
+> Note: The Conference have historically happened in 1884 - many years later than will happen in any campaign.
 
 ### Colonial related casus belli
 
@@ -639,7 +641,7 @@ Effect: You get 4 provinces in Dahomey state: Idaasha, Maho, Materi and Chauru t
 
 ## Belgian Congo
 
-This colony has a complex scripts allowing it to be taken by Belgium (eventually other secondary like power) with approval from great powers in the Congo Conference. This is one of the most beneficial colonies, with wast supply of rubber and other resources and big population.
+Congo (the bigger - Belgian one) colony has a complex scripts allowing it to be taken by Belgium (eventually other secondary like power) with approval from great powers in the Congo Conference. This is one of the most beneficial colonies, with wast supply of rubber and other resources and big population.
 
 ### 1830 in future Belgian Congo
 
@@ -656,7 +658,7 @@ This conference can be called by `colonial_railroading` decision by Belgium (or 
 
 Requirements:
 
-- Berlin Conference has happened (early 1880's) and its at least 1870 (useless check?)
+- Berlin Conference has happened (early 1870's) and its at least 1870 (useless check?)
 - Country have a capital in Europe
 - Have a naval base
 - At least 6 cities (provinces?) and at least 2 states
@@ -666,28 +668,28 @@ Requirements:
 - Have 16+ rank or is `BEL` or `BNF`
 - Abolished slavery
 Then country have to fulfill at least one set of those requirements:
-- Set one (5 infamy):
-  - Have less than 5 infamy
+- Set one (10 infamy):
+  - Have less than 10 infamy
   - Do not have any subjects
   - Do not have any colonial province
-  - Have `Blue and Brown Water Schools` technology
+  - Have `Blue and Brown Water Schools` (1875) technology
 - Set two (2.5 infamy)
   - Less than 2.5 infamy
   - Do not have any province in Africa (but other colonies **are allowed**)
-  - Have `Naval Logistics` technology
+  - Have `Naval Logistics` (1870) technology
   - It is at least 1885
 - Set three (0.25 infamy)
   - Have less than 0.25 infamy
   - Do not have any province in Africa (but other colonies **are NOT allowed**)
   - Do not have any colonial province
-  - Have `Raider Group Doctrine` technology
+  - Have `Raider Group Doctrine` (1855) technology
   - It is at least 1886
 - Set four (Belgium)
   - It is `BEL` or `BNF`
   - Have less than 12.5 infamy
   - Do not have any province in Africa (but other colonies **are NOT allowed**)
   - Do not have any colonial province
-  - Have `Raider Group Doctrine` technology
+  - Have `Raider Group Doctrine` (1855) technology
   - It is at least 1884
   - `colonial_railroading` is enabled
 
@@ -712,14 +714,15 @@ There are 3 options:
 
 > Note: In this time period there should be around 4-6 countries allowed to vote.
 > If `BEL` or `BNF` called the conference and there are no big player involvements, they have little chances to lose this voting.
+> Since Belgium have big favours if they called the Conference, the worst chances they can get look like this: 1: ~71% 2: ~25% 3: ~3%
 
 When *votes are counted* another event happens in with Belgium claims Congo:
 
 `Congo.txt - 4778710`
 
-Event triggers if Belgium received at least 4 votes *for* or at lest 3 votes *for* while there is less than 3 votes *against*.
+Event triggers if Belgium received at least 4 votes *for* or at lest 3 votes *for* while there are less than 3 votes *against*.
 
-It gives an event to Belgium to claim Congo if any westernized nation is owning Boma or Kinkoki or Lemba. There, they ask them to transfer Congo to them through another event.
+This gives event to Belgium to claim Congo if any westernized nation is owning Boma or Kinkoki or Lemba. There, they ask them to transfer Congo to them through another event.
 
 `Congo.txt - 4778711`
 
@@ -729,11 +732,12 @@ Congo current colonizer gets 2 options there:
 - Stay at Congo against Belgium
 
 1. Congo is sold for 100k, (see map for actual provinces that are sold) you get 25 prestige and **lose 3 infamy** (`AI` 100%)
-2. **3 infamy** is given, 25 prestige taken, every European GP loses 250 relation with you and get cut down to size CB against you. In response you get the same CB against Belgium, and lose 400 influence and relation with it. (`AI` 0%)
+2. **3 infamy** is given, 25 prestige taken, every European GP lose 250 relation with you and get cut down to size CB against you. In response you get the same CB against Belgium, and lose 400 influence and relations with it. (`AI` 0%)
 
-> This means that in order to vote conference to fail, you need to force at least 3 votes *against* and up to 3 *for*, or just less than 3 votes *for*. You can occupy European GPs to oblivion, making non-Europeans countries GPs - they cannot vote.
+> This means that in order to vote conference to fail, you need to force at least 3 votes *against* and up to 3 *for*, or just less than 3 votes *for*. You can occupy European GPs to oblivion, making non-Europeans countries GPs since only European GPs can vote.
+> Congo is transferred in the next event, this just asks its owner
 
-If Congo went to Belgium (may there be an exploit?) with voting wining for Belgium, another event happens, where Congo is colonized by Belgium.
+If Belgium took Congo (may there be an exploit?) and if votes are still for it (this is double checking?), another event happens, where Congo is colonized by Belgium.
 
 `Congo.txt - 955183`
 
