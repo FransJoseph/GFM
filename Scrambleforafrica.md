@@ -77,42 +77,68 @@ ___
 
 ### Colonial nation status
 
-Every country can be categorized by its colonial status. There are however a few quirks there. That status is important since being one allows to make many colonial actions, but also increases supply consumption.
+This is one of the triggered modifiers. When you fulfill its requirements, you will get it in the next month tick and lose it if you no longer meet them. This status allows to make many colonial actions, but also increases supply consumption.
 
-First, all uncivilized nations are non-colonial since they can not have colonial states. Second, you can actually have many of those and never be a colonial nation. To actually became one, you need to met a set of requirements:
+First, all uncivilized nations are non-colonial ones since they can not have colonial states. Second, you can actually have many of those and never be a colonial nation. To actually became one, you need to met this set of requirements:
 
-- You **can not** have a capital in modern day Australia, New Zealand, Morocco, Algeria, Libya, Egypt or Sudan
-- A colonial state in any of those regions: Africa, Australia, New Zealand, Oceania, or some part of Asia, more specific:
+- You **can not** have a capital in modern day: Australia, New Zealand, Morocco, Algeria, Libya, Egypt or Sudan
+- You need a colonial state in any of those lands: Africa, Australia, New Zealand, Oceania, or some part of Asia, more specific:
   - Indochina, Siam, Burma (including Andaman Islands), Yunnan state, Philippines or Indonesia and its surroundings
 
-Most importantly, American colonies like in the Caribbeans (Sweden case), in India or in the Middle East do not make you a colonial nation.
+Most importantly, colonies in Americas (Sweden case), India or in the Middle East do not make you a colonial nation.
 
-> NOTE: You can be a colonial nation for example as Zulu (probably a mistake) since continent *Africa* is actually just North Africa, the rest is West Africa, East Africa, etc.
+> NOTE: You can be a colonial nation for example as Zulu (probably a mistake) since continent *Africa* is actually just North Africa, the rest of it is West Africa, East Africa, etc.
 
 ___
 
 ### Colonial policies/reforms
 
-Those reforms works rather like policies and are called like that in the game interface. There are 4 of them:
+Those reforms works rather like policies and are called accordingly in the game interface. There are 4 of them:
 
 - Settlement
 - Indirect rule
 - Civilizing mission
 - Non-colonial Nation
 
-If you are not a colonial nation, you are forced to have *Non-colonial Nation* reform. Note that uncivilized nations do not have it, since they have westernization reforms instead. If you became a colonial nation, you are forced to have 1 of 3 remaining instead. You will also get an event allowing you to take any of those for free. They work otherwise as a normal political reforms, allowing you to take one step at a time into lower tiers, or rollback them into higher tiers.
+If you are not a colonial nation, you will have *Non-colonial Nation* reform. Note that uncivilized nations do not have it, since they have westernization reforms instead. If you became a colonial nation, you are forced to have 1 of 3 remaining instead. You will also get an event (`FlavourMod_EuropeOther.txt - 99801`) allowing you to take any of those for free. They work otherwise as a normal political reforms, allowing you to take one step at a time into lower tiers, or rollback them into higher tiers.
+
+> Note: Reforms do not change if you no longer meet their requirements, they are only checked if you want to introduce them. This allows countries like USA or Mexico to have *Settlement* while not being a colonial nation.
+> Note: *Non-colonial* is described booth on wiki and in the files as `core_pop_`(effect)`_modifier`. After tests it probably means POPs living in the full states rather than cores, in line with game interface.
+> Note: All promotion modifiers are scaled by 0.25. So if bonus is 25% (0.2% in tooltip), it is 6.25% in reality
+> Note: Same is true for colonial migration, but it is scaled by 0.15 instead
+> Note: Same again with religious conversations, they are scaled by 0.1
 
 #### Detailed description
 
-**Settlement** -
+**Settlement** - The most *conservative* of them all. It is a policy best suited for integration of colonies. It is also the most expensive. Big North American countries begins with it, even though they do not meet `colonial_nation` requirement. It gives 5% SC, takes 3% tax efficiency, increases required bureaucrats, gives +0.05 militancy and consciousness to all non-accepted POPs. On the positives you get 7.5% assimilation rate, 1.5% immigrant attraction and -0.01 militancy and consciousness in non-colonial provinces.
 
-**Indirect rule** -
+In terms of sneaker modifiers, it increases accepted POPs promotion in colonial states by 25% and increases colonial migration of POPs with 3+ consciousness by 15%. Next, it increases chance that promoting POP will become a bureaucrat if province has 25+ LR within a state with 135k+ POPs, but decreases it extra than normal if below 55k.
+In a similar way any russian primary culture country can get 12% chance if a province has 50k+ POPs and is a colony without `RUS` or `CRI` core. Even stronger bonus is added after 1865 for the same provinces but with 125k+ POPs.
 
-**Civilizing mission** - It is the most *liberal* one of them all. It is blocked for countries with `islamic_law` and enabled only after `berlin_conference` or for `theocratic_government` countries.
+**It also speeds up events giving cores on assimilated provinces**.
 
-Like all of them it increases the need for bureaucrats in the same scale. The greatest bonus here is education efficiency +10% and +10% assimilation rate. Additionally it gives 5% culture research and 0.1
+It is required for these decisions:
 
-**Non-colonial Nation** - Despite being a place holder for the other nations, it can be beneficial. That is because it gives -5% SC and gives +5% research on military techs, in exchange for -5% on naval techs, with is nothing to complain about. Additionally, since being a colonial nation gives extra 10% SC, this is instant jump of +15% when you become a colonial nation.
+- `FlavourMod_Africa.txt - integrating_french_algeria`
+- `FlavourMod_JAP - establish_karafuto_prefecture`
+
+___
+
+**Indirect rule** - It is the simplest of them, *the middle ground* that is not dedicated for anything. Many European Countries begins with it. It is named `exploitation` in the files. It provides 3% tax efficiency, 5% navy tech research, 25% suppression points gain and 0.1 monthly prestige (sums to 127.2 through the entire campaign). In terms of costs, it is again increased need for bureaucrats and 5% SC.
+
+It does not have any sneak modifiers, neither is required for decisions or events.
+
+___
+
+**Civilizing mission** - It is the most *liberal* of them all. It is best suited for assimilation and education of **all** POPs. It is blocked for countries with `islamic_law` and enabled only after `berlin_conference` or for `theocratic_government` countries. However, Portugal and Spain begins the game with it.
+
+It gives +10% education efficiency, +10% assimilation rate, 5% culture research and 0.1 monthly prestige (sums to 127.2 through the entire campaign). This one also increases the need for bureaucrats.
+
+In terms of sneaky effects, it increases religious conversation chance by 25% in colonial states. It is not needed for any decisions or events.
+
+___
+
+**Non-colonial Nation** - Despite being a place holder for the other nations, it can be beneficial, giving -5% SC and +5% research on military techs, in exchange for -5% on naval techs, with is nothing to complain about. Additionally, since being a colonial nation gives extra 10% SC, this is instant jump of +15% or 20% when you become a colonial nation.
 
 ### Berlin Conference
 
@@ -339,9 +365,9 @@ However, there is an additional event (`Yakutat.txt - 18482536`) allowing you to
 
 #### Ethiopia & Somalia
 
-### Tags recycling
+### Tags re-usage
 
-In GFM for ??? reasons some country tags are recycled. This can cause big confusions. Here is a list of them:
+In GFM for *reasons* there are country tags are recycled. Some are used to determine borders of future European colonies in Africa, some for temporary countries, some for booth. This can cause big confusions. Here is a list of them:
 
 |  Tag  | First name |      Second name      |        Third name        |
 | ----- | ---------- | --------------------- | ------------------------ |
@@ -645,14 +671,15 @@ Congo (the bigger - Belgian one) colony has a complex scripts allowing it to be 
 
 ### 1830 in future Belgian Congo
 
-Borders of this future colony are so wast and abstract that it shatters many native African countries. The coast belongs to two countries, then there are a few countries in the interior, but half of the colony consist of empty jungle provinces in the center. Colony also cuts in half two Central African countries in the north and Rwanda to the east.
+Borders of this future colony are so wast and abstract that it shatters the region. Its west and south belongs to African natives, but half of the colony consist of empty jungle provinces in the center. Colony also cuts in half two Central African countries in the north and Rwanda to the east and finally, there is also Kipula to the south east.
 
 ### The Congo Conference
 
-This conference can be called by `colonial_railroading` decision by Belgium (or `BNF`) or eventually other secondary like power to take over wast Congo colony while having limited colonial possibilities, thanks to approval by Great Powers, forbidding them from taking that colony. By doing so they can weaken colonial rivals, because no one will take it.
+> WARMING: Taking Congo that way forbids you from using *Scramble for Africa* CB, severely reducing your potential at gaining other colonies in Africa!
 
-> Note: For simplicity, in this chapter, the country that calls the Congo Conference will be called *Belgium*, since they do it in wast majority of campaigns, despite its formable and other minor European powers also having access to it.  
-> Note: Taking Congo that way forbids you from using *Scramble for Africa* CB, severely reducing your potential at gaining other colonies in Africa. It is also generally restricted to minor European countries.
+This conference can be called by taking `colonial_railroading` decision by Belgium (or `BNF`) or eventually other secondary like power to take over wast Congo colony while having limited colonial possibilities, thanks to approval by Great Powers, forbidding them from taking that colony. By doing so a compromise of some sort as historically is signed to not rival in the Congo. If you want to take Congo otherwise, (against the conference) you will severely anger other colonizers.
+
+> Note: For simplicity in this chapter, the country that calls the Congo Conference will be called *Belgium*, since they do it in wast majority of campaigns, despite its formable and other European countries also having access to it.  
 
 `BEL.txt - international_african_association`
 
