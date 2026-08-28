@@ -112,7 +112,7 @@ If you are not a colonial nation, you will have *Non-colonial Nation* reform. No
 
 **Settlement** - The most *conservative* of them all. It is a policy best suited for integration of colonies. It is also the most expensive. Big North American countries begins with it, even though they do not meet `colonial_nation` requirement. It gives 5% SC, takes 3% tax efficiency, increases required bureaucrats, gives +0.05 militancy and consciousness to all non-accepted POPs. On the positives you get 7.5% assimilation rate, 1.5% immigrant attraction and -0.01 militancy and consciousness in non-colonial provinces.
 
-In terms of sneaker modifiers, it increases accepted POPs promotion in colonial states by 25% and increases colonial migration of POPs with 3+ consciousness by 15%. Next, it increases chance that promoting POP will become a bureaucrat if province has 25+ LR within a state with 135k+ POPs, but decreases it extra than normal if below 55k.
+In terms of sneaky modifiers, it increases accepted POPs promotion in colonial states by 25% and increases colonial migration of POPs with 3+ consciousness by 15%. Next, it increases chance that promoting POP will become a bureaucrat if province has 25+ LR within a state with 135k+ POPs, but decreases it extra than normal if below 55k.
 In a similar way any russian primary culture country can get 12% chance if a province has 50k+ POPs and is a colony without `RUS` or `CRI` core. Even stronger bonus is added after 1865 for the same provinces but with 125k+ POPs.
 
 **It also speeds up events giving cores on assimilated provinces**.
@@ -761,17 +761,43 @@ Congo current colonizer gets 2 options there:
 1. Congo is sold for 100k, (see map for actual provinces that are sold) you get 25 prestige and **lose 3 infamy** (`AI` 100%)
 2. **3 infamy** is given, 25 prestige taken, every European GP lose 250 relation with you and get cut down to size CB against you. In response you get the same CB against Belgium, and lose 400 influence and relations with it. (`AI` 0%)
 
-> This means that in order to vote conference to fail, you need to force at least 3 votes *against* and up to 3 *for*, or just less than 3 votes *for*. You can occupy European GPs to oblivion, making non-Europeans countries GPs since only European GPs can vote.
+> This means that in order to vote conference to fail, you need to force at least 3 votes *against* and up to 3 *for*, or just less than 3 votes *for*. You can occupy European GPs to oblivion, depriving them from that status and a right to vote there with it.
 > Congo is transferred in the next event, this just asks its owner
 
-If Belgium took Congo (may there be an exploit?) and if votes are still for it (this is double checking?), another event happens, where Congo is colonized by Belgium.
+### Colonization of Congo
+
+If Belgium took Congo and if votes are still for Belgium (this is double checking?), another event happens, where Congo is colonized by Belgium.
 
 `Congo.txt - 955183`
 
-Congo is colonized by Belgium and any country that voted for it, transfers their provinces to it. Other countries are given ultimatum to do it instead.
-Colony consists of a westernized subject with its master religion, Belgium gets `Indirect Rule` reform/colonial policy, despite potentially not owning any colony directly.
+Congo is colonized by Belgium and any country that voted for it, transfers their provinces to it. Other countries are given ultimatum to do it instead. `AI` African Natives and in most cases even `AI` GPs will accept ultimatum, awarding them money, prestige, relations and small infamy loss.
+The event itself is very complex, but it just ensures to do everything right while transferring that many provinces in various states to whoever should have them all possible cases.
 
-WIP
+Finally, ready colony consists of a `post_colonial_country` subject owning all of modern day Democratic Republic of Congo (with cores), following its master religion. Belgium also gets `Indirect Rule` reform/colonial policy.
+
+If some country (presumably Egypt) expanded southwards (and agreed to ultimatum), colony will have 2 extra provinces Wadelai (Uganda) and Lado (Sudan). Congo will also have cores there regardless if they got them.
+
+> Because of `post_colonial_country` flag, Scramble for Africa CB is useless against Congo.
+
+### Congo destiny
+
+`Congo.txt - 955186`
+
+If Congo was colonized as it should, from 1891 an event can trigger to Congo master. Its `MTTH` is over 100 years if Congo does not own all of its cores, but otherwise it will happen within 2 months.
+
+There its master can decide its destiny, or play as it in two different ways. The options are:
+
+- Historical Exploitation by King Leopold
+- Colony annexation against the Congo Conference postulates
+- Run it as a philanthropic endeavor (statement at the Conference)
+- Play as Congo with your current primary culture
+- Play as Congo with its primary culture
+
+1. Congo capital will get fort lvl 1 unless it is already there and all other provinces will get Congo Exploitation for 7 years, giving 20% mining/farming efficiency, +100% RGO size and -100% immigration push. On the downsides, there is consciousness and militancy increasing modifier and most importantly, a big POP growth decrease of -0.1%. It will be literary murdering affected population (`AI` 90%)
+2. If Congo is not a player, it is annexed for **5 infamy**. Otherwise it is released with its former overlord getting make puppet CB. GP's other than Belgium SoI owner will get Place in the Sun and Cut down to size CB against it. All Congo cores will also get nationalism agitation and the massacre (decreasing POP growth) effects for a 3 and 6 years respectively (`AI` 8%)
+3. It **decreases 1 infamy**, gives Congo country modifier: philanthropic work for 3 years, giving education efficiency, and consciousness modifier and introducing elections (`AI` 2%)
+4. Release and play as Congo with your previous primary culture, get a capital fort, booth exploitation and philanthropic work, purge half of non accepted POPs and introduce voting (`AI 0%`)
+5. The same effect, but your Congo will be not of your previous primary culture. Due to this, purge will target other POPs (`AI` 0%)
 
 ## Ghana
 
