@@ -270,7 +270,7 @@ Actions that gives that flag:
 
 `colonial_reconquest_cb`
 
-`claim_holy_land`
+`claim_holy_land` - not used, almost sure
 
 ### Annexation through Sphere of Influence
 
@@ -785,7 +785,7 @@ If some country (presumably Egypt) expanded southwards (and agreed to ultimatum)
 
 If Congo was colonized as it should, from 1891 an event can trigger to Congo master. Its `MTTH` is over 100 years if Congo does not own all of its cores, but otherwise it will happen within 2 months.
 
-There its master can decide its destiny, or play as it in two different ways. The options are:
+There its master can decide its destiny, with will lead to next events. Here you can also play as Congo in two different ways. The options are:
 
 - Historical Exploitation by King Leopold
 - Colony annexation against the Congo Conference postulates
@@ -798,6 +798,21 @@ There its master can decide its destiny, or play as it in two different ways. Th
 3. It **decreases 1 infamy**, gives Congo country modifier: philanthropic work for 3 years, giving education efficiency, and consciousness modifier and introducing elections (`AI` 2%)
 4. Release and play as Congo with your previous primary culture, get a capital fort, booth exploitation and philanthropic work, purge half of non accepted POPs and introduce voting (`AI 0%`)
 5. The same effect, but your Congo will be not of your previous primary culture. Due to this, purge will target other POPs (`AI` 0%)
+
+#### Later developments
+
+If you took the historical Leopold Exploitation, you will get a repeatable event `Congo.txt - 955187` that have `MTTH` of just 2 months, but it locks itself for 3 years after firing. This means that it will repeat in ~2 months after 3 years have passed. The effect blocking it gives **0.15 infamy every month with sums to 5.4 infamy per event**. Even if you will be at peace all the time, yor infamy will still increase.
+
+Event always has 3 options, those are:
+
+- Full exploitation
+- Minor exploitation
+- Philanthropic work (with atrocities)
+
+1. Gives 20k, (repeated gives 40k, 80k and last 120k), the same Congo exploitation again for 4 years, purges half of other than primary culture POPs in the capital (minus officers & landowners), giving those excluded in purge big money and capital received 100% RGO size for 3 years
+2. 
+
+### Congo annexation
 
 ## Ghana
 
