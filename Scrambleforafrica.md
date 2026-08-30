@@ -785,7 +785,7 @@ If some country (presumably Egypt) expanded southwards (and agreed to ultimatum)
 
 If Congo was colonized as it should, from 1891 an event can trigger to Congo master. Its `MTTH` is over 100 years if Congo does not own all of its cores, but otherwise it will happen within 2 months.
 
-There its master can decide its destiny, with will lead to next events. Here you can also play as Congo in two different ways. The options are:
+There its master can decide colony destiny. Historical route will lead to next events, allowing its annexation through various ways, or alternative route forcing a status quo. Here you can also play as Congo in two different ways. The options are:
 
 - Historical Exploitation by King Leopold
 - Colony annexation against the Congo Conference postulates
@@ -799,9 +799,9 @@ There its master can decide its destiny, with will lead to next events. Here you
 4. Release and play as Congo with your previous primary culture, get a capital fort, booth exploitation and philanthropic work, purge half of non accepted POPs and introduce voting (`AI 0%`)
 5. The same effect, but your Congo will be not of your previous primary culture. Due to this, purge will target other POPs (`AI` 0%)
 
-#### Later developments
+#### Later developments with historical route
 
-If you took the historical Leopold Exploitation, you will get a repeatable event `Congo.txt - 955187` that have `MTTH` of just 2 months, but it locks itself for 3 years after firing. This means that it will repeat in ~2 months after 3 years have passed. The effect blocking it gives **0.15 infamy every month with sums to 5.4 infamy per event**. Even if you will be at peace all the time, yor infamy will still increase.
+If you took the historical Leopold Exploitation, you will get a repeatable event `Congo.txt - 955187` that have `MTTH` of just 2 months, but it locks itself by using effect for 3 years after firing. This means that it will repeat in ~2 months after 3 years have passed. The effect blocking it gives **0.15 infamy every month with sums to 5.4 infamy per event**. Even if you will be at peace all the time, yor infamy will still increase.
 
 Event always has 3 options, those are:
 
@@ -809,10 +809,37 @@ Event always has 3 options, those are:
 - Minor exploitation
 - Philanthropic work (with atrocities)
 
-1. Gives 20k, (repeated gives 40k, 80k and last 120k), the same Congo exploitation again for 4 years, purges half of other than primary culture POPs in the capital (minus officers & landowners), giving those excluded in purge big money and capital received 100% RGO size for 3 years
-2. 
+1. Gives 20k, (repeated gives 40k, 80k and last 120k), the same Congo exploitation again for 4 years, purges half of other than primary culture POPs in the capital (minus officers & landowners), giving those excluded in purge big money and capital receives 100% RGO size for 3 years. Finally, there is a hidden variable that limits how many times you can get this event after using these responses. It has RNG, limiting firing of this event to 3-7 total, with 3-4 being most common. (`AI` 45%)
+2. Similar to first option. First firing **takes** 10k, next 20k, 40k and last 80k. **Same infamy giving modifier is given**. POPs are still purged, but 30% rather than 50%, provinces are still exploited. RNG allows you to take this decision 3-7 times, with like 4-5 firings being common. (`AI` 50%, 0% if lacking money)
+3. Also gives exploitation and purge, but with 20% of the POPs, but does not give infamy giving modifier, giving Congo philanthropic work effect for 3 years instead (event still locks itself but through philanthropic work). Accepted POPs in Congo gain 3 militancy. RNG allows the same firing amount as previous option. (`AI` 5%)
 
-### Congo annexation
+##### Annexation and additional way to free the Congo
+
+This can be done in various ways, but **only if you took historical exploitation**
+
+Event `Congo.txt - 955188` is the historical way (the worst one). It triggers if you exploited Congo enough times through previous repeatable event. It has 2 options:
+
+- Apologize for nothing
+- Accept full responsibility
+
+1. For **10 infamy** Congo is annexed and your POPs get militancy and consciousness. (`AI` 50%, 0% if at 12.5+ infamy)
+2. For **5 infamy and 20% of all prestige**, your POPs militancy and consciousness, Congo is annexed. (`AI` 50%, 100% if at 12.5+ infamy)
+
+There is however alternative, much better way to annex Congo through `Congo.txt - 955189` event, but it requires luck and some strategy. You need to get previous event at least 8 times, while never fully exploiting neither *do philanthropic in Congo* too much. You can improve your chances by taking 2nd option 2 times and 3rd option 4 times, since your atrocities will come to the public if you took the 1st and 2nd option, with 2nd giving less progress towards that. You cannot however take 3rd option all of the time, since that will always block this event even with best of luck with RNG.
+
+What will happen if you only did philanthropic work? A happy ending! That will left Congo as your subject however through `Congo.txt - 955190`. It grants **30% of your current prestige**.
+
+What will happen if Belgium is overthrown by a revolution (or changed government otherwise but this would do nothing with subjects) before annexing Congo? Normally it would become free, but not exactly in its case. Event `Congo.txt - 955191` alters that.
+
+If Belgium is no longer a monarchy while having Congo as a subject (are subjects fried immediately after revolution?) it will trigger with 3 options to take:
+
+- Annex Congo
+- Status quo
+- Free Congo
+
+1. Congo is annexed. (`AI` 90%, 0% if proletariat dictatorship is in power)
+2. Congo stays as a Belgium subject and proletariat dictatorship takes power there if it is also present in Belgium (`AI` 10%, 0% if proletariat dictatorship is in power)
+3. Congo becomes free and proletariat dictatorship takes power there if it is also present in Belgium. (`AI` 100%, 0% if proletariat dictatorship is **NOT** in power)
 
 ## Ghana
 
