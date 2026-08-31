@@ -4,7 +4,7 @@ This file contains all the information that is useful for obtaining as many colo
 
 ## Dictionary
 
-Here is a small dictionary to help you understand some of the terms and abbreviations used in this encyclopedia.
+Here is a dictionary to help you understand some of the terms and abbreviations used in this encyclopedia.
 
 GFM - Greater Flavour Mod  
 GP - Great Power  
@@ -15,13 +15,20 @@ LR - Life rating
 SC - Supply Consumption  
 WE - War Exhaustion  
 `MTTH` - Mean time to happen, events use it to determine how long it takes to happen  
-Independent - Not a puppet, but can be in someone SoI  
-Base prestige - Prestige from events to be modified by *prestige gain* modifier  
-`colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead)  
-`Yakutat.txt` - game/mod file in with said thing is written  
-`GER` (or similar) - Country `tag`. Every country have a unique one (few short living countries are used as other country, retaining the same tag)  
-France - French like country not specifying exact tag, like `BOR` or `FRA`  
-Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`  
+Independent - Not a puppet, but can be in someone SoI
+
+Base prestige - Prestige from events to be modified by *prestige gain* modifier
+
+`colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead)
+
+`Yakutat.txt` - game/mod file in with said thing is written
+
+`GER` (or similar) - Country `tag`. Every country have a unique one
+
+France - French like country not specifying exact tag, like `BOR` or `FRA`
+
+Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`
+
 UK - United Kingdom  
 USA - United States of America  
 45k+ (and similar) - *at least 45 thousand pounds*  
@@ -383,9 +390,9 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]> **May** - Bourbon France declares war on Algiers, that will trigger a civil war there later  
-]> **June** - *July* Ordinances trigger revolution in Bourbon France changing it to common France  
 |  
+]> **June** - Bourbon France declares war on Algiers, that will trigger a civil war there later  
+]> **July** - July Ordinances trigger revolution in Bourbon France changing it to common France  
 |  
 |  
 |  
@@ -911,7 +918,7 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]==> **1870** - Countries are allowed to get `Colonial Negotiations`, paving the way for Berlin Conference and beyond
+]==> **1870**
 |  
 |  
 |  
@@ -950,7 +957,98 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]==> **1873** - Berlin Conference should happen up to this point  
+]==> **1873**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1874**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1875**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1876**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1877**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1878**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1879**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1880** - Countries are allowed to get `Colonial Negotiations`, paving the way for Berlin Conference and beyond  
 |  
 |  
 |  
@@ -1066,9 +1164,9 @@ Tags there can be very misleading, here is a table explaining them:
 
 `1830_GFM_FRA.txt - france_bullies_algeria`
 This is a very simple decision for great power France at peace if Algeria still owns Algiers.
-It requires to be at least **May of any year**, so you can miss it and have to wait to May 1831 to do it.
+It requires to be at least **June of any year**, so you can miss it and have to wait to June 1831 to do it.
 
-Algeria releases and breaks alliances with Ait Abbas and Touggourt and get a feedback event.
+Algeria releases and breaks alliances with Beni Abbas and Touggourt and get a feedback event.
 Finally, a war is declared upon them with *Punitive Expedition* CB (`treaty_port_casus_belli_no_infamy` exactly).
 
 After France wins, they can take one of two Algerian treaty ports, Oran and Algiers.
