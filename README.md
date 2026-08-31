@@ -6,25 +6,25 @@ This file contains all the information that is useful for obtaining as many colo
 
 Here is a small dictionary to help you understand some of the terms and abbreviations used in this encyclopedia.
 
-GFM - Greater Flavour Mod
-GP - Great Power
-SP - Secondary Power
-SoI - Sphere of Influence
-CB - Casus Belli
-LR - Life rating
-SC - Supply Consumption
-WE - War Exhaustion
-`MTTH` - Mean time to happen, events use it to determine how long it takes to happen
-Independent - Not a puppet, but can be in someone SoI
-Base prestige - Prestige from events to be modified by *prestige gain* modifier
-`colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead)
-`Yakutat.txt` - game/mod file in with said thing is written
-`GER` (or similar) - Country `tag`. Every country have a unique one (few short living countries are used as other country, retaining the same tag)
-France - French like country not specifying exact tag, like `BOR` or `FRA`
-Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`
-UK - United Kingdom
-USA - United States of America
-45k+ (and similar) - *at least 45 thousand pounds*
+GFM - Greater Flavour Mod  
+GP - Great Power  
+SP - Secondary Power  
+SoI - Sphere of Influence  
+CB - Casus Belli  
+LR - Life rating  
+SC - Supply Consumption  
+WE - War Exhaustion  
+`MTTH` - Mean time to happen, events use it to determine how long it takes to happen  
+Independent - Not a puppet, but can be in someone SoI  
+Base prestige - Prestige from events to be modified by *prestige gain* modifier  
+`colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead)  
+`Yakutat.txt` - game/mod file in with said thing is written  
+`GER` (or similar) - Country `tag`. Every country have a unique one (few short living countries are used as other country, retaining the same tag)  
+France - French like country not specifying exact tag, like `BOR` or `FRA`  
+Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`  
+UK - United Kingdom  
+USA - United States of America  
+45k+ (and similar) - *at least 45 thousand pounds*  
 
 ## Important topics
 
@@ -376,6 +376,594 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 | `CAR` |   Rafai    |    Rabih az-Zubayr    | Central African Republic |
 | `EQG` |   Waalo    |         Benga         |    Equatorial Guinea     |
 
+## Timeline
+
+]==> **1830** - Earlier starting date of the campaign  
+|  
+|  
+|  
+|  
+]> **May** - Bourbon France declares war on Algiers, that will trigger a civil war there later  
+]> **June** - *July* Ordinances trigger revolution in Bourbon France changing it to common France  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1831** - France declares war for Oran  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1832** - France declares war for Ennab  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1833** - France declares war for Bougie  
+|  
+|  
+]> **~March** - France takes Comoros & Mahori after getting `Medicine`  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1834**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1835**  
+|  
+|  
+|  
+|  
+]> **May** - France declares war upon Algiers & Algeria, annexing them  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1836** - Later starting date of the campaign  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1837**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1838** - France subjects Beni Abbas through event  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1838**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1839**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1840**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1841**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1842**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1843**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1844**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1845**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1846**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1847**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1848** - The Spring of Nations takes a toll upon Europe
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1849**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1850** - A very important technology: `Nationalism & Imperialism` is unlocked, many countries start researching it ASAP  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1851**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1852**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1853**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1854**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1855**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1856**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1857**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1858**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1859**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1860**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1861**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1862**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1863**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1864**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1865** - If Prussia performed badly, but still won unification war they can form weaker North German Confederation  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1866**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1867**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1868**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1869**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1870** - Countries are allowed to get `Colonial Negotiations`, paving the way for Berlin Conference and beyond
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1871**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1872**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1873** - Berlin Conference should happen up to this point  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+
 ## Africa
 
 `uncivilizedFlavor.txt - conquest_of_the_south`
@@ -503,7 +1091,7 @@ After wining the first war France can easily begin next. They just need to be at
 They will declare war on Algeria with *Punitive Expedition* CB if they still hold Oran. This decision even ignores truce between them.
 After taking this treaty port they also gain POPs there, this time from Lake Athabasca.
 
-> Truce breaking from decisions like that still leads to prestige loss and infamy gain
+> Truce breaking from decisions like that still leads to prestige loss and infamy gain, thankfully, France is a defender in Algerian wars
 
 ### War fo Ennab
 
@@ -521,7 +1109,8 @@ It works literally the same. France just declares a war on them if `ABA` own Bou
 `1830_GFM_FRA.txt - 17051919`
 It triggers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algiers and Algeria with *Establish Protectorate* CB, again ignoring potential truce.
 
-> As player you can also chose to not declare these wars in that event, losing prestige
+> As player you can also chose to not declare these wars in that event, losing prestige.  
+> WARMING: France is an attacker there, taking all penalties of truce breaking!
 
 ### French settlement in Algeria
 
@@ -530,9 +1119,25 @@ This easy decision gives France corresponding event that has 3 options, neither 
 
 ### Conquest of Beylik of Constantine
 
-`Algerian_War.txt - 372382`
+Constantine is annex by France thanks to `Algerian_War.txt - 372382` event. It is triggered for great power French primary culture country with a capital in Paris owning Algiers and being at peace with all GPs, while Constantine is independent or French subject at peace with France and there is no truce between them. It is locked after 1870 however.
+
+It has a `MTTH` of 18 months, but it becomes shorter since 1837 and even shorter in 1838. There, you declare a war upon them to annex them. You however **gain 0.5-2 infamy**. As a player you can also take second option for **-1 infamy** and -10 prestige.
+
+### Subjection of Beni Abbas
+
+`Yakutat.txt - 18482286` is an event triggering (only!) in **January of 1838** to a country with a capital in Paris and French as a primary culture owning Algiers, Oran and Constantine while Beni Abbas is independent and at peace.
+
+It has 2 options, first makes Beni Abbas a subject and adds them to SoI for 50k, (`AI` 100% unless Beni Abbas is a player) second declares a war to vassalize them while they add humiliation CB. (`AI` 0% - so `AI` will chose neither option if it targets player?)
+
+### Beni Abbas annexation
+
+`Algerian_War.txt - 372401` releases Beni Abbas and declares a war upon them. To trigger it, you need to own any of Sahara bordering Algerian provinces, have `Nationalism & Imperialism` (that limits event to **1850**), Algeria and Constantine cannot exist, you need to have a capital in Europe, have them as a subject with no truce and be at war or wait until 1855.
+
+It has `MTTH` of 3 months, releases them, adds all of their provinces as Algerian cores and declares war upon them. 2 states in Algeria also get nationalist agitation.
 
 ### Rebellion - annexation of remaining states
+
+a
 
 `Algerian_War.txt - 37240`
 
