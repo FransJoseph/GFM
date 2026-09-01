@@ -6,32 +6,35 @@ This file contains all the information that is useful for obtaining as many colo
 
 Here is a dictionary to help you understand some of the terms and abbreviations used in this encyclopedia.
 
-GFM - Greater Flavour Mod  
-GP - Great Power  
-SP - Secondary Power  
-SoI - Sphere of Influence  
-CB - Casus Belli  
-LR - Life rating  
-SC - Supply Consumption  
-WE - War Exhaustion  
-`MTTH` - Mean time to happen, events use it to determine how long it takes to happen  
-Independent - Not a puppet, but can be in someone SoI
+### Abbreviations
 
-Base prestige - Prestige from events to be modified by *prestige gain* modifier
+- GFM - Greater Flavour Mod
+- GP - Great Power
+- SP - Secondary Power
+- SoI - Sphere of Influence
+- CB - Casus Belli
+- LR - Life rating
+- SC - Supply Consumption
+- WE - War Exhaustion
+- UK - United Kingdom
+- USA - (The) United States of America
 
-`colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead)
+### Terms
 
-`Yakutat.txt` - game/mod file in with said thing is written
-
-`GER` (or similar) - Country `tag`. Every country have a unique one
-
-France - French like country not specifying exact tag, like `BOR` or `FRA`
-
-Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`
-
-UK - United Kingdom  
-USA - United States of America  
-45k+ (and similar) - *at least 45 thousand pounds*  
+- Westernized Nation - It is renamed in GFM from *Civilized Nation* to be more accurate
+- Non-western Nation - Similarly, it is renamed in GFM from *Uncivilized Nation*
+- Casus Belli (plural Casus Belli) - you need it to declare wars and enforce demands on other nations through said wars
+- Division - Army stack that has at least 2 brigades. It is used in some requirements
+- `MTTH` - Mean time to happen, events use it to determine avenge time to trigger
+- Independent - Not a puppet, but can be in SoI
+- Base prestige - Prestige from events that is modified by *prestige gain* modifier
+- `colonial_railroading` (or similar looking) - in-game name for flag, decision or event (but events have numbers instead). In some sections CBs names can also be noted like that
+- `Yakutat.txt` - game/mod file in with said thing is written
+- `Medicine` - I put technologies and inventions in that format
+- `GER` (or similar) - Country `tag`. Every country have a unique one
+- France - French like country not specifying exact tag, like `BOR` or `FRA`
+- Germany - German like country not specifying exact tag, like `NGF`, `GER` or rarely `SGF`
+- 45k+ (and similar) - *at least 45 thousand pounds*, eventually other things if specified
 
 ## Important topics
 
@@ -47,38 +50,37 @@ GFM did micro on LR. This is mostly to block provinces from colonization rather 
 Most provinces have 35 LR. Just like in the base game, by getting inventions you can colonize provinces that have a lower LR. Note that some provinces have LR of just 5 or even 1. They can never be colonized through that mechanic alone.  
 Here is the list of inventions that do decrease minimum LR in GFM:
 
-- Prophylaxis against Malaria (in `Medicine`, available from 1830): -5, 30 minimum in total
-- Mission to Civilize (in `State & Government`, but available only from 1850): -10, 20 minimum in total
-- Colonial Negotiations (in `Breech-loaded Riffles`, but available from 1880): -5, 15 minimum in total
-- The Dark Continent (in `Revolution & Counterrevolution`, but available from 1895): -5, 10 minimum in total
+- Prophylaxis against Malaria in `Medicine`, available from 1830: -5 ==> 30 minimum in total
+- Mission to Civilize in `State & Government`, available only from 1850: -10 ==> 20 minimum in total
+- Colonial Negotiations in `Breech-loaded Riffles`, available from 1880: -5 ==> 15 minimum in total
+- The Dark Continent in `Revolution & Counterrevolution`, available from 1895: -5 ==> 10 minimum in total
 
 #### The Dark Continent invention
 
-It has a complex requirements, while giving final -5 min life rating. Here it is requirements:
+It has complex requirements, while giving final -5 min life rating. In short it can only be invented in **1890-1895 timeframe**. Here are all of its requirements:
 
-You **CAN NOT** get it if you are not a great power with any of those flags:
+It is locked at base not only by `Revolution & Counterrevolution` technology but also **1890 date**, making its icon gray before those are meet.
 
-- `congo_master`
-- `historical_congo`
-- `civilizing_congo`
-- If you have `colonial_railroading`
-  - It CAN NOT be discovered after 1895, unless the Congo conference have happened
-- If you disabled it:
-  - You need 1 more tech or 2 other increasing factors listed below
+Its discovery is **blocked after 1895**, unless you disabled `colonial_railroading` or called the Congo conference.
 
-Now to actually get it, you need any of those techs, but having more of them increases your chances greatly:
+Next, if you are NOT a Great Power, you cannot be *scripted* master of the Congo (eg. Belgium through conference before its annexation).
 
-- `Biologism` (1850 tech)
-- `Military Logistics` (1870 tech)
-- `Steel Streamers` (1880 tech)
-  Other factors also help to get it, but less
-- Any great power have that invention
-- Your neighbor have it
+It has a base discovery chance of 0%, so you need to meet other requirements in order to actually get it, all of them are cumulative:
 
-At the same scale these factors also can block you from getting it, forcing you to get more of above factors:
+- `Biologism` (1850 technology) for +20%
+- `Military Logistics` (1870 technology) for +20%
+- `Steel Streamers` (1880 tech technology) for +20%
+- If any Great Power already have it: +10%
+- If any of your neighbors already have it: +10%
 
-- Being at most secondary power
-- Having rank worse than 16
+Beware, that there are also factors decreasing that chance, those are:
+
+- Disabling `colonial_railroading` (affects all countries): -20%
+- Being at most secondary power: -10%
+- Having rank worse than 16: -10%
+
+> The logic of it allows only, loosely speaking: *countries that were part of the Berlin Conference* to get it.
+> If you were prepared, you can easily get it within the first months of 1890.
 
 ___
 
@@ -92,8 +94,7 @@ First, all uncivilized nations are non-colonial ones since they can not have col
 - You need a colonial state in any of those lands: Africa, Australia, New Zealand, Oceania, or some part of Asia, more specific:
   - Indochina, Siam, Burma (including Andaman Islands), Yunnan state, Philippines or Indonesia and its surroundings
 
-Most importantly, colonies in Americas (Sweden case), India or in the Middle East do not make you a colonial nation.
-
+> From that we can deduct that colonies in Americas (Sweden case), India or in the Middle East do not make you a colonial nation.
 > NOTE: You can be a colonial nation for example as Zulu (probably a mistake) since continent *Africa* is actually just North Africa, the rest of it is West Africa, East Africa, etc.
 
 ___
@@ -105,12 +106,12 @@ Those reforms works rather like policies and are called accordingly in the game 
 - Settlement
 - Indirect rule
 - Civilizing mission
-- Non-colonial Nation
+- Non-Colonial Nation
 
-If you are not a colonial nation, you will have *Non-colonial Nation* reform. Note that uncivilized nations do not have it, since they have westernization reforms instead. If you became a colonial nation, you are forced to have 1 of 3 remaining instead. You will also get an event (`FlavourMod_EuropeOther.txt - 99801`) allowing you to take any of those for free. They work otherwise as a normal political reforms, allowing you to take one step at a time into lower tiers, or rollback them into higher tiers.
+If you are not a colonial nation, you will have *Non-Colonial Nation* reform. Note that uncivilized nations do not have it, since they have westernization reforms instead. If you became a colonial nation, you are forced to have 1 of 3 remaining instead. You will also get an event (`FlavourMod_EuropeOther.txt - 99801`) allowing you to take any of those for free. They work otherwise as a normal political reforms, allowing you to move into lower tiers, or rollback them into higher tiers, one step at a time.
 
 > Note: Reforms do not change if you no longer meet their requirements, they are only checked if you want to introduce them. This allows countries like USA or Mexico to have *Settlement* while not being a colonial nation.
-> Note: *Non-colonial* is described booth on wiki and in the files as `core_pop_`(effect)`_modifier`. After tests it probably means POPs living in the full states rather than cores, in line with game interface.
+> Note: *Non-Colonial* is described booth on wiki and in the files as `core_pop_militancy/consciousness_modifier`. After tests it probably means POPs living in the full states rather than cores, in line with game interface.
 > Note: All promotion modifiers are scaled by 0.25. So if bonus is 25% (0.2% in tooltip), it is 6.25% in reality
 > Note: Same is true for colonial migration, but it is scaled by 0.15 instead
 > Note: Same again with religious conversations, they are scaled by 0.1
@@ -149,7 +150,7 @@ ___
 
 ### Berlin Conference
 
-It is one of the most important events in the mod, allowing European countries to dominate the world.
+It is one of the most important events in the mod, allowing European countries to dominate the world. In most campaigns it will trigger **around 1881**.
 It sets a single very important global flag, `berlin_conference` that leads to many events and decisions, but most importantly it allows you to use a **unique free casus belli against most african natives**. Every event and decision cited here also is categorized if it requires it or not, just like `colonial_railroading`.
 
 `Scramble for Africa.txt - 95500`
@@ -160,42 +161,39 @@ Most importantly, they need 3 inventions:
 - Mission to Civilize
 - Colonial Negotiations
 
-The first one is the Medicine tech and is obtainable from the game start (1830).
-The second is in State & Government, available from 1840, but obtainable only after researching 1850' techs.
-Last one is the most important, since it is a time bottleneck for the entire event.
-It is in the Breech-loaded Rifles (1850 tech), but obtainable after researching 1870' techs.
-If you are prepared, you will get it it within few months after getting first 1870' tech.
+All of them were described in detail in Life Rating section, since they decrease minimum life rating.
+Last one is the most important, since it is a time bottleneck for the entire event. It can be discovered only **after 1880**.
 
 Finally, it has a `MTTH` of 6 months, shorter if your capital is Berlin, increasing chance to be truly Berlin conference.
 Otherwise, it is named after capital of nation that got this event. It also gives 25 base prestige.
 
-> Note: The Conference have historically happened in 1884 - many years later than will happen in any campaign.
+> If you are prepared, you will get it in within a year since the beginning of 1880.
+> Note: The Conference have historically happened in 1884.
 
 ### Colonial related casus belli
 
-They are key for taking colonies, as for example *Scramble for Africa* casus belli can be used to conquer most african natives without taking any infamy.
-Due to GFM complexity, there are quite a few of them. Due to technical limitations, many have 2 similar versions, one to take state and other for annexation.
+They are key for taking colonies and since there are many of them, you can use some strategy to mitigate your infamy when expanding into colonial regions.
+Due to technical limitations, many CB's have 2 similar versions, one to take state and other for annexation.
 
 #### Scramble for Africa - Demand State/Annex
 
-They are CB's that represent European justification for annexing african natives.
+They are CB's that represent European justification for annexing african natives. **They allow you to take most of Africa without any infamy take!**
 They cannot be justified, but are enabled by default. *You just need to fulfill many requirements* to get them.
 First one is to take a state and second to annex nation if they have just one state left.
 Since the second one have a few extra requirements the first one - Demand State, will be explained first.
 
-> Note: they are named `annex_africa` & `annex_africa_full` in the files.
-
 ##### Scramble for Africa - Demand State
 
+`annex_africa`
 It has EU4 aggressive expansion icon.
 What you need to enable it?
 
-- Berlin conference has happened (beginning of the 1880')
+- Berlin conference has happened
 - Have a capital in Europe
 - **You can't be `RUS` or `TUR`**
 - Be a westernized (civilized) nation
 - `Have Nationalism & Imperialism`
-- Be a colonial nation (explained in the other paragraph)
+- Have colonial nation status
 - Ban slavery
 - You are not a nation that successfully called the Congo conference (basically Belgium)
 
@@ -206,33 +204,34 @@ What countries can be conquered with it?
 Nation that fulfills all of those:
 
 - Have a capital in Africa
+- - **It is NOT any of those countries: `MOR`, `ALD`, `TRI`, `CYR`, `LIB`, `ETH`, `MAD`, `EGY`**
 - It is `AI` controlled
 - Is uncivilized
 - Have more than 1 state
-- You neighbor it by land or you and target have sea access or you are already at war with them as a player
+- You neighbor it by land or you and target have sea access, as a player you can bypass it if you are already at war with them
 - It is not your subject
 - This is not a post colonial country (basically ones that were already taken)
-- **It is NOT any of those nations: Morocco, Aldjazair, Tripoli, Cyrenaica, Liberia, Ethiopia, Madagascar/Imerina or Egypt**
 
 ___
 
 ##### Scramble for Africa - Annex
 
+`annex_africa_full`
 It has EU4 overextension icon.
 It has the same requirements as the previous one but some extra:
 
 - Target have only 1 state
 - **You cannot have `claimed_africa` country flag** (see explanation below)
-- Target cannot have any Ethiopian culture as their primary one (but ETH tag is not forbidden directly this time)
+- Target cannot have any Ethiopian culture as their primary one (but `ETH` is not forbidden directly this time)
 
 These requirements can be bypassed if you are already at war with the target nation:
 
 - If you do not neighbor target nation you will need to have 5+ ships
-- You need to have at least 1 army with 2+ brigades
+- Have at least 1 division
 
-> It looks like this CB **can be used** by congo conference caller
-> It does not technically require to be a westernized nation but it would be impossible to get `Nationalism & Imperialism` otherwise
-> This casus belli can be used on Madagascar/Imerina & Egypt but they start the game with more than 1 state, making that allowance rather useless
+> It looks like this CB **can be used** by congo conference caller, while the firs one cannot
+> It does not require to be a westernized nation directly
+> This casus belli can be used on Imerina or Egypt but they start the game with more than 1 state, making that allowance rather useless
 > Because Scramble for Africa - Annex cb is limited to how often you can use it, you can only annex one state countries every 120 days, while the first cb does not have that limitation - meaning you can even annex big countries quicker.
 
 #### Demand Concession (Berlin Conference)
@@ -277,7 +276,7 @@ Actions that gives that flag:
 
 `colonial_reconquest_cb`
 
-`claim_holy_land` - not used, almost sure
+`claim_holy_land` - probably not used
 
 ### Annexation through Sphere of Influence
 
@@ -372,6 +371,10 @@ However, there is an additional event (`Yakutat.txt - 18482536`) allowing you to
 
 #### Ethiopia & Somalia
 
+#### Central Africa
+
+`uncivilizedFlavor.txt - conquest_of_the_south`
+
 ### Tags re-usage
 
 In GFM for *reasons* there are country tags are recycled. Some are used to determine borders of future European colonies in Africa, some for temporary countries, some for booth. This can cause big confusions. Here is a list of them:
@@ -388,35 +391,31 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 ]==> **1830** - Earlier starting date of the campaign  
 |  
 |  
+]> **March** - Address of 221 triggers the Anti-Bourbon Sentiment in Bourbon France - leading to revolution in the future  
 |  
 |  
-|  
-]> **June** - Bourbon France declares war on Algiers, that will trigger a civil war there later  
-]> **July** - July Ordinances trigger revolution in Bourbon France changing it to common France  
-|  
-|  
-|  
-|  
-|  
-]==> **1831** - France declares war for Oran  
+]> **June** - Bourbon France declares war on Algiers, leading to a civil war there later  
+]> **July** - July Ordinances trigger revolution in Bourbon France, changing it to *common* France after few days  
 |  
 |  
 |  
 |  
 |  
+]==> **1831**  
+]> **January** - France declares war for Oran, UK takes Krobo from Ashanti  
 |  
 |  
 |  
 |  
 |  
-|  
-|  
-]==> **1832** - France declares war for Ennab  
-|  
+]> **July** - Ferdinandea island emerges from the Mediterranean  
 |  
 |  
 |  
 |  
+]> **December** - Ferdinandea island sinks  
+]==> **1832**  
+]> **January** - France declares war for Ennab  
 |  
 |  
 |  
@@ -424,10 +423,14 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]==> **1833** - France declares war for Bougie  
 |  
 |  
-]> **~March** - France takes Comoros & Mahori after getting `Medicine`  
+|  
+|  
+]==> **1833**  
+]> **January** - France declares war for Bougie    
+|  
+]> **~March** - France takes Comoros & Mahori after researching `Medicine`  
 |  
 |  
 |  
@@ -455,7 +458,7 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]> **May** - France declares war upon Algiers & Algeria, annexing them  
+]> **June** - France declares war upon Algiers & Algeria   
 |  
 |  
 |  
@@ -464,7 +467,7 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 ]==> **1836** - Later starting date of the campaign  
-|  
+]> **January** - France makes peace with Algeria maintaining status quo  
 |  
 |  
 |  
@@ -489,21 +492,9 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]==> **1838** - France subjects Beni Abbas through event  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
 ]==> **1838**  
 |  
+]> **February** - France subjects Beni Abbas and conquer Constantine  
 |  
 |  
 |  
@@ -514,8 +505,7 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-|  
-]==> **1839**  
+]==> **1839** - France declares a war on Algeria and subjects Touggourt around that time  
 |  
 |  
 |  
@@ -632,7 +622,7 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]==> **1848** - The Spring of Nations takes a toll upon Europe
+]==> **1848** - The Spring of Nations takes a toll upon Europe, provoking mass migrations to the *New World*
 |  
 |  
 |  
@@ -723,7 +713,7 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 |  
 |  
 |  
-]==> **1855**  
+]==> **1855** - France annexes Beni Abbas in roughly this time  
 |  
 |  
 |  
@@ -1064,8 +1054,6 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 
 ## Africa
 
-`uncivilizedFlavor.txt - conquest_of_the_south`
-
 Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented collapse in the **Scramble for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coastal colonies dotted all across the continent.
 
 ## French Conquests in the Scrabble for Africa
@@ -1160,6 +1148,8 @@ Tags there can be very misleading, here is a table explaining them:
 | `TUG` | Tuggurt   | Touggourt             |
 | `ALD` | Aldjazair | Algeria               |
 
+> For simplicity, where `RGA` and `ALD` are booth targets of action, they will be called just *Algeria*.
+
 ### War for Algiers
 
 `1830_GFM_FRA.txt - france_bullies_algeria`
@@ -1182,6 +1172,11 @@ If France have won this war before 1835, they get an event that splits Algeria. 
 > If Algeria wins, they will get research points and can be added into Ottoman SOI
 > Algeria do not lose core on Batnah - probably a mistake, because it has a high (suggesting new new) id
 
+### French settlement in Algeria
+
+`1830_GFM_FRA.txt - fund_french_settlement_in_algeria` & `1830_GFM_FRA.txt - 160518542`
+This easy decision gives France corresponding event that has 3 options, neither costing anything. The first increases French settled POPs, gives them some cash and increases size their slaves POPs, the second omits that slaves part and the third reduces prestige. There is no `AI` weighting there as in entire file.
+
 ### War for Oran
 
 `1830_GFM_FRA.txt - oran_french_war`
@@ -1189,7 +1184,7 @@ After wining the first war France can easily begin next. They just need to be at
 They will declare war on Algeria with *Punitive Expedition* CB if they still hold Oran. This decision even ignores truce between them.
 After taking this treaty port they also gain POPs there, this time from Lake Athabasca.
 
-> Truce breaking from decisions like that still leads to prestige loss and infamy gain, thankfully, France is a defender in Algerian wars
+> Truce breaking from decisions still leads to prestige loss and infamy gain, thankfully, France is a defender in most Algerian war related events and decisions.
 
 ### War fo Ennab
 
@@ -1202,18 +1197,26 @@ This just declares another Punitive Expedition war against its owner.
 `1830_GFM_FRA.txt - bougie_french_war`
 It works literally the same. France just declares a war on them if `ABA` own Bougie. They again just need to hold Algiers and wait until **1833**.
 
-### Battle of Macta - conquest of Algeria
+### Battle of Macta - *useless* war with Algeria
 
-`1830_GFM_FRA.txt - 17051919`
-It triggers for France owning any Algerian core in short time window: **May-December 1835**. It declares another war on Algiers and Algeria with *Establish Protectorate* CB, again ignoring potential truce.
+> This war is scripted to end with status quo, as a player you can continue it however.
+
+`1830_GFM_FRA.txt - 17051919`  
+It triggers for France owning any Algerian core in short time window: **June-December 1835**. It declares another war on Algiers and Algeria with *Establish Protectorate* CB, again ignoring potential truce.
 
 > As player you can also chose to not declare these wars in that event, losing prestige.  
-> WARMING: France is an attacker there, taking all penalties of truce breaking!
+> WARMING: France is an attacker there, taking all penalties of potential truce breaking!
 
-### French settlement in Algeria
+### The Treaty of Tafna - 1836 status
 
-`1830_GFM_FRA.txt - fund_french_settlement_in_algeria` & `1830_GFM_FRA.txt - 160518542`
-This easy decision gives France corresponding event that has 3 options, neither costing anything. The first increases French settled POPs, gives them some cash and increases size their slaves POPs, the second omits that slaves part and the third reduces prestige. There is no `AI` weighting there as in entire file.
+`Algerian_War.txt - 372381`  
+This event makes peace between France and Algeria, finishing 1830-1836 transition.  
+It triggers in 1836 with `MTTH` of 15 days to France that is still at war with Algeria or Algiers. It has 2 options:
+
+- You **lose 1 infamy**, make peace and gain 100 influence in Touggourt (`AI` 100%)
+- You **gain 1 infamy** and 5 WE, war continues (`AI` 0%)
+
+> For some reason first option temporary transfers 2 French provinces in India to `ENG`, later `CLN` and finally back to France, but not if player got this decision. Why? I don't now.
 
 ### Conquest of Beylik of Constantine
 
@@ -1221,11 +1224,28 @@ Constantine is annex by France thanks to `Algerian_War.txt - 372382` event. It i
 
 It has a `MTTH` of 18 months, but it becomes shorter since 1837 and even shorter in 1838. There, you declare a war upon them to annex them. You however **gain 0.5-2 infamy**. As a player you can also take second option for **-1 infamy** and -10 prestige.
 
-### Subjection of Beni Abbas
+### Beni Abbas becomes French subject
 
-`Yakutat.txt - 18482286` is an event triggering (only!) in **January of 1838** to a country with a capital in Paris and French as a primary culture owning Algiers, Oran and Constantine while Beni Abbas is independent and at peace.
+`Yakutat.txt - 18482286` is an event triggering (only!) in **February of 1838** to a country with a capital in Paris and French as a primary culture owning Algiers, Oran and Constantine while Beni Abbas is independent and at peace.
 
-It has 2 options, first makes Beni Abbas a subject and adds them to SoI for 50k, (`AI` 100% unless Beni Abbas is a player) second declares a war to vassalize them while they add humiliation CB. (`AI` 0% - so `AI` will chose neither option if it targets player?)
+It has 3 options, first makes Beni Abbas a subject and adds them to SoI for 50k (`AI` 100% unless Beni Abbas is a player), second declares a war to vassalize them while they add humiliation CB (`AI` 0% - so `AI` will chose neither option if it targets player?). Third maintains status quo and takes prestige (`AI` 0%).
+
+### The Iron Gates Expedition - conquest of Algeria
+
+`Algerian_War.txt - 37238`  
+It triggers for Great Power with a capital in Paris and French as a primary culture that is at peace with other GP's, Constantine must be owned by it or Algeria and it is before 1870. It  happens **shortly after the conquest of Constantine**.
+
+It has `MTTH` of 14 days and 2 options:
+
+- For **2-3.5 infamy** and 5 WE, declare a war on Algeria, however *can* Morocco protect them. War is not declared if there is a truce still in place (`AI` 100%)
+- **Lose 1 infamy**, gain 5 WE, and lose 5 prestige (`AI` 0%)
+
+#### French victory in Algeria
+
+`Algerian_War.txt - 372383`  
+When France finish its conquests by owning Algiers, Constantine and Laghwat/Laghouat (through any war), event with `MTTH` of 14 days happens with just 1 option.
+
+It angers local POPs and kills 1% of them and make Touggourt a subject.
 
 ### Beni Abbas annexation
 
@@ -1233,11 +1253,20 @@ It has 2 options, first makes Beni Abbas a subject and adds them to SoI for 50k,
 
 It has `MTTH` of 3 months, releases them, adds all of their provinces as Algerian cores and declares war upon them. 2 states in Algeria also get nationalist agitation.
 
-### Rebellion - annexation of remaining states
+### Mokrani Revolt - also annexation of Touggourt
 
-a
+If status quo from set by previous developments was maintained, since 1871 this region can happen. It has `MTTH` of 6 months.
 
-`Algerian_War.txt - 37240`
+`Algerian_War.txt - 37240`  
+Touggourt is annexed by Algeria that also gains some of the provinces. A war is declared to conquer them.
+
+### Other events
+
+If rebels won this war, they get all of Algerian cores through `Algerian_War.txt - 372406969` event and gain 15 prestige.
+
+When France owns all of Algerian cores minus empty ones, a serve famine happens there, where `AI` do not help struggling population: `Algerian_War.txt - 377902`.
+
+There is a repeatable event `Algerian_War - 377903` that gives some regional provinces to Algeria, if France fails to own any of listed there provinces while owning Laghouat, but either I do not understand it, or it just does not work.
 
 ## Benin/Dahomey
 
@@ -1559,7 +1588,7 @@ Whatever happens, UK gets respond event. If Ashanti denied, they can declare a w
 
 ### The sell of Accra
 
-Denmark (or Denmark-Norway) sells Accra to Cape Coast owner in the early 1850's. **Potentially, it can give colonies like Ghana, Togo?, Senegal?, Benin and Ivory Coast** from Accra owner to Gold Coast province owner.
+Denmark (or Denmark-Norway) sells Accra to Cape Coast owner in the **early 1850's**. **Potentially, it can give colonies like Ghana, Togo?, Senegal?, Benin and Ivory Coast** from Accra owner to Gold Coast province owner.
 
 `DEN.txt - selling_danish_ghana`  
 Requirements:
@@ -2591,3 +2620,7 @@ Have 100k or is AI
 Then target country gets an event in which it makes the deal, or denies
 The better the relations, the better the chance for the deal with AI and vice versa
 If target is in the sphere of the proposer, the chance is very good even with the worst relations
+
+## Magazine for other things to do later
+
+`1830_GFM_FRA - flauhaut_plan` - partition Belgium in the early game - player only, `AI` agrees
