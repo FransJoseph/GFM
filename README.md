@@ -386,672 +386,6 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 | `CAR` |   Rafai    |    Rabih az-Zubayr    | Central African Republic |
 | `EQG` |   Waalo    |         Benga         |    Equatorial Guinea     |
 
-## Timeline
-
-]==> **1830** - Earlier starting date of the campaign  
-|  
-|  
-]> **March** - Address of 221 triggers the Anti-Bourbon Sentiment in Bourbon France - leading to revolution in the future  
-|  
-|  
-]> **June** - Bourbon France declares war on Algiers, leading to a civil war there later  
-]> **July** - July Ordinances trigger revolution in Bourbon France, changing it to *common* France after few days  
-|  
-|  
-|  
-|  
-|  
-]==> **1831**  
-]> **January** - France declares war for Oran, UK takes Krobo from Ashanti  
-|  
-|  
-|  
-|  
-|  
-]> **July** - Ferdinandea island emerges from the Mediterranean  
-|  
-|  
-|  
-|  
-]> **December** - Ferdinandea island sinks  
-]==> **1832**  
-]> **January** - France declares war for Ennab  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1833**  
-]> **January** - France declares war for Bougie    
-|  
-]> **~March** - France takes Comoros & Mahori after researching `Medicine`  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1834**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1835**  
-|  
-|  
-|  
-|  
-]> **June** - France declares war upon Algiers & Algeria   
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1836** - Later starting date of the campaign  
-]> **January** - France makes peace with Algeria maintaining status quo  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1837**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1838**  
-|  
-]> **February** - France subjects Beni Abbas and conquer Constantine  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1839** - France declares a war on Algeria and subjects Touggourt around that time  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1840**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1841**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1842**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1843**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1844**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1845**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1846**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1847**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1848** - The Spring of Nations takes a toll upon Europe, provoking mass migrations to the *New World*
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1849**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1850** - A very important technology: `Nationalism & Imperialism` is unlocked, many countries start researching it ASAP  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1851**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1852**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1853**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1854**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1855** - France annexes Beni Abbas in roughly this time  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1856**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1857**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1858**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1859**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1860**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1861**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1862**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1863**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1864**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1865** - If Prussia performed badly, but still won unification war they can form weaker North German Confederation  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1866**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1867**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1868**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1869**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1870**
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1871**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1872**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1873**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1874**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1875**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1876**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1877**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1878**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1879**  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-]==> **1880** - Countries are allowed to get `Colonial Negotiations`, paving the way for Berlin Conference and beyond  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-|  
-
 ## Africa
 
 Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented collapse in the **Scramble for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coastal colonies dotted all across the continent.
@@ -2620,6 +1954,672 @@ Have 100k or is AI
 Then target country gets an event in which it makes the deal, or denies
 The better the relations, the better the chance for the deal with AI and vice versa
 If target is in the sphere of the proposer, the chance is very good even with the worst relations
+
+## Timeline
+
+]==> **1830** - Earlier starting date of the campaign  
+|  
+|  
+]> **March** - Address of 221 triggers the Anti-Bourbon Sentiment in Bourbon France - leading to revolution in the future  
+|  
+|  
+]> **June** - Bourbon France declares war on Algiers, leading to a civil war there later  
+]> **July** - July Ordinances trigger revolution in Bourbon France, changing it to *common* France after few days  
+|  
+|  
+|  
+|  
+|  
+]==> **1831**  
+]> **January** - France declares war for Oran, UK takes Krobo from Ashanti  
+|  
+|  
+|  
+|  
+|  
+]> **July** - Ferdinandea island emerges from the Mediterranean  
+|  
+|  
+|  
+|  
+]> **December** - Ferdinandea island sinks  
+]==> **1832**  
+]> **January** - France declares war for Ennab  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1833**  
+]> **January** - France declares war for Bougie  
+|  
+]> **~March** - France takes Comoros & Mahori after researching `Medicine`  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1834**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1835**  
+|  
+|  
+|  
+|  
+]> **June** - France declares war upon Algiers & Algeria  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1836** - Later starting date of the campaign  
+]> **January** - France makes peace with Algeria maintaining status quo  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1837**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1838**  
+|  
+]> **February** - France subjects Beni Abbas and conquer Constantine  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1839** - France declares a war on Algeria and subjects Touggourt around that time  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1840**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1841**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1842**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1843**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1844**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1845**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1846**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1847**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1848** - The Spring of Nations takes a toll upon Europe, provoking mass migrations to the *New World*
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1849**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1850** - A very important technology: `Nationalism & Imperialism` is unlocked, many countries start researching it ASAP  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1851**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1852**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1853**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1854**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1855** - France annexes Beni Abbas in roughly this time  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1856**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1857**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1858**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1859**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1860**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1861**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1862**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1863**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1864**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1865** - If Prussia performed badly, but still won unification war they can form weaker North German Confederation  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1866**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1867**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1868**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1869**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1870**
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1871**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1872**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1873**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1874**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1875**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1876**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1877**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1878**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1879**  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+]==> **1880** - Countries are allowed to get `Colonial Negotiations`, paving the way for Berlin Conference and beyond  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
+|  
 
 ## Magazine for other things to do later
 
