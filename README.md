@@ -467,6 +467,63 @@ Effects:
 
 `FlavourMod_Africa.txt - france_rabih` is a decision with almost the same requirements as the previous French ones. It similarly declares a war of conquest, but this time upon Rabih az-Zubayr (or rather just `CAR`).
 
+## Tanzania & Rwanda-Burundi
+
+While the colony never had that name, I use it to combine the lands of German East Africa (later British Tanganyika) with Zanzibar since they were related and nowadays are joined through country of Tanzania.
+Note that colonies of Rwanda and Burundi are also included here, since they were a part of German East Africa and were only taken away by Belgium after World War I.
+
+### Tanzania in 1830
+
+Future colonies consists of Zanzibar at the coast, that back then belonged to Oman (being home to huge part of its POPs), known for its slave trade, empty middle interior and local natives in the west and north.
+
+`OMA` `MZR`
+
+### Pre European developments
+
+`Yakutat.txt - bring_war_mazrui`  
+Oman owning Mzizma declares war to Mazrui in 1837 (but it locks itself from 1847), player can do it at campaign start. Mazrui get an event where they deny annexation and war to annex them breaks out.
+
+`Yakutat.txt - occupy_kilwa`  
+When you or your subject own Mzizma or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until 1845. You also gain some prestige.
+
+`OMAFlavor.txt - 38500`  
+Oman moves its capital to Zanzibar between 1839 and 1844, but `AI` has 10% to take 2nd option there, angering the US instead of liking them.
+
+### Creation of Zanzibar and UK influence in the region
+
+`OMAFlavour.txt - 38505`  
+Due to death of the current Sultan, Oman splits to Zanzibar and Oman in 1856 with an event with `MTTH` of 6 months. Oman must be at peace.
+
+Event has 4 options, the first is the only that `AI` will ever take:
+
+Because Sultan have given islands nearby Oman as a gift to United Kingdom, UK colonizes them (since Sultan did not controlled them), but only if `ENG` owns Aden. Islands were administrated from Yemen, and so Yemen gains core there, to make them a part of that colony.  
+Before creation, Zanzibar reforms and westernization progress is set to mirror those of Oman, it is then released as a subject.  
+If UK is `AI` controlled, they also get 50 influence in Zanzibar and 400 in Oman.  
+This is the only option where Zanzibar gains an event that all most African nations can get, but it just gives 50 relations with some countries.
+
+Second option still gives UK islands in the same way, but Oman does not splits. Its SoI owner and all European GP's with 100+ ships or 50+ ports that are not `RUS` or `TUR` will lose influence and relation with it, gaining CB *Liberate Country* and *Add to Sphere* against Oman. Zanzibar (that is not released here) still mirrors reforms of Oman.
+
+Third option mirrors the first, but you will play as Zanzibar with Oman primary culture and religion (Ibadi instead of Sunni) and `AI` will gain just 50 influence in Oman.
+
+Fourth options mirrors 3rd, but Zanzibar will be of its primary culture and religion.
+
+`NationalUnification.txt - become_zanzibar` - Oman when lose mainland
+
+`Yakutat.txt - form_zanzibar` - gives independent Zanzibar cores
+
+`anglo_zanzibari_treaty` - when `AI` play it it justs outlaws slavery in independent Zanzibar, otherwise a war of conquest of some part will be. Otherwise big, or not at all.
+
+`omani_somalia` - cores for Oman or Zanzibar there, player easy take, `AI` may do that?
+
+`184900041` - Zanzibari independence movement - cores
+
+### Annexation of Zanzibar
+
+`FlavourMod_Africa.txt - zanzibar_protectorate`  
+`colonial_railroading` decision available to GP `ENG` since 1896 that owns Mombasa if Zanzibar is `AI` controlled and at peace.
+
+It annexes them, giving **1 infamy** and 5 prestige. Zanzibar also loses all of its cores.
+
 ## Algeria
 
 In 1830 it consists of a 4 countries and big swats of empty Sahara to the south. The biggest country is Algiers, that is also overlord of Beylik of Constantine, Ait Abbas and Touggourt. Additionally, one of Constantine's provinces is in the Tunisia state.
@@ -2624,3 +2681,13 @@ If target is in the sphere of the proposer, the chance is very good even with th
 ## Magazine for other things to do later
 
 `1830_GFM_FRA - flauhaut_plan` - partition Belgium in the early game - player only, `AI` agrees
+
+`OMAFlavor.txt - 45678901` - Oman colonizes coast
+
+`OMAFlavour.txt - 38506` - Slave Trade in provinces is changed after abolition of Slavery in its owner
+
+`OMAFlavor.txt - 38507` - *pearl rush* in Australia
+
+`form_oman_yarubid` - Zanzibar or other country can form Oman if it collapsed
+
+`claim_eastern_algeria` - Algeria gains cores on eastern itself
