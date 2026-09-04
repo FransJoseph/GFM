@@ -2678,6 +2678,41 @@ If target is in the sphere of the proposer, the chance is very good even with th
 |  
 |  
 
+## Flowchart
+
+Most interactions are between state and its people.
+
+POPs:
+
+- Work in RGOs: Landowners, Farmers, Labourers, Serfs & Slaves
+- Work in Factories: Capitalists, Craftsmens & Clerks
+- Process goods: Artisans
+- Work for state: Intellectualists, Bureaucrats, Soldiers & Officers
+
+- Pay taxes & tarrifs
+- Receive aids
+
+- Have literacy and educate
+- Have status, Promote & Demote
+- Have cultures & religion, Assimilate & Convert
+- Move: Emigrate, Migrate, Move to Colonies
+- Buy needs: Life, Everyday & Luxury
+- Have militancy & consciousness
+- Have issues, ideologies & party loyalties
+- Have money in the bank and invest in the railroads & factories
+
+Countries:
+
+- Have status from prestige, economy and military
+- Have cores, states, colonies, its people and goods
+- Accepted culures & religion
+- Have armies & navies
+- Have money, debts and stockpile
+- Have parties, elections and laws/reforms
+- Have technologies & inventions
+- Have SoI
+- Trade with world market and its spherlings
+
 ## Magazine for other things to do later
 
 `1830_GFM_FRA - flauhaut_plan` - partition Belgium in the early game - player only, `AI` agrees
