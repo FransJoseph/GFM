@@ -484,21 +484,18 @@ Tags here are also confusing, here is a table of them:
 | ----- | --------- | --------------------- |
 | `OMA` | Oman      | Muscat-Oman           |
 | `MZR` | Zanzibar  | Mazrui                |
-| `   ` | Ait Abbas | Beni Abbas            |
-| `   ` | Tuggurt   | Touggourt             |
-| `   ` | Aldjazair | Algeria               |
 
 ### Oman lead developments
 
 `Yakutat.txt - bring_war_mazrui`  
 Oman owning Mzizma sends ultimatum to Mazrui in **1837** (but it locks itself from 1847), player can do it at campaign start. Mazrui `AI` always denies it and thus a war to annex them breaks out.
 
-`Yakutat.txt - occupy_kilwa`  
-When you or your subject own Mzizma or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until 1845. You also gain some prestige.
-
 `OMAFlavor.txt - 38500`  
 Oman moves its capital to Zanzibar between 1839 and 1844, but `AI` has 10% to take 2nd option there. This event is connected to the USA, first option improves relations with them, second worsens.  
-It is key in later events, since they check if Oman capital is in Zanzibar.
+It is key in some events, since they check if Oman capital is in Zanzibar.
+
+`Yakutat.txt - occupy_kilwa`  
+When you or your subject own Mzizma or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until **1845**. You also gain some prestige.
 
 ### Creation of Zanzibar and UK influence in the region
 
@@ -531,6 +528,8 @@ Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. I
 `184900041` - Zanzibari independence movement - cores
 
 `witu_protectorate`
+
+`Yaktutat.txt - 18490052` - does not fire due to faulty date?
 
 ### Annexation of Zanzibar
 
