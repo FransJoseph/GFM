@@ -17,7 +17,7 @@ Here is a dictionary to help you understand some of the terms and abbreviations 
 - SC - Supply Consumption
 - WE - War Exhaustion
 - UK - United Kingdom
-- USA - (The) United States of America
+- USA - The United States of America
 
 ### Terms
 
@@ -474,38 +474,51 @@ Note that colonies of Rwanda and Burundi are also included here, since they were
 
 ### Tanzania in 1830
 
-Future colonies consists of Zanzibar at the coast, that back then belonged to Oman (being home to huge part of its POPs), known for its slave trade, empty middle interior and local natives in the west and north.
+Future colonies consists of Zanzibar at the coast, that back then belonged to Oman (being home to huge part of its POPs), known for its slave trade, empty middle interior and African natives in the west and north.
 
-`OMA` `MZR`
+### Tags
 
-### Pre European developments
+Tags here are also confusing, here is a table of them:
+
+|  Tag  | Base name |     In-game name      |
+| ----- | --------- | --------------------- |
+| `OMA` | Oman      | Muscat-Oman           |
+| `MZR` | Zanzibar  | Mazrui                |
+| `   ` | Ait Abbas | Beni Abbas            |
+| `   ` | Tuggurt   | Touggourt             |
+| `   ` | Aldjazair | Algeria               |
+
+### Oman lead developments
 
 `Yakutat.txt - bring_war_mazrui`  
-Oman owning Mzizma declares war to Mazrui in 1837 (but it locks itself from 1847), player can do it at campaign start. Mazrui get an event where they deny annexation and war to annex them breaks out.
+Oman owning Mzizma sends ultimatum to Mazrui in **1837** (but it locks itself from 1847), player can do it at campaign start. Mazrui `AI` always denies it and thus a war to annex them breaks out.
 
 `Yakutat.txt - occupy_kilwa`  
 When you or your subject own Mzizma or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until 1845. You also gain some prestige.
 
 `OMAFlavor.txt - 38500`  
-Oman moves its capital to Zanzibar between 1839 and 1844, but `AI` has 10% to take 2nd option there, angering the US instead of liking them.
+Oman moves its capital to Zanzibar between 1839 and 1844, but `AI` has 10% to take 2nd option there. This event is connected to the USA, first option improves relations with them, second worsens.  
+It is key in later events, since they check if Oman capital is in Zanzibar.
 
 ### Creation of Zanzibar and UK influence in the region
 
 `OMAFlavour.txt - 38505`  
-Due to death of the current Sultan, Oman splits to Zanzibar and Oman in 1856 with an event with `MTTH` of 6 months. Oman must be at peace.
+Due to death of the current Sultan, Oman splits to Zanzibar and Oman in **1856** with an event with `MTTH` of 6 months. Oman must be at peace and Mazrui cannot exist, since it uses the same tag as Zanzibar.
 
 Event has 4 options, the first is the only that `AI` will ever take:
 
-Because Sultan have given islands nearby Oman as a gift to United Kingdom, UK colonizes them (since Sultan did not controlled them), but only if `ENG` owns Aden. Islands were administrated from Yemen, and so Yemen gains core there, to make them a part of that colony.  
-Before creation, Zanzibar reforms and westernization progress is set to mirror those of Oman, it is then released as a subject.  
+1. Because Sultan have given islands nearby Oman as a gift to United Kingdom, UK colonizes them (since Sultan did not controlled them), but only if `ENG` owns Aden. Islands were administrated from Yemen, and so Yemen gains core there, to make them a part of that colony.  
+Before creation, Zanzibar reforms are set to mirror those of Oman, its goverment is changed to HMS goverment, thus changing the name to Zanzibar. Finally, it is released as a subject.  
 If UK is `AI` controlled, they also get 50 influence in Zanzibar and 400 in Oman.  
 This is the only option where Zanzibar gains an event that all most African nations can get, but it just gives 50 relations with some countries.
 
-Second option still gives UK islands in the same way, but Oman does not splits. Its SoI owner and all European GP's with 100+ ships or 50+ ports that are not `RUS` or `TUR` will lose influence and relation with it, gaining CB *Liberate Country* and *Add to Sphere* against Oman. Zanzibar (that is not released here) still mirrors reforms of Oman.
+2. Still gives UK islands in the same way, but Oman does not split. Its SoI owner and all European GP's with 100+ ships or 50+ ports that are not `RUS` or `TUR` will lose influence and relation with it, gaining CB *Liberate Country* and *Add to Sphere* against Oman. Zanzibar (that is not released here) still mirrors reforms of Oman.
 
-Third option mirrors the first, but you will play as Zanzibar with Oman primary culture and religion (Ibadi instead of Sunni) and `AI` will gain just 50 influence in Oman.
+3. Mirrors the first, but you will play as Zanzibar with Oman primary culture and religion (Ibadi instead of Sunni) and `AI` will gain just 50 influence in Oman.
 
-Fourth options mirrors 3rd, but Zanzibar will be of its primary culture and religion.
+4. mirrors 3rd, but Zanzibar will be of its primary culture and religion.
+
+Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. It is changed to Zanzibar by decision that is unlocked by cleanup whenever they have a capital elsewhere.
 
 `NationalUnification.txt - become_zanzibar` - Oman when lose mainland
 
@@ -513,9 +526,11 @@ Fourth options mirrors 3rd, but Zanzibar will be of its primary culture and reli
 
 `anglo_zanzibari_treaty` - when `AI` play it it justs outlaws slavery in independent Zanzibar, otherwise a war of conquest of some part will be. Otherwise big, or not at all.
 
-`omani_somalia` - cores for Oman or Zanzibar there, player easy take, `AI` may do that?
+`omani_somalia` - player only - cores for Oman or Zanzibar
 
 `184900041` - Zanzibari independence movement - cores
+
+`witu_protectorate`
 
 ### Annexation of Zanzibar
 
@@ -539,7 +554,7 @@ Tags there can be very misleading, here is a table explaining them:
 | `TUG` | Tuggurt   | Touggourt             |
 | `ALD` | Aldjazair | Algeria               |
 
-> For simplicity, where `RGA` and `ALD` are booth targets of action, they will be called just *Algeria*.
+> For simplicity, when `RGA` and `ALD` are booth target of action, they will be called just *Algeria*.
 
 ### War for Algiers
 
@@ -2106,7 +2121,7 @@ If target is in the sphere of the proposer, the chance is very good even with th
 |  
 |  
 ]==> **1837**  
-|  
+]> **January** - Oman declares war to annex Mazrui  
 |  
 |  
 |  
