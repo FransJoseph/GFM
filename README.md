@@ -53,7 +53,7 @@ Here is the list of inventions that do decrease minimum LR in GFM:
 - Prophylaxis against Malaria in `Medicine`, available from 1830: -5 ==> 30 minimum in total
 - Mission to Civilize in `State & Government`, available only from 1850: -10 ==> 20 minimum in total
 - Colonial Negotiations in `Breech-loaded Riffles`, available from 1880: -5 ==> 15 minimum in total
-- The Dark Continent in `Revolution & Counterrevolution`, available from 1895: -5 ==> 10 minimum in total
+- The Dark Continent in `Revolution & Counterrevolution`, available from 1890: -5 ==> 10 minimum in total
 
 #### The Dark Continent invention
 
