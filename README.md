@@ -484,28 +484,39 @@ Tags here are also confusing, here is a table of them:
 | ----- | --------- | --------------------- |
 | `OMA` | Oman      | Muscat-Oman           |
 | `MZR` | Zanzibar  | Mazrui                |
+| `WTU` | Witu      | Pate                  |
+| `SMB` | Usambara  | Usambara              |
 
 ### Oman lead developments
 
 `Yakutat.txt - bring_war_mazrui`  
-Oman owning Mzizma sends ultimatum to Mazrui in **1837** (but it locks itself from 1847), player can do it at campaign start. Mazrui `AI` always denies it and thus a war to annex them breaks out.
+Oman owning Mzizima sends ultimatum to Mazrui in **1837** (but it locks itself from 1847), player can do it at campaign start. Mazrui `AI` always denies it and thus a war to annex them breaks out.
 
 `OMAFlavor.txt - 38500`  
-Oman moves its capital to Zanzibar between 1839 and 1844, but `AI` has 10% to take 2nd option there. This event is connected to the USA, first option improves relations with them, second worsens.  
+Oman moves its capital to Zanzibar between **1839 and 1844**, but `AI` has 10% to take 2nd option there. This event is connected to the USA, first option improves relations with them, second worsens.  
 It is key in some events, since they check if Oman capital is in Zanzibar.
 
 `Yakutat.txt - occupy_kilwa`  
-When you or your subject own Mzizma or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until **1845**. You also gain some prestige.
+When you or your subject own Mzizima or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until **1845**. You also gain some prestige.
+
+`Yakutat.txt - 184900041`  
+This is a setup like event. It can trigger to Mzizima owner in **1845-1871 a day after Mazrui stops existing**. It changes their government type, thus changing its name to Zanzibar, religion is changed and gives them cores in the region. If Oman have cores in the coastal Somalia (player lead Oman can get those), they will also get them there. A unique flag is given to Zanzibar: `delay_unciv_annexation` that will slow down process of their annexation through SoI 10 times as long as it is placed on them.
+
+`Yakutat.txt - 184900521`  
+This is an event allowing Oman to annex Pate. It triggers in **1848-1851** timeframe to Oman having capital in Zanzibar while being at peace with Pate that still owns their 2 starting provinces.
+This triggers an event chain, where `AI` Oman will first try sending an ultimatum, (90%) rather than declaring a war of annexation. `AI` will agree to it with 90% chance, otherwise a war breaks out.  
+Whatever happens, Oman gains Lamu (plus core there) and core in Buur Gaabo, while Zanzibar gains core in Buur Gaabo.  
+If it went down without a war (`AI` 81%), Witu province is what is left of Pate instead of becoming a part of Oman. Pate also gains alliance with Oman, they lose core on Lamu and their government form is changed, changing their flag and name to Witu.
 
 ### Creation of Zanzibar and UK influence in the region
 
 `OMAFlavour.txt - 38505`  
-Due to death of the current Sultan, Oman splits to Zanzibar and Oman in **1856** with an event with `MTTH` of 6 months. Oman must be at peace and Mazrui cannot exist, since it uses the same tag as Zanzibar.
+Due to death of the current Sultan, Oman splits to to Zanzibar and Oman between its sons in **1856** with an event with `MTTH` of 6 months. Oman must be at peace and Mazrui cannot exist, since it uses the same tag as Zanzibar.
 
 Event has 4 options, the first is the only that `AI` will ever take:
 
 1. Because Sultan have given islands nearby Oman as a gift to United Kingdom, UK colonizes them (since Sultan did not controlled them), but only if `ENG` owns Aden. Islands were administrated from Yemen, and so Yemen gains core there, to make them a part of that colony.  
-Before creation, Zanzibar reforms are set to mirror those of Oman, its goverment is changed to HMS goverment, thus changing the name to Zanzibar. Finally, it is released as a subject.  
+Before creation, Zanzibar reforms are set to mirror those of Oman, its government is changed to HMS government, thus changing the name to Zanzibar. Finally, it is released as a subject.  
 If UK is `AI` controlled, they also get 50 influence in Zanzibar and 400 in Oman.  
 This is the only option where Zanzibar gains an event that all most African nations can get, but it just gives 50 relations with some countries.
 
@@ -513,7 +524,7 @@ This is the only option where Zanzibar gains an event that all most African nati
 
 3. Mirrors the first, but you will play as Zanzibar with Oman primary culture and religion (Ibadi instead of Sunni) and `AI` will gain just 50 influence in Oman.
 
-4. mirrors 3rd, but Zanzibar will be of its primary culture and religion.
+4. Mirrors 3rd, but Zanzibar will be of its primary culture and religion.
 
 Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. It is changed to Zanzibar by decision that is unlocked by cleanup whenever they have a capital elsewhere.
 
@@ -523,13 +534,7 @@ Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. I
 
 `anglo_zanzibari_treaty` - when `AI` play it it justs outlaws slavery in independent Zanzibar, otherwise a war of conquest of some part will be. Otherwise big, or not at all.
 
-`omani_somalia` - player only - cores for Oman or Zanzibar
-
-`184900041` - Zanzibari independence movement - cores
-
 `witu_protectorate`
-
-`Yaktutat.txt - 18490052` - does not fire due to faulty date?
 
 ### Annexation of Zanzibar
 
@@ -537,6 +542,22 @@ Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. I
 `colonial_railroading` decision available to GP `ENG` since 1896 that owns Mombasa if Zanzibar is `AI` controlled and at peace.
 
 It annexes them, giving **1 infamy** and 5 prestige. Zanzibar also loses all of its cores.
+
+### Other events and decisions
+
+`Yakutat.txt - omani_somalia` - Player only decision available to `OMA` or `MZB` that conquered Pate and got Buur Gaabo. It gives cores on 4 coastal provinces in Somalia.
+
+`Yakutat.txt - 18490052` - does not fire due to wrongly set dates. Would give Oman Tanga through an event chain that may include a war that will annex them. This does not make a big difference, since their provinces are Zanzibari cores and there is a special decision available to Germany to get them.
+
+`Yakutat.txt - occupy_burgabo`
+
+`kilwa_empire`
+
+`zanzibar_oman`
+
+`Yakutat.txt - 18482563` - Zanzibari slaves rebel and escape to mainland Africa in some numbers.
+
+`Yakutat.txt - 18482565` - If slaves rebellion went well for them, Usambara can *decolonize* Korogwe in 1851-1854 timeframe, but only if they do not own Tanga.
 
 ## Algeria
 
