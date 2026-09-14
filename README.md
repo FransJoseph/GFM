@@ -528,9 +528,13 @@ This is the only option where Zanzibar gains an event that all most African nati
 
 Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. It is changed to Zanzibar by decision that is unlocked by cleanup whenever they have a capital elsewhere.
 
-`NationalUnification.txt - become_zanzibar` - Oman when lose mainland
+`FlavourMod_Africa.txt - british_east_africa`
 
-`Yakutat.txt - form_zanzibar` - gives independent Zanzibar cores
+`FlavourMod_Africa.txt - expand_kenya`
+
+`FlavourMod_Africa.txt - expand_tanganyika`
+
+`FlavourModAfrica.txt - hehe_war`
 
 `anglo_zanzibari_treaty` - when `AI` play it it justs outlaws slavery in independent Zanzibar, otherwise a war of conquest of some part will be. Otherwise big, or not at all.
 
@@ -555,9 +559,21 @@ It annexes them, giving **1 infamy** and 5 prestige. Zanzibar also loses all of 
 
 `zanzibar_oman`
 
+`NationalUnification.txt - become_zanzibar` - Oman when lose mainland
+
+`Yakutat.txt - form_zanzibar` - gives independent Zanzibar cores
+
 `Yakutat.txt - 18482563` - Zanzibari slaves rebel and escape to mainland Africa in some numbers.
 
 `Yakutat.txt - 18482565` - If slaves rebellion went well for them, Usambara can *decolonize* Korogwe in 1851-1854 timeframe, but only if they do not own Tanga.
+
+`plantations_in_ruanda_urundi`
+
+`unite_the_nguni`
+
+`mirambo_empire1`
+
+`legacy_of_chwezi`
 
 ## Algeria
 
