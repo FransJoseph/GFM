@@ -150,7 +150,7 @@ ___
 
 ### Berlin Conference
 
-It is one of the most important events in the mod, allowing European countries to dominate the world. In most campaigns it will trigger **around 1881**.
+It is one of the most important events in the mod, allowing European countries to dominate the world. In most campaigns it will trigger **in the early moths of 1880'**.
 It sets a single very important global flag, `berlin_conference` that leads to many events and decisions, but most importantly it allows you to use a **unique free casus belli against most african natives**. Every event and decision cited here also is categorized if it requires it or not, just like `colonial_railroading`.
 
 `Scramble for Africa.txt - 95500`
@@ -386,9 +386,76 @@ In GFM for *reasons* there are country tags are recycled. Some are used to deter
 | `CAR` |   Rafai    |    Rabih az-Zubayr    | Central African Republic |
 | `EQG` |   Waalo    |         Benga         |    Equatorial Guinea     |
 
+### Monarchy checks - `monarchy_government` flag
+
+There are numerous checks in the mod for the `monarchy_government` flag, making it very beneficial to know how to get it and vice versa. It is simply given to any country having monarchy like goverment at game start and with background action that technical tag does regularly. In the same way it is removed when you no longer meet the requirements. Here is the list of goverment types that grants this flag:
+
+- Absolute Monarchy - `absolute_monarchy` or `absolute_empire`
+- Semi-Constitutional Monarchy - `prussian_constitutionalism` or `semi_constitutional_empire`
+- Constitutional Monarchy -  `hms_government` or `constitutional_empire`
+
 ## Africa
 
 Africa is in 1830 dominated by *uncivilized* natives, many of them have a very hard time westernizing. This ensures their status until their unprecedented collapse in the **Scramble for Africa**. Worth noting is Egypt that is the most advanced country on the continent, being an Ottoman subject. There are also coming Boer states in the south that are westernized. Finally, there are many growing European coastal colonies dotted all across the continent.
+
+### Colonial tags
+
+In GFM, some country tags are reused. Colonies in Africa makes most of reused tags. When a colonizer takes colony for itself, background technical tag automatically gives cores, accepted cultures and main culture of the colonizer to said colonial tag. You may remember that you had to do it yourself by decision if you played moded VicII before.
+
+This allows to determine borders of colonies and potential decolonization among other things. Here is a list of them:
+
+|  Tag  | Colonial name                 | First shown name              | Eventual name         |
+| :---: | :---------------------------: | :---------------------------: | :-------------------: |
+| `ALD` | Algeria                       |                               |                       |
+| `ANG` | Angola                        |                               |                       |
+| `BSH` | Basotho                       | Basotho                       |                       |
+| `BKF` | Burkina Faso                  | Gulmu                         |                       |
+| `BRD` | Urundi                        | Burundi                       |                       |
+| `BUG` | Buganda                       | Buganda                       |                       |
+| `CAR` | Central African Republic      | Rafai                         | Rabih az-Zubayr       |
+| `CHD` | Chad                          | Baguirmi                      |                       |
+| `CMR` | Cameroon                      | Mandara                       |                       |
+| `CMS` | Comoros                       | Mahori Sultanate              |                       |
+| `CNG` | Congo Free State              | Kakongo                       |                       |
+| `CPV` | Cabo Verde                    |                               |                       |
+| `DAH` | Dahomey                       | Dahomey                       |                       |
+| `EGY` | Egypt                         | Sultanate of Egypt            |                       |
+| `EQG` | Equatorial Guinea             | Waalo                         | Benga                 |
+| `ETH` | Ethiopia                      | Ethiopia                      |                       |
+| `FRN` | Federation Rhodesia Nyasaland | Chidima                       |                       |
+| `GAB` | Gabon                         | Orungu                        |                       |
+| `GHN` | Ghana                         | Gonja                         |                       |
+| `GMB` | Gambia                        | Saloum                        |                       |
+| `GNE` | Guinea                        | Susu                          |                       |
+| `IVC` | Ivory Coast                   | Baule                         |                       |
+| `KNY` | Kenya                         | Laikipia                      |                       |
+| `LBY` | Libya                         | Beylik of Constantine         |                       |
+| `LIB` | Liberia                       | American Colonization Society | Liberia               |
+| `MAD` | Madagascar                    | Imerina                       |                       |
+| `MGH` | Maghreb                       | Dhofar                        |                       |
+| `MLI` | Mali                          | Bambuk                        |                       |
+| `MLW` | Malawi                        | Bani Khalid                   |                       |
+| `MOR` | Morocco                       | Morocco                       |                       |
+| `MOZ` | Mozambique                    |                               |                       |
+| `NGR` | Nigeria                       | Ijebu                         |                       |
+| `NIG` | Niger                         | Liptako                       |                       |
+| `NMB` | Namibia                       |                               |                       |
+| `RUN` | Reunion                       |                               |                       |
+| `RWA` | Ruanda                        | Rwanda                        |                       |
+| `SAF` | South Africa                  |                               |                       |
+| `SLE` | Sierra Leone                  |                               |                       |
+| `SNG` | Senegal                       | Kayor                         |                       |
+| `SOM` | Somalia                       | Hiraab                        |                       |
+| `STP` | Sao Tome and Principe         |                               |                       |
+| `SUA` | Suazi                         | Swazi                         |                       |
+| `SUD` | Sudan                         |                               |                       |
+| `TNZ` | Tanzania                      | Unyamwezi                     |                       |
+| `TOG` | Togo                          | Sine                          |                       |
+| `TRZ` | Trarza                        | Trarza                        |                       |
+| `TSW` | Botswana                      | baTawana                      |                       |
+| `WSA` | Western Sahara                | Tekna                         |                       |
+| `ZAM` | Zambia                        | Barotse                       |                       |
+| `ZBW` | Zimbabwe                      | Duma Confederacy              |                       |
 
 ## French Conquests in the Scrabble for Africa
 
@@ -467,18 +534,15 @@ Effects:
 
 `FlavourMod_Africa.txt - france_rabih` is a decision with almost the same requirements as the previous French ones. It similarly declares a war of conquest, but this time upon Rabih az-Zubayr (or rather just `CAR`).
 
-## Tanzania & Rwanda-Burundi
+## East Africa
 
-While the colony never had that name, I use it to combine the lands of German East Africa (later British Tanganyika) with Zanzibar since they were related and nowadays are joined through country of Tanzania.
-Note that colonies of Rwanda and Burundi are also included here, since they were a part of German East Africa and were only taken away by Belgium after World War I.
+This section is about territories of modern day Tanzania, Rwanda, Burundi, Kenya and Uganda, but also includes bits of Somalia and Mozambique. Lastly, there is much talked about Oman, since it was an active country there. So much land is included there because it is all closely connected, and in short, just 5 major decisions makes colonies in Tanzania, Kenya and Uganda.
 
-### Tanzania in 1830
-
-Future colonies consists of Zanzibar at the coast, that back then belonged to Oman (being home to huge part of its POPs), known for its slave trade, empty middle interior and African natives in the west and north.
+In history, Omani Empire hold modern day coast of Tanzania. They also expanded their holdings to neighboring lands and even moved its capital there. Later Oman split and Zanzibar holdings were given to one of the sons of the Sultan. When the scrabble came, Germany and UK signed treaty, where in exchange for Heligoland, UK got Zanzibar and Kenya. They later expanded their holdings into interior, forming Kenya and Uganda colonies, while Germans have created German East Africa consisting of modern day Tanzania minus Zanzibar but with Rwanda-Burundi.
 
 ### Tags
 
-Tags here are also confusing, here is a table of them:
+Here is a table with local tags that are important:
 
 |  Tag  | Base name |     In-game name      |
 | ----- | --------- | --------------------- |
@@ -486,6 +550,10 @@ Tags here are also confusing, here is a table of them:
 | `MZR` | Zanzibar  | Mazrui                |
 | `WTU` | Witu      | Pate                  |
 | `SMB` | Usambara  | Usambara              |
+| `HHE` | Uhehe     | Uhehe                 |
+| `TNZ` | Tanzania  | Unyamwezi             |
+| `KNY` | Kenya     | Laikipia              |
+| `BUG` | Buganda   | Buganda               |
 
 ### Oman lead developments
 
@@ -496,11 +564,13 @@ Oman owning Mzizima sends ultimatum to Mazrui in **1837** (but it locks itself f
 Oman moves its capital to Zanzibar between **1839 and 1844**, but `AI` has 10% to take 2nd option there. This event is connected to the USA, first option improves relations with them, second worsens.  
 It is key in some events, since they check if Oman capital is in Zanzibar.
 
+One event may also move their capital to Zanzibar.
+
 `Yakutat.txt - occupy_kilwa`  
 When you or your subject own Mzizima or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until **1845**. You also gain some prestige.
 
 `Yakutat.txt - 184900041`  
-This is a setup like event. It can trigger to Mzizima owner in **1845-1871 a day after Mazrui stops existing**. It changes their government type, thus changing its name to Zanzibar, religion is changed and gives them cores in the region. If Oman have cores in the coastal Somalia (player lead Oman can get those), they will also get them there. A unique flag is given to Zanzibar: `delay_unciv_annexation` that will slow down process of their annexation through SoI 10 times as long as it is placed on them.
+This is a setup like event. It can trigger to Mzizima owner in **1845-1871 a day after Mazrui stops existing**. It changes their government type, thus changing its name to Zanzibar, religion is changed and cores are given to them. If Oman have cores in the coastal Somalia (player lead Oman can get those), they will also get them there. A unique flag is given to Zanzibar: `delay_unciv_annexation` that will slow down process of their annexation through SoI 10 times as long as they have it.
 
 `Yakutat.txt - 184900521`  
 This is an event allowing Oman to annex Pate. It triggers in **1848-1851** timeframe to Oman having capital in Zanzibar while being at peace with Pate that still owns their 2 starting provinces.
@@ -508,7 +578,7 @@ This triggers an event chain, where `AI` Oman will first try sending an ultimatu
 Whatever happens, Oman gains Lamu (plus core there) and core in Buur Gaabo, while Zanzibar gains core in Buur Gaabo.  
 If it went down without a war (`AI` 81%), Witu province is what is left of Pate instead of becoming a part of Oman. Pate also gains alliance with Oman, they lose core on Lamu and their government form is changed, changing their flag and name to Witu.
 
-### Creation of Zanzibar and UK influence in the region
+### Creation of Zanzibar and British influence in the region
 
 `OMAFlavour.txt - 38505`  
 Due to death of the current Sultan, Oman splits to to Zanzibar and Oman between its sons in **1856** with an event with `MTTH` of 6 months. Oman must be at peace and Mazrui cannot exist, since it uses the same tag as Zanzibar.
@@ -527,6 +597,31 @@ This is the only option where Zanzibar gains an event that all most African nati
 4. Mirrors 3rd, but Zanzibar will be of its primary culture and religion.
 
 Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. It is changed to Zanzibar by decision that is unlocked by cleanup whenever they have a capital elsewhere.
+
+### European Imperialism comes
+
+`FlavourMod_Africa.txt - east_africa_company`  
+This is a `colonial_railroading`, `berlin_conference` decision that allows a German like country to take coast of Tanzania for **3 infamy**, beginning the European takeover in this region of Africa. It does it through event given to Zanzibar.
+
+Requirements:
+
+- Country is `GER` or `NGF` or `GCF` or is North German primary culture Great Power owning Danzig or Hamburg or Jadegebiet/Wilhelmshaven
+- Have `monarchy_government` flag (read in *Important Topics*)
+- Zanzibar owns Zanzibar
+- Slavery is outlawed
+- Is not disarmed
+- Have `Steel Streamers` or it it at least 1883
+- Have `Prophylaxis Against Malaria`, `Mission to Civilize` and `Colonial Negotiations`
+- Have at least 1 port
+- Have 15+ ships and 75001+ funds or is `AI`
+
+> Requirements effectively allows it only to a German like country and **1880 date earliest**, due to Berlin Conference and `Steel Streamers` tech.
+
+`GerFlavor - 33031`  
+This event is given to Zanzibar from previous decision. It has 2 options, with `AI` taking second option (positive for the Germans) in wast majority of times.
+
+1. Deny German aggression, giving 5 prestige and concession CB against to Germany
+2. asdasd
 
 `FlavourMod_Africa.txt - british_east_africa`
 
@@ -574,6 +669,14 @@ It annexes them, giving **1 infamy** and 5 prestige. Zanzibar also loses all of 
 `mirambo_empire1`
 
 `legacy_of_chwezi`
+
+Yao converts to Islam
+
+Shell every port from Bandar Abbas to...
+
+The Conquest of Dhofar
+
+1877 Portugal takes Tungi
 
 ## Algeria
 
@@ -2777,3 +2880,11 @@ Countries:
 `form_oman_yarubid` - Zanzibar or other country can form Oman if it collapsed
 
 `claim_eastern_algeria` - Algeria gains cores on eastern itself
+
+`Sitka.txt - 960692` Tippu Tip formation
+
+`FlavourMod_GER - the_jade_purchase` - Prussia boughs Jadegebiet/Wilhelmshaven
+
+Hormuz Strait gives bonus from 1880
+
+Asian/African Farms & Mines
