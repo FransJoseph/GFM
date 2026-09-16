@@ -298,9 +298,9 @@ How the first event (`Scramble for Africa.txt - 95505`) is triggered:
 - **`AI`** cannot annex those countries that way: **Cyrenaica**, **Aussa**, **Algeria**, **Algiers**, **Harar**, **Ethiopia** or **Darfur**
   - Ottoman **`AI`** additionally cannot annex **Morocco** this way
 
-> This rather broad trigger allows you to annex countries like Ethiopia, Senussi, Morocco or even Liberia!
-> Note: This event can trigger to a player
-> Note: `CYR` is labeled 2 times in the `OR` code bracket
+> This rather broad trigger allows you to annex countries like Ethiopia, Senussi, Morocco or even Liberia!  
+> Note: This event can trigger to a player  
+> Note: `CYR` is labeled 2 times in the `OR` code bracket  
 
 This event has a `MTTH` of 4 months, but can happen earlier or later depending on some circumstances:
 
@@ -318,7 +318,7 @@ Finally, the candidate for annexation is presented with 2 options:
 - Deny it
 
 `AI` will respond to both options with 50% chance at base.
-However, if it has less than 3 armies (3 stacks of min 2 regiments) it will always accept it.
+However, if it has less than 3 divisions, it will always accept it.
 Otherwise, if target country has any of those (it stacks), it will likely deny:
 
 - At least 50% westernization progress
@@ -328,11 +328,11 @@ Otherwise, if target country has any of those (it stacks), it will likely deny:
 
 If annexation was accepted, SoI owner gets an event: `Scramble for Africa.txt - 95506`
 
-It gives 2 options, where first makes a status quo, **reducing infamy by 1**. It also locks annexation of it that way, event if other GP adds it to its SoI. Second annex target country **for 2 infamy**.
+It gives 2 options, where first makes a status quo, **reducing infamy by 1**. It also blocks annexation of it that way, event if other GP adds it to its SoI. Second annexes target country **for 2 infamy**.
 
 If the annexation was denied however, SoI owner gets event `Scramble for Africa.txt - 95507` instead.
 
-GP loses them from SoI, all other GPs also loses 100 influence over them. In the event itself GP can let them be for 25 prestige, `AI` will rarely do that. Otherwise, GP declares a war to annex them.
+GP loses them from SoI, all other GPs also loses 100 influence over them. In the event itself GP can let them be, losing 25 prestige, `AI` will rarely do that. Otherwise, GP declares a war to annex them.
 
 ### Occupation of empty provinces
 
@@ -620,8 +620,10 @@ Requirements:
 `GerFlavor - 33031`  
 This event is given to Zanzibar from previous decision. It has 2 options, with `AI` taking second option (positive for the Germans) in wast majority of times.
 
-1. Deny German aggression, giving 5 prestige and concession CB against to Germany
-2. asdasd
+1. Deny German aggression, giving 5 prestige and concession CB to Germany against Zanzibar (`AI` 0.1%, 10x if in someone SoI, 10x if in alliance with GP other than you, 0% if it comes from `AI` or ia in your SoI)
+2. Takes 5 prestige and gives 400 relation with Germany. Transfers all Zanzibari provinces in the Zanzibar and Lindi states, excluding Zanzibar. Mzizima is taken from whoever may still own it, erwerwer
+
+If other uncivilized `AI` owns any province at the coast directly, or it is still empty, also transfer it.
 
 `FlavourMod_Africa.txt - british_east_africa`
 
