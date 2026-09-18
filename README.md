@@ -1,4 +1,4 @@
-# Victoria II Grater Flavour Mod colonization encyclopedia
+# <center> Victoria II Grater Flavour Mod colonization encyclopedia </center>
 
 This file contains all the information that is useful for obtaining as many colonies as possible in Victoria II Greater Flavour Mod. It also explains the process in with they are gained, so player can try to prevent their colonization by other nation. For example you can prevent UK from taking Nigeria by conquering just Lagos in the early game and conquer it with free casus belli that you get from Berlin Conference.
 
@@ -81,6 +81,26 @@ Beware, that there are also factors decreasing that chance, those are:
 
 > The logic of it allows only, loosely speaking: *countries that were part of the Berlin Conference* to get it.
 > If you were prepared, you can easily get it within the first months of 1890.
+
+#### Colonial Power
+
+Just like in the vanilla colonial power is gained through ships and decreased proportionally when over naval supply throughput.
+
+Here is a table:
+
+|   Ship Name   |  CP  |  ST  |  Limit  | CP/ST |
+| ------------- | :--: | :--: | :-----: | :---: |
+| Battleship    | 25   | 25   | 1/base  | 1     |
+| Steam Frigate | 4    | 3    | none    | 1.33  |
+| Cruiser       | 8    | 20   | none    | 0.4   |
+| Dreadnought   | 30   | 35   | 1/base  | 0.86  |
+| Frigate       | 2    | 1    | none    | 2     |
+| Ironclad      | 10   | 3    | 10/base | 3.33  |
+| Man'o'war     | 5    | 2    | none    | 2.5   |
+| Monitor       | 15   | 3    | none    | 5     |
+| Submarine     | 14   | 30   | none    | 0.47  |
+
+#### Burdened Colonial Administration
 
 ___
 
@@ -404,7 +424,7 @@ In GFM, some country tags are reused. Colonies in Africa makes most of reused ta
 
 This allows to determine borders of colonies and potential decolonization among other things. Here is a list of them:
 
-|  Tag  | Colonial name                 | First shown name              | Eventual name         |
+|  Tag  |         Colonial name         |       First shown name        |     Eventual name     |
 | :---: | :---------------------------: | :---------------------------: | :-------------------: |
 | `ALD` | Algeria                       |                               |                       |
 | `ANG` | Angola                        |                               |                       |
