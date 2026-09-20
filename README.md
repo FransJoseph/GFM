@@ -556,7 +556,7 @@ Effects:
 
 ## East Africa
 
-This section is about territories of modern day Tanzania, Rwanda, Burundi, Kenya and Uganda, but also includes bits of Somalia and Mozambique. Lastly, there is much talked about Oman, since it was an active country there. So much land is included there because it is all closely connected, and in short, just 5 major decisions makes colonies in Tanzania, Kenya and Uganda.
+This section is about lands of modern day Tanzania, Rwanda, Burundi, Kenya and Uganda, but also includes bits of Somalia and Mozambique. Lastly, there is much talked about Oman, since it was an active country there. So much land is included there because it is all closely connected, and in short, just 5 major decisions makes colonies in Tanzania, Kenya and Uganda.
 
 In history, Omani Empire hold modern day coast of Tanzania. They also expanded their holdings to neighboring lands and even moved its capital there. Later Oman split and Zanzibar holdings were given to one of the sons of the Sultan. When the scrabble came, Germany and UK signed treaty, where in exchange for Heligoland, UK got Zanzibar and Kenya. They later expanded their holdings into interior, forming Kenya and Uganda colonies, while Germans have created German East Africa consisting of modern day Tanzania minus Zanzibar but with Rwanda-Burundi.
 
@@ -586,6 +586,11 @@ It is key in some events, since they check if Oman capital is in Zanzibar.
 
 One event may also move their capital to Zanzibar.
 
+#### Slave rebellion
+
+`Yakutat.txt - 18482563`  
+Oman with allowed slavery owning Zanzibar and Mzizma 
+
 `Yakutat.txt - occupy_kilwa`  
 When you or your subject own Mzizima or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until **1845**. You also gain some prestige.
 
@@ -597,6 +602,9 @@ This is an event allowing Oman to annex Pate. It triggers in **1848-1851** timef
 This triggers an event chain, where `AI` Oman will first try sending an ultimatum, (90%) rather than declaring a war of annexation. `AI` will agree to it with 90% chance, otherwise a war breaks out.  
 Whatever happens, Oman gains Lamu (plus core there) and core in Buur Gaabo, while Zanzibar gains core in Buur Gaabo.  
 If it went down without a war (`AI` 81%), Witu province is what is left of Pate instead of becoming a part of Oman. Pate also gains alliance with Oman, they lose core on Lamu and their government form is changed, changing their flag and name to Witu.
+
+> Note: Since Oman have cores from Manbasa in Kenya to Ibo in Mozambique, they can easily conquer lands listed above without scripts at earlier date.  
+> Note: There is an event (`Yakutat.txt - 18490052`) chain that in short would lead to Oman taking Tanga, but it does not fire due to faulty set trigger. In the end, Oman can still get it as said earlier and even if they don't, this does not make a big difference when the European takes over the region.
 
 ### Creation of Zanzibar and British influence in the region
 
@@ -618,6 +626,8 @@ This is the only option where Zanzibar gains an event that all most African nati
 
 Right after its creation, Zanzibar has a capital where Mazrui had, in Mombasa. It is changed to Zanzibar by decision that is unlocked by cleanup whenever they have a capital elsewhere.
 
+> Note: Since Zanzibar stays as Oman subject, they are unable to conquer cores that they get in Usambara by themselves.
+
 ### European Imperialism comes
 
 `FlavourMod_Africa.txt - east_africa_company`  
@@ -635,7 +645,7 @@ Requirements:
 - Have at least 1 port
 - Have 15+ ships and 75001+ funds or is `AI`
 
-> Requirements effectively allows it only to a German like country and **1880 date earliest**, due to Berlin Conference and `Steel Streamers` tech.
+> Requirements effectively allows it only to a German like country at **1880 earliest**, due to Berlin Conference and `Steel Streamers` tech.
 
 `GerFlavor - 33031`  
 This event is given to Zanzibar from previous decision. It has 2 options, with `AI` taking second option (positive for the Germans) in wast majority of times.
