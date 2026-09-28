@@ -1,4 +1,4 @@
-# <center> Victoria II Grater Flavour Mod colonization encyclopedia </center>
+# Victoria II Grater Flavour Mod colonization encyclopedia
 
 This file contains all the information that is useful for obtaining as many colonies as possible in Victoria II Greater Flavour Mod. It also explains the process in with they are gained, so player can try to prevent their colonization by other nation. For example you can prevent UK from taking Nigeria by conquering just Lagos in the early game and conquer it with free casus belli that you get from Berlin Conference.
 
@@ -84,9 +84,13 @@ Beware, that there are also factors decreasing that chance, those are:
 
 #### Colonial Power
 
-Just like in the vanilla colonial power is gained through ships and decreased proportionally when over naval supply throughput.
+Just like in the vanilla it is used for maintenance of colonies (including protectorates) and for vanilla colonization mechanic.
 
-Here is a table:
+##### Sources
+
+Colonial power is gained through naval bases and ships and decreased proportionally when over naval supply throughput.
+
+**Ships** - Here is a table showing how much colonial power (CP) each ship gives, including its supply consumption (SC) and potential limits:
 
 |   Ship Name   |  CP  |  ST  |  Limit  | CP/ST |
 | ------------- | :--: | :--: | :-----: | :---: |
@@ -99,6 +103,10 @@ Here is a table:
 | Man'o'war     | 5    | 2    | none    | 2.5   |
 | Monitor       | 15   | 3    | none    | 5     |
 | Submarine     | 14   | 30   | none    | 0.47  |
+
+As you can see, monitors give most colonial power per supply used, meaning that fleet made entirely out of them maximals your colonial power potential.
+
+**Naval Bases** - dsfdsfsd
 
 #### Burdened Colonial Administration
 
@@ -589,7 +597,7 @@ One event may also move their capital to Zanzibar.
 #### Slave rebellion
 
 `Yakutat.txt - 18482563`  
-Oman with allowed slavery owning Zanzibar and Mzizma 
+Oman with allowed slavery owning Zanzibar and Mzizma fdgdfg
 
 `Yakutat.txt - occupy_kilwa`  
 When you or your subject own Mzizima or Sudi, you can colonize Kilwa while it is still empty. You just need to be westernized or wait until **1845**. You also gain some prestige.
