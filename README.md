@@ -82,13 +82,11 @@ Beware, that there are also factors decreasing that chance, those are:
 > The logic of it allows only, loosely speaking: *countries that were part of the Berlin Conference* to get it.
 > If you were prepared, you can easily get it within the first months of 1890.
 
-#### Colonial Power
+### Colonial Power
 
 Just like in the vanilla it is used for maintenance of colonies (including protectorates) and for vanilla colonization mechanic.
 
-##### Sources
-
-Colonial power is gained through naval bases and ships and decreased proportionally when over naval supply throughput.
+Colonial power is gained through naval bases, overseas states and ships and decreased proportionally when over naval supply throughput and by colonial maintenance and used to get those and integrate them.
 
 **Ships** - Here is a table showing how much colonial power (CP) each ship gives, including its supply consumption (SC) and potential limits:
 
@@ -106,9 +104,17 @@ Colonial power is gained through naval bases and ships and decreased proportiona
 
 As you can see, monitors give most colonial power per supply used, meaning that fleet made entirely out of them maximals your colonial power potential.
 
-**Naval Bases** - dsfdsfsd
+**Naval Bases** - Each naval base level gives 30 colonial points per level. Only one can be constructed in a state per country, but non-core ones does not give any.
 
-#### Burdened Colonial Administration
+**Colonies itself** - Every state that is not connected to your capital by land but only by sea, gives 1 CP, regardless of cores, if it is a state or colony
+
+
+
+Protectorate costs 4 CP per province in maintenance, while colony 6 CP per province.
+
+Converting protectorate to state costs 4 CP per province, so the same cost as its maintenance. Converting colony into a state costs the same, so just 4 CP per province.
+
+### Burdened Colonial Administration
 
 ___
 
